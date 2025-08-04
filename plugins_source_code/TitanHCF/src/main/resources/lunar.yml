@@ -1,0 +1,53 @@
+LUNAR_API:
+  ENABLED: true
+  FIX_1_8_HIT_DELAY: true # Viper también hace esto, ¡corrige el retraso de golpe solo para el cliente lunar!
+
+NAMETAGS:
+  NORMAL: '&6[%name% &7┃ %dtr-color%%dtr%%dtr-symbol%&6]'
+  TEAM_TOP: '&6[%pos% %name% &7┃ %dtr-color%%dtr%%dtr-symbol%&6]'
+
+LUNAR_PREFIXES:
+  ENABLED: true
+  TEAMS:
+    ONE: '&4①'
+    TWO: '&c②'
+    THREE: '&f③'
+  PLAYER:
+    ONE: '&6#1'
+    TWO: '&2#2'
+    THREE: '&7#3'
+
+# Simplemente busca en Google 'código hexadecimal de <color>'
+WAYPOINTS:
+  SPAWN:
+    ENABLED: true
+    NAME: 'Spawn'
+    COLOR: '#00FF00'
+  HQ:
+    ENABLED: true
+    NAME: 'HQ'
+    COLOR: '#0000FF'
+  FOCUS:
+    ENABLED: true
+    NAME: 'HQ de %team%'
+    COLOR: '#FFC0CB'
+  RALLY_POINT:
+    ENABLED: true
+    NAME: 'Punto de Reunión'
+    COLOR: '#FF0000'
+  GLOWSTONE:
+    ENABLED: true
+    NAME: 'Montaña de Glowstone'
+    COLOR: '#FFD700'
+  ORE_MOUNTAIN:
+    ENABLED: true
+    NAME: 'Montaña de Minerales'
+    COLOR: '#00FFFF'
+  KOTH:
+    ENABLED: true
+    NAME: 'KoTH de %name%'
+    COLOR: '#0000FF'
+  END_EXIT: # Esto está en el mundo del End.
+    ENABLED: true
+    NAME: 'Salida del End'
+    COLOR: '#9400D3'

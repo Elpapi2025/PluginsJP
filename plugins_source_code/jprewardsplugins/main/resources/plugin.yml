@@ -1,0 +1,18 @@
+name: JPRewards
+version: 1.0
+main: com.jprewards.JPRewards
+author: JuanPiece
+description: Un plugin de recompensas diarias y personalizadas.
+
+commands:
+  jprewards:
+    description: Comando principal de JPRewards.
+    usage: /jprewards <give|reload>
+    permission: jprewards.admin
+    permission-message: No tienes permiso para usar este comando.
+  rewards:
+    description: Abre la GUI de recompensas.
+    usage: /rewards
+    permission: jprewards.use
+    permission-message: No tienes permiso para usar este comando.
+    tab-completer: com.jprewards.JPRewardsCommand # Added tab-completer

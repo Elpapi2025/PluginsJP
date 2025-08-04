@@ -1,0 +1,62 @@
+# Definición de ítems globales que pueden ser usados en cualquier tienda
+items:
+  # Items de UI
+  decor_pane:
+    material: STAINED_GLASS_PANE
+    amount: 1
+    name: " "
+    data: 7 # Gris
+  close_button:
+    material: BARRIER
+    amount: 1
+    name: "&c&lCerrar Menú"
+    lore:
+      - "&7Haz clic para cerrar la tienda."
+    action: close
+  back_button:
+    material: ARROW
+    amount: 1
+    name: "&7&lVolver Atrás"
+    lore:
+      - "&7Haz clic para regresar al menú anterior."
+    action: back
+
+  # Items de Navegación del Menú Principal
+  nav_blocks:
+    material: GRASS
+    amount: 1
+    name: "&a&lTienda de Bloques"
+    lore:
+      - "&7Compra bloques de construcción."
+    action: open_shop
+    target_shop: blocks_shop
+
+  # Items de ejemplo
+  buy_diamond:
+    material: DIAMOND
+    amount: 1
+    name: "&bComprar un Diamante"
+    lore:
+      - "&7Precio: &5100 Almas"
+    action: buy_item
+    currency_type: souls
+    price: 100.0
+    commands:
+      - "give %player% diamond 1"
+
+# Definición de las tiendas
+shops:
+  main_menu:
+    title: "&8&lMenú Principal de la Tienda"
+    size: 27
+    items:
+      '13': nav_blocks
+      '22': close_button
+
+  blocks_shop:
+    title: "&a&lTienda de Bloques"
+    size: 27
+    items:
+      '13': buy_diamond
+      '18': back_button
+      '26': close_button

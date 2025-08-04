@@ -1,0 +1,17 @@
+
+name: jpcommand
+main: com.axcommands.AxCommandsPlugin
+version: 1.0
+api-version: 1.8.9
+author: JuanPiece2025
+description: Plugin de comandos personalizados configurables para Minecraft 1.8.9
+commands:
+  axcmd:
+    description: Ayuda y recarga de AxCommands
+    usage: /axcmd <help|reload>
+  freerank:
+    description: Comando personalizado de ejemplo (edita config.yml)
+    usage: /freerank
+  vip:
+    description: Comando personalizado de ejemplo (edita config.yml)
+    usage: /vip

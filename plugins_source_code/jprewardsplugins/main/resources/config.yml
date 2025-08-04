@@ -1,0 +1,109 @@
+# Configuración de la Interfaz Gráfica (GUI)
+gui:
+  title: '&b&lRecompensas Diarias'
+  size: 45
+  # Relleno de los espacios vacíos de la GUI
+  fill_item:
+    enabled: true
+    # Para 1.8.x, usa el ID numérico del material y el data value.
+    # Ejemplo para panel de cristal gris: material: 160, data: 7
+    # Puedes encontrar IDs de materiales aquí: https://minecraft-ids.grahamedgecombe.com/
+    material: 160 # STAINED_GLASS_PANE
+    data: 7 # Gris
+    name: ' '
+
+# Configuración del tipo de almacenamiento de datos
+# Opciones: JSON, SQLITE, MYSQL
+storage_type: JSON
+
+# Configuración de la base de datos (solo si storage_type es SQLITE o MYSQL)
+database:
+  # Configuración para SQLite
+  sqlite:
+    file: 'rewards.db' # Nombre del archivo de la base de datos SQLite
+
+  # Configuración para MySQL
+  mysql:
+    host: 'localhost'
+    port: 3306
+    database: 'jprewards'
+    username: 'root'
+    password: 'password'
+
+# Definición de los ítems para cada estado de la recompensa
+items:
+  claimed:
+    material: 328 # MINECART
+    data: 0
+    name: '&c&lDía {day} - Reclamado'
+    lore:
+      - '&7Ya has reclamado esta recompensa.'
+  available:
+    material: 342 # CHEST_MINECART
+    data: 0
+    name: '&a&lDía {day} - ¡Disponible!'
+    lore:
+      - '&7¡Haz clic para reclamar tu premio!'
+    enchanted: true
+  locked:
+    material: 342 # ANVIL (BARRIER no existe en 1.8.x como ítem)
+    data: 0
+    name: '&7&lDía {day} - Bloqueado'
+    lore:
+      - '&7Completa los días anteriores para'
+      - '&7desbloquear esta recompensa.'
+  next_locked:
+    material: 342 # ANVIL
+    data: 0
+    name: '&7&lDía {day} - Bloqueado'
+    lore:
+      - '&7Siguiente recompensa en: &f{time}'
+
+# Mensajes personalizables
+messages:
+  reload_success: '&aLa configuración de JPRewards ha sido recargada.'
+  no_permission: '&cNo tienes permiso para usar este comando.'
+  player_only: '&cEste comando solo puede ser ejecutado por un jugador.'
+  no_rewards_configured: '&cNo hay recompensas configuradas en el plugin.'
+  reward_claimed: '&a¡Has reclamado tu recompensa del día {day}!'
+  already_claimed: '&cYa has reclamado esta recompensa.'
+  cannot_claim_yet: '&cAún no puedes reclamar esta recompensa.'
+  streak_lost: '&cHas perdido tu racha de recompensas diarias.'
+
+# Configuración de la racha de recompensas
+streak_settings:
+  enable_streak_loss: true # Habilita o deshabilita la pérdida de racha por inactividad
+  streak_loss_period_hours: 48 # Período en horas después del cual se pierde la racha si no se reclama una recompensa
+
+# Configuración de notificaciones
+notifications:
+  actionbar:
+    enabled: true
+    message: '&a¡Has reclamado tu recompensa del día {day}!'
+  title:
+    enabled: false
+    title: '&a¡Recompensa Reclamada!'
+    subtitle: '&bDía {day}'
+    fade_in: 10
+    stay: 70
+    fade_out: 20
+
+# Lista de recompensas por día consecutivo
+# Puedes añadir tantos comandos como quieras para cada día.
+rewards:
+  # Semana 1
+  - { day: 1,  slot: 10, commands: ['give %player% diamond 5', 'eco give %player% 100'] }
+  - { day: 2,  slot: 11, commands: ['give %player% iron_ingot 32'] }
+  - { day: 3,  slot: 12, commands: ['give %player% gold_ingot 16'] }
+  - { day: 4,  slot: 13, commands: ['give %player% cooked_beef 64'] }
+  - { day: 5,  slot: 14, commands: ['give %player% experience_bottle 32'] }
+  - { day: 6,  slot: 15, commands: ['give %player% golden_apple 3'] }
+  - { day: 7,  slot: 16, commands: ['give %player% 264 1', 'eco give %player% 500'] } # DIAMOND
+  # Semana 2
+  - { day: 8,  slot: 19, commands: ['give %player% diamond 10'] }
+  - { day: 9,  slot: 20, commands: ['give %player% 42 8'] } # IRON_BLOCK
+  - { day: 10, slot: 21, commands: ['give %player% 41 4'] } # GOLD_BLOCK
+  - { day: 11, slot: 22, commands: ['give %player% emerald 32'] }
+  - { day: 12, slot: 23, commands: ['give %player% 449 1'] } # TOTEM_OF_UNDYING (si existe en 1.8.x, si no, cambiar)
+  - { day: 13, slot: 24, commands: ['give %player% 322 1'] } # GOLDEN_APPLE (encantada)
+  - { day: 14, slot: 25, commands: ['give %player% 157 1', 'eco give %player% 1000'] } # DIAMOND_BLOCK

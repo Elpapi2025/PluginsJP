@@ -1,0 +1,10 @@
+# Configuración de la base de datos
+database:
+  # Tipo de almacenamiento: JSON, SQLITE, MYSQL
+  type: JSON
+  mysql:
+    host: localhost
+    port: 3306
+    database: economia
+    user: root
+    password: ""

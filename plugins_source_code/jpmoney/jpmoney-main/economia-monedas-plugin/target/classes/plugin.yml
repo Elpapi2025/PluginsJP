@@ -1,0 +1,25 @@
+name: jpmoney
+version: 1.0
+main: com.ejemplo.economiaplugin.EconomiaPlugin
+api-version: 1.8
+softdepend: [Vault] # Soft dependency on Vault
+commands:
+  moneda:
+    description: Comando principal para gestionar monedas personalizadas
+    usage: /<command> <subcomando>
+    aliases: [monedas, economia]
+  shop:
+    description: Comando para abrir tiendas personalizadas
+    usage: /<command> <nombre_tienda>
+    aliases: [tienda]
+  souls:
+    description: Comando para la moneda Almas
+    usage: /<command> <subcomando>
+  gold:
+    description: Comando para la moneda Oro
+    usage: /<command> <subcomando>
+
+  shopreload:
+    description: Recarga la tienda sin reiniciar el servidor
+    usage: /shopreload
+    permission: economia.shop.reload

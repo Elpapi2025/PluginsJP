@@ -1,0 +1,250 @@
+# Definición de ítems globales que pueden ser usados en cualquier tienda
+items:
+  # Items de UI
+  decor_pane:
+    material: STAINED_GLASS_PANE
+    amount: 1
+    name: " "
+    data: 7 # Gris
+  close_button:
+    material: BARRIER
+    amount: 1
+    name: "&c&lCerrar Menú"
+    lore:
+      - "&7Haz clic para cerrar la tienda."
+    action: close
+  back_button:
+    material: ARROW
+    amount: 1
+    name: "&7&lVolver Atrás"
+    lore:
+      - "&7Haz clic para regresar al menú anterior."
+    action: back
+
+  # Items de Navegación del Menú Principal
+  nav_coins:
+    material: GOLD_INGOT
+    amount: 1
+    name: "&e&lTienda de Monedas"
+    lore:
+      - "&7Compra Almas y Oro"
+      - "&7usando dinero del servidor."
+    action: open_shop
+    target_shop: coins_shop
+  nav_ranks:
+    material: DIAMOND_BLOCK
+    amount: 1
+    name: "&a&lTienda de Rangos"
+    lore:
+      - "&7Adquiere rangos exclusivos"
+      - "&7usando Almas."
+    action: open_shop
+    target_shop: ranks_shop
+  nav_kits:
+    material: CHEST
+    amount: 1
+    name: "&b&lTienda de Kits"
+    lore:
+      - "&7Obtén kits especiales"
+      - "&7usando Oro."
+    action: open_shop
+    target_shop: kits_shop
+
+  # Items de la Tienda de Monedas (compra con Vault)
+  buy_souls_100:
+    material: SOUL_SAND
+    amount: 1
+    name: "&eComprar 100 Almas"
+    lore:
+      - "&7Precio: &a$10,000 (Vault)"
+    action: buy_item
+    currency_type: vault
+    price: 10000.0
+    commands:
+      - "moneda add %player% souls 100"
+  buy_souls_500:
+    material: SOUL_SAND
+    amount: 5
+    name: "&eComprar 500 Almas"
+    lore:
+      - "&7Precio: &a$45,000 (Vault)"
+    action: buy_item
+    currency_type: vault
+    price: 45000.0
+    commands:
+      - "moneda add %player% souls 500"
+  buy_gold_1000:
+    material: GOLD_INGOT
+    amount: 1
+    name: "&6Comprar 1,000 Oro"
+    lore:
+      - "&7Precio: &a$1,000 (Vault)"
+    action: buy_item
+    currency_type: vault
+    price: 1000.0
+    commands:
+      - "moneda add %player% gold 1000"
+  buy_gold_5000:
+    material: GOLD_INGOT
+    amount: 5
+    name: "&6Comprar 5,000 Oro"
+    lore:
+      - "&7Precio: &a$4,500 (Vault)"
+    action: buy_item
+    currency_type: vault
+    price: 4500.0
+    commands:
+      - "moneda add %player% gold 5000"
+
+  # Items de la Tienda de Rangos (compra con Almas)
+  rank_evil:
+    material: COAL_BLOCK
+    name: "&8Rango Evil"
+    lore:
+      - "&7Beneficios básicos."
+      - "&7Precio: &55,000 Almas"
+    action: buy_item
+    currency_type: souls
+    price: 5000.0
+    commands:
+      - "lp user %player% parent set evil"
+  rank_ultra:
+    material: IRON_BLOCK
+    name: "&7Rango Ultra"
+    lore:
+      - "&7Mejores beneficios."
+      - "&7Precio: &515,000 Almas"
+    action: buy_item
+    currency_type: souls
+    price: 15000.0
+    commands:
+      - "lp user %player% parent set ultra"
+  rank_ultimate:
+    material: DIAMOND_BLOCK
+    name: "&bRango Ultimate"
+    lore:
+      - "&7Grandes ventajas."
+      - "&7Precio: &530,000 Almas"
+    action: buy_item
+    currency_type: souls
+    price: 30000.0
+    commands:
+      - "lp user %player% parent set ultimate"
+  rank_titan:
+    material: EMERALD_BLOCK
+    name: "&aRango Titan"
+    lore:
+      - "&7Ventajas de élite."
+      - "&7Precio: &550,000 Almas"
+    action: buy_item
+    currency_type: souls
+    price: 50000.0
+    commands:
+      - "lp user %player% parent set titan"
+  rank_legendary:
+    material: GOLD_BLOCK
+    name: "&6Rango Legendary"
+    lore:
+      - "&7Lo mejor de lo mejor."
+      - "&7Precio: &5100,000 Almas"
+    action: buy_item
+    currency_type: souls
+    price: 100000.0
+    commands:
+      - "lp user %player% parent set legendary"
+
+  # Items de la Tienda de Kits (compra con Oro)
+  kit_pvp:
+    material: IRON_SWORD
+    name: "&cKit PvP"
+    lore:
+      - "&7Equipamiento para combate."
+      - "&7Precio: &61,000 Oro"
+    action: buy_item
+    currency_type: gold
+    price: 1000.0
+    commands:
+      - "kit give pvp %player%"
+  kit_miner:
+    material: DIAMOND_PICKAXE
+    name: "&bKit Minero"
+    lore:
+      - "&7Herramientas para la mina."
+      - "&7Precio: &6750 Oro"
+    action: buy_item
+    currency_type: gold
+    price: 750.0
+    commands:
+      - "kit give minero %player%"
+  kit_farmer:
+    material: DIAMOND_HOE
+    name: "&aKit Granjero"
+    lore:
+      - "&7Herramientas para el campo."
+      - "&7Precio: &6500 Oro"
+    action: buy_item
+    currency_type: gold
+    price: 500.0
+    commands:
+      - "kit give granjero %player%"
+
+# Definición de las tiendas
+shops:
+  main_menu:
+    title: "&8&lMenú Principal de la Tienda"
+    size: 27
+    items:
+      '0': decor_pane
+      '1': decor_pane
+      '2': decor_pane
+      '3': decor_pane
+      '4': decor_pane
+      '5': decor_pane
+      '6': decor_pane
+      '7': decor_pane
+      '8': decor_pane
+      '11': nav_coins
+      '13': nav_ranks
+      '15': nav_kits
+      '18': decor_pane
+      '19': decor_pane
+      '20': decor_pane
+      '21': decor_pane
+      '22': close_button
+      '23': decor_pane
+      '24': decor_pane
+      '25': decor_pane
+      '26': decor_pane
+
+  coins_shop:
+    title: "&e&lTienda de Monedas"
+    size: 36
+    items:
+      '10': buy_souls_100
+      '11': buy_souls_500
+      '15': buy_gold_1000
+      '16': buy_gold_5000
+      '27': back_button
+      '31': close_button
+
+  ranks_shop:
+    title: "&a&lTienda de Rangos"
+    size: 27
+    items:
+      '10': rank_evil
+      '11': rank_ultra
+      '12': rank_ultimate
+      '13': rank_titan
+      '14': rank_legendary
+      '18': back_button
+      '22': close_button
+
+  kits_shop:
+    title: "&b&lTienda de Kits"
+    size: 27
+    items:
+      '11': kit_pvp
+      '13': kit_miner
+      '15': kit_farmer
+      '18': back_button
+      '22': close_button

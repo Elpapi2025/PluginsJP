@@ -1,0 +1,19 @@
+RECLAIMS:
+  IRON: # el permiso es titan.reclaim.iron
+    PRIORITY: 80 # si el jugador tiene permiso para este y otro, se le dará el de mayor prioridad.
+    COMMANDS:
+      - 'cr givekey %player% iron 3'
+      - 'partnerpackage give %player% 3'
+      - 'broadcast &f%player% &eha canjeado las recompensas del rango &f&lHierro &eusando &7/reclaim&e.'
+  GOLD: # el permiso es titan.reclaim.gold
+    PRIORITY: 90 # si el jugador tiene permiso para este y otro, se le dará el de mayor prioridad.
+    COMMANDS:
+      - 'cr givekey %player% iron 5'
+      - 'partnerpackage give %player% 5'
+      - 'broadcast &6%player% &eha canjeado las recompensas del rango &6&lOro &eusando &7/reclaim&e.'
+  TITAN_CORE: # el permiso es titan.reclaim.titan
+    PRIORITY: 100 # si el jugador tiene permiso para este y otro, se le dará el de mayor prioridad.
+    COMMANDS:
+      - 'cr givekey %player% iron 7'
+      - 'partnerpackage give %player% 7'
+      - 'broadcast &c%player% &eha canjeado las recompensas del rango &c&lTitan Core &eusando &7/reclaim&e.'

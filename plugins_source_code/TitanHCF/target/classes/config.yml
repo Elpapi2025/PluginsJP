@@ -1,0 +1,455 @@
+# JSON o MONGO
+STORAGE_TYPE: 'JSON'
+
+# Habilita Mongo arriba para usar esto
+MONGO:
+  SERVER_IP: '127.0.0.1:27017'
+  DATABASE: 'TitanCore'
+  AUTH:
+    ENABLED: false
+    USERNAME: 'admin'
+    PASSWORD: 'Password'
+
+KITMAP_MODE: false # ¿Es el modo de kits del servidor?
+TEAM_INFO_JOIN: true # Enviar información del equipo al unirse
+SMELT_ON_MINE: true # Fundir bloque al minar
+GIVE_EXP_MINE: true # Dar experiencia directamente al jugador al minar
+GIVE_EXP_KILL: true # Esto NO es para jugadores, solo para mobs. Dar experiencia instantáneamente.
+GIVE_ITEM_ON_KILL: true # Esto NO es para jugadores, solo para mobs. Dar botín instantáneamente
+STARTING_BALANCE: 250 # La cantidad de dinero con la que los usuarios comienzan.
+DEFAULT_CLAIM_SCOREBOARD: false # ¿Cuál es el valor predeterminado para la reclamación en el marcador? (/settings)
+MOB_NATURAL_SPAWN: false # ¿Quieres que los mobs aparezcan de forma natural?
+MESSAGE_SOUND: 'ORB_PICKUP' # Sonido de /message
+SPAWN_TELEPORT_SOTW: true # ¿Permitir que un jugador use /spawn instantáneamente cuando SOTW está activo?
+
+DEATHBANS:
+  DEFAULT_TIME: 45
+  KILL_TIME: 5 # cuánto tiempo quitar cuando un jugador con deathban mata a alguien.
+  TIMES: # Usará el más bajo si el jugador tiene permiso.
+    - 'GOLD, 35' # titan.deathban.gold
+    - 'SILVER, 30' # titan.deathban.silver
+    - 'TITAN, 20' # titan.deathban.titan
+  SIGNS_CONFIG:
+    LIVES_SIGN: # crea un cartel con la línea 0 como [lives]
+      - '&0&m----------'
+      - '¿Tienes vidas?'
+      - '&a¡Haz clic aquí!'
+      - '&0&m----------'
+    KILLED_BY: # crea un cartel con la línea 0 como [killedbysign]
+      - '&0&m----------'
+      - 'Asesinado por:'
+      - '&d%reason%'
+      - '&0&m----------'
+    DEATH_LOCATION: # crea un cartel con la línea 0 como [deathlocsign]
+      - '&0&m----------'
+      - 'Lugar de Muerte:'
+      - '&c%location%'
+      - '&0&m----------'
+
+COBWEBS_CONFIG:
+  PLACE_WARZONE: true
+  DESPAWN_TIME: 8
+
+DURABILITY_FIX:
+  ENABLED: true
+  PERCENT: 75 # Probabilidad de ignorar el daño de durabilidad
+
+JOIN_ITEMS:
+  ENABLED: true
+  BOOK_ITEM:
+    TITLE: '&6Bienvenido a Titan Core'
+    AUTHOR: 'JuanPiece'
+    PAGES:
+      - '&9Bienvenido a la Red de Titan Core.'
+  NORMAL_ITEMS: # MATERIAL, CANTIDAD, ENCANTAMIENTOS
+    - 'FISHING_ROD, 1, LURE:2'
+    - 'COOKED_BEEF, 10, NONE'
+
+MOB_STACKING:
+  ENABLED: true
+  RADIUS: 10
+  MAX_STACK: 150
+  COLOR: '&c'
+
+STRENGTH_FIX:
+  ENABLED: true
+  MULTIPLIER: 0.45 # Más bajo para menos daño, esto significa 45% del daño real
+
+STAFF_MODE:
+  STAFF_MODE_ON_JOIN: true # Habilitar modo staff al unirse
+  VANISH_ON_JOIN: true # Desaparecer al unirse
+  SILENT_VIEW_TITLE: 'Viendo silenciosamente...' # Al hacer clic en un cofre o tolva en modo staff.
+  DISABLED_COMMANDS_FROZEN:
+    - 'f home'
+    - 't home'
+    - 'faction home'
+    - 'team home'
+    - 'logout'
+  FREEZE_MESSAGE_INTERVAL: 3
+  STAFF_ITEMS:
+    VANISH_ON:
+      NAME: '&dVanish &c(Desactivado)'
+      ACTION: 'VANISH_ON' # Puede ser: VANISH_OFF, VANISH_ON, RANDOM_TP, INSPECTION, FREEZE
+      MATERIAL: 'INK_SACK'
+      DATA: 8
+      SLOT: 1
+      REPLACE: 'VANISH_OFF' # Cuando se hace clic, qué objeto debe reemplazar a este.
+      LORE:
+        - '&eHaz clic para aparecer ante todos los jugadores en línea. '
+    VANISH_OFF:
+      NAME: '&dVanish &a(Activado)'
+      ACTION: 'VANISH_OFF' # Puede ser: VANISH_OFF, VANISH_ON, RANDOM_TP, INSPECTION, FREEZE
+      MATERIAL: 'INK_SACK'
+      DATA: 10
+      SLOT: 1
+      REPLACE: 'VANISH_ON' # Cuando se hace clic, qué objeto debe reemplazar a este.
+      LORE:
+        - '&eHaz clic para desaparecer de todos los jugadores en línea.'
+    FREEZE:
+      NAME: '&dCongelar'
+      ACTION: 'FREEZE' # Puede ser: VANISH_OFF, VANISH_ON, RANDOM_TP, INSPECTION, FREEZE
+      MATERIAL: 'ICE'
+      DATA: 0
+      SLOT: 2
+      REPLACE: '' # Cuando se hace clic, qué objeto debe reemplazar a este.
+      LORE:
+        - '&eHaz clic en un jugador para congelarlo.'
+    RANDOM_TP:
+      NAME: '&dTeletransporte Aleatorio'
+      ACTION: 'RANDOM_TP' # Puede ser: VANISH_OFF, VANISH_ON, RANDOM_TP, INSPECTION, FREEZE
+      MATERIAL: 'WATCH'
+      DATA: 0
+      SLOT: 8
+      REPLACE: '' # Cuando se hace clic, qué objeto debe reemplazar a este.
+      LORE:
+        - '&eHaz clic para teletransportarte aleatoriamente a un jugador en línea..'
+    INSPECTION:
+      NAME: '&dInspeccionar Inventario'
+      ACTION: 'INSPECTION' # Puede ser: VANISH_OFF, VANISH_ON, RANDOM_TP, INSPECTION, FREEZE
+      MATERIAL: 'BOOK'
+      DATA: 0
+      SLOT: 9
+      REPLACE: '' # Cuando se hace clic, qué objeto debe reemplazar a este.
+      LORE:
+        - '&eHaz clic en un jugador para inspeccionar su inventario.'
+    COMPASS:
+      NAME: '&dTeletransporte a través de Paredes'
+      ACTION: '' # Puede ser: VANISH_OFF, VANISH_ON, RANDOM_TP, INSPECTION, FREEZE
+      MATERIAL: 'COMPASS'
+      DATA: 0
+      SLOT: 5
+      REPLACE: '' # Cuando se hace clic, qué objeto debe reemplazar a este.
+      LORE:
+        - '&eHaz clic en una pared para teletransportarte a través de ella.'
+  INSPECTION_MENU:
+    TITLE: '&dMenú de Inspección'
+    SIZE: 54
+    FILLER:
+      NAME: '&7'
+      MATERIAL: STAINED_GLASS_PANE
+      DATA: 6
+    POTIONS_VIEWER:
+      NAME: '&dEfectos Activos'
+      MATERIAL: BREWING_STAND_ITEM
+      DATA: 0
+      SLOT: 50
+      FORMAT: '&e%effect% &7(&d%time% &dNVL: %amplifier%&7)'
+    PLAYER_INFO:
+      NAME: '&eInformación del Jugador&7: &d%player%'
+      MATERIAL: 'SKULL_ITEM'
+      DATA: 0
+      SLOT: 51
+      LORE:
+        - '&dAsesinatos&7: &f%kills%'
+        - '&dMuertes&7: &f%deaths%'
+        - '&dVidas&7: &f%lives%'
+    CLOSE_INSPECTION:
+      NAME: '&cCerrar Inspección'
+      MATERIAL: 'WOOL'
+      DATA: 14
+      SLOT: 54
+      LORE:
+        - '&eHaz clic para cerrar la inspección.'
+    HELMET_SLOT: 46
+    CHESTPLATE_SLOT: 47
+    LEGGINGS_SLOT: 48
+    BOOTS_SLOT: 49
+
+SPAWNERS_CONFIG:
+  ITEM:
+    NAME: '&dGenerador de Mobs'
+    LORE:
+      - '&eTipo de Entidad: &c%spawner%'
+  TYPES: # Tipo de Entidad, Nombre a mostrar
+    - 'ENDERMAN, &dEndermen'
+    - 'BLAZE, &6Blaze'
+    - 'CREEPER, &aCreeper'
+    - 'SPIDER, &8Araña'
+    - 'COW, &7Vaca'
+    - 'PIG, &dCerdo'
+
+# Si no quieres multicolor, simplemente pon todos iguales
+WALLS:
+  PVP_TIMER:
+    TYPE: 'STAINED_GLASS'
+    DATA: 5
+  INVINCIBILITY:
+    TYPE: 'STAINED_GLASS'
+    DATA: 5
+  COMBAT_TAG:
+    TYPE: 'STAINED_GLASS'
+    DATA: 14
+  LOCKED_CLAIM:
+    TYPE: 'STAINED_GLASS'
+    DATA: 3
+
+# También hay comandos para esto.
+LOCATIONS:
+  DEATHBAN_ARENA:
+    ARENA_SPAWN: 'world, 0, 10, 0, 0.0, 0.0'
+    KILLED_BY_SIGN: 'world, 0, 10, 0, 0.0, 0.0'
+    DEATH_LOC_SIGN: 'world, 0, 10, 0, 0.0, 0.0'
+  END_EXITS:
+    END_EXIT: 'world_the_end, 0, 10, 0, 0.0, 0.0'
+    WORLD_EXIT: 'world, 0, 10, 0, 0.0, 0.0'
+
+KOTHS_CONFIG:
+  # Permitir que los jugadores sin equipo capturen
+  ALLOW_NO_TEAM_CAP: true
+  # Cuándo debemos enviar el mensaje de captura, actualmente cada 20 segundos.
+  SEND_CAPTURING_MESSAGE: 20
+  # Cuándo debemos decirle al equipo que están controlando el koth, actualmente cada 60 segundos.
+  TEAM_SEND_CAPTURING_MESSAGE: 60
+  # Cuántos koths pueden estar activos a la vez
+  MAX_KOTHS_ACTIVE: 1
+  # Comandos a ejecutar cuando un jugador captura un koth
+  COMMANDS_ON_CAPTURE:
+    - 'cr givekey %player% event 3'
+    - 'cr givekey %player% koth 5'
+
+CITADEL:
+  CHEST_CONFIG:
+    # La cantidad de objetos por cofre (será aleatoria)
+    MIN_ITEM_AMOUNT: 2
+    MAX_ITEM_AMOUNT: 5
+    RANDOM_ITEMS: # Material, Cantidad, Datos, Nombre, Encantamientos, Lore, Porcentaje
+      - 'DIAMOND_SWORD, 1, 0, &c&lEspada &f&lde la Ciudadela, DAMAGE_ALL:2;DURABILITY:4, &cNutrición III;&cTitan IX, 30%'
+      - 'DIAMOND_HELMET, 1, 0, &c&lCasco &f&lde la Ciudadela, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
+      - 'DIAMOND_CHESTPLATE, 1, 0, &c&lPechera &f&lde la Ciudadela, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cResistencia al Fuego I, 20%'
+      - 'DIAMOND_LEGGINGS, 1, 0, &c&lPantalones &f&lde la Ciudadela, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
+      - 'DIAMOND_BOOTS, 1, 0, &c&lBotas &f&lde la Ciudadela, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cVelocidad II, 15%'
+      - 'COOKIE, 1, 0, &c&lGalleta &f&lde la Ciudadela, none, &c&kii&r &cGalleta &cMágica de &cTitan &c&kii&r, 10%'
+      - 'GOLDEN_APPLE, 16, 0, none, none, none, 45%'
+      - 'GOLDEN_APPLE, 1, 1, none, none, none, 10%'
+      - 'ENDER_PEARL, 8, 0, none, none, none, 30%'
+      - 'GLOWSTONE_DUST, 16, 0, none, none, none, 35%'
+      - 'SULPHUR, 16, 0, none, none, none, 35%' # pólvora llamada sulphur
+      - 'EMERALD_BLOCK, 16, 0, none, none, none, 20%'
+      - 'DIAMOND_BLOCK, 16, 0, none, none, none, 25%'
+      - 'GOLD_BLOCK, 16, 0, none, none, none, 30%'
+      - 'IRON_BLOCK, 16, 0, none, none, none, 35%'
+      - 'ABILITY:Switcher, 4, 15%' # Las habilidades son así. Habilidad, Cantidad, Probabilidad
+      - 'ABILITY:AntiBuild, 4, 15%' # Las habilidades son así. Habilidad, Cantidad, Probabilidad
+
+MOUNTAINS:
+  ORE_MOUNTAIN:
+    CHEST_CONFIG:
+      # La cantidad de objetos por cofre (será aleatoria)
+      MIN_ITEM_AMOUNT: 2
+      MAX_ITEM_AMOUNT: 5
+      RANDOM_ITEMS: # Material, Cantidad, Datos, Nombre, Encantamientos, Lore, Porcentaje
+        - 'DIAMOND_SWORD, 1, 0, &c&lEspada &f&lde la Montaña, DAMAGE_ALL:2;DURABILITY:4, &cNutrición III;&cTitan IX, 30%'
+        - 'DIAMOND_HELMET, 1, 0, &c&lCasco &f&lde la Montaña, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
+        - 'DIAMOND_CHESTPLATE, 1, 0, &c&lPechera &f&lde la Montaña, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cResistencia al Fuego I, 20%'
+        - 'DIAMOND_LEGGINGS, 1, 0, &c&lPantalones &f&lde la Montaña, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
+        - 'DIAMOND_BOOTS, 1, 0, &c&lBotas &f&lde la Montaña, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cVelocidad II, 15%'
+        - 'COOKIE, 1, 0, &c&lGalleta &f&lde la Montaña, none, &c&kii&r &cGalleta &cMágica de &cTitan &c&kii&r, 10%'
+        - 'GOLDEN_APPLE, 16, 0, none, none, none, 45%'
+        - 'GOLDEN_APPLE, 1, 1, none, none, none, 10%'
+        - 'ENDER_PEARL, 8, 0, none, none, none, 30%'
+        - 'GLOWSTONE_DUST, 16, 0, none, none, none, 35%'
+        - 'SULPHUR, 16, 0, none, none, none, 35%' # pólvora llamada sulphur
+        - 'EMERALD_BLOCK, 16, 0, none, none, none, 20%'
+        - 'DIAMOND_BLOCK, 16, 0, none, none, none, 25%'
+        - 'GOLD_BLOCK, 16, 0, none, none, none, 30%'
+        - 'IRON_BLOCK, 16, 0, none, none, none, 35%'
+        - 'ABILITY:Switcher, 4, 15%' # Las habilidades son así. Habilidad, Cantidad, Probabilidad
+        - 'ABILITY:AntiBuild, 4, 15%' # Las habilidades son así. Habilidad, Cantidad, Probabilidad
+    ALLOWED_BREAK: # Los objetos que reaparecen/se pueden romper.
+      - 'EMERALD_ORE'
+      - 'DIAMOND_ORE'
+      - 'GOLD_ORE'
+      - 'IRON_ORE'
+      - 'COAL_ORE'
+      - 'EMERALD_BLOCK'
+      - 'DIAMOND_BLOCK'
+      - 'GOLD_BLOCK'
+      - 'IRON_BLOCK'
+      - 'COAL_BLOCK'
+  GLOWSTONE:
+    CHEST_CONFIG:
+      MIN_ITEM_AMOUNT: 0
+      MAX_ITEM_AMOUNT: 0
+      RANDOM_ITEMS: { }
+    ALLOWED_BREAK: # Los objetos que reaparecen/se pueden romper.
+      - 'GLOWSTONE'
+
+BORDERS:
+  WORLD: 2000
+  NETHER: 1000
+
+LOGGERS:
+  COLOR: '&e'
+  DESPAWN: 15 # Segundos
+
+ONLINE_DONOR:
+  INTERVAL: 120 # Segundos
+  MESSAGE: # Permiso: titan.donor - No contará a los jugadores con op.
+    - '&7&m--------------------------'
+    - '&c&lDonadores de Titan Core &8» &7%members%'
+    - '&fCompra el rango &cTitan Core &fen store.titan.cc'
+    - '&7&m--------------------------'
+
+CHAT_FORMAT:
+  DENIED_WORDS:
+    - 'FUCK'
+    - 'BITCH'
+    - 'KYS'
+    - 'STFU'
+  COOLDOWN: 3 # segundos
+  PUBLIC_NO_TEAM: '%killtop%%tag%%prefix%%color%%player%%suffix%&7: &f%s'
+  PUBLIC_TEAM: '&6[%ftop%&r%team%&6]&r %killtop%%tag%%prefix%%color%%player%%suffix%&7: &f%s'
+  KILL_TOP_FORMAT: '&8[%killtop%&8] &r'
+  FTOP_FORMAT: '%ftop% '
+  TEAM_CHAT:
+    ENABLED: true
+    FORMAT: '&2(Equipo) %player%: &e%s'
+    SHORTCUT: '@' # Escribe @ antes de un mensaje para que sea en el chat del equipo
+  ALLY_CHAT:
+    ENABLED: true
+    FORMAT: '&9(Aliado) %player%: &e%s'
+    SHORTCUT: '' # Déjalo vacío para deshabilitar
+  OFFICER_CHAT:
+    ENABLED: true
+    FORMAT: '&d(Oficial) %player%: &e%s'
+    SHORTCUT: '' # Déjalo vacío para deshabilitar
+  CO_LEADER_CHAT:
+    ENABLED: true
+    FORMAT: '&3(Co-Líder) %player%: &e%s'
+    SHORTCUT: '' # Déjalo vacío para deshabilitar
+
+FIXES:
+  ENDERCHEST_CRAFTING: false
+  BOAT_PLACING: true # Solo funcionará en el agua si esto es verdadero
+  OBSIDIAN_GENS: false
+  MOB_SPAWN_WARZONE: false
+
+MULTIPLIERS:
+  NETHER_MULTIPLIER: 2
+  SMELT_MULTIPLIER: 2
+
+SIGNS_CONFIG:
+  UP_SIGN:
+    ENABLED: true
+    LINES:
+      - '&4[Ascensor]'
+      - 'Arriba'
+      - ''
+      - ''
+  DOWN_SIGN:
+    ENABLED: false
+    LINES:
+      - '&4[Ascensor]'
+      - 'Abajo'
+      - ''
+      - ''
+  BUY_SIGN:
+    ENABLED: true
+    LINES:
+      - '&a- Comprar -'
+      - '%material%'
+      - '%amount%'
+      - '$%price%'
+  SELL_SIGN:
+    ENABLED: true
+    LINES:
+      - '&c- Vender -'
+      - '%material%'
+      - '%amount%'
+      - '$%price%'
+  KIT_SIGN:
+    ENABLED: true
+    LINES:
+      - '&9- Kit -' # ¡Aún así creas con [Kit]!
+      - '%kit%'
+      - ''
+      - ''
+  SUBCLAIM_SIGN:
+    ENABLED: true
+    LINES:
+      - '&4[Sub-reclamación]' # ¡Aún así creas con [Subclaim]!
+      - '%member%'
+      - ''
+      - ''
+
+TIMERS_COOLDOWN:
+  INVINCIBILITY: 3600
+  PVP_TIMER: 1800
+  COMBAT_TAG: 45
+  APPLE: 45
+  ENDER_PEARL: 16
+  GAPPLE: 10800
+  STUCK: 45
+  HQ: 10
+  ARCHER_TAG: 10
+  WARMUP: 3
+  LOGOUT: 45
+  TEAM_CREATE_CD: 30
+  TEAM_RENAME_CD: 30
+  LOCK_CLAIM: 30
+
+SPAWN_TIMER:
+  ENABLED: false # ¿/spawn inicia una cuenta regresiva para teletransportarse al spawn?
+  TIME: 45 # Tiempo antes de que sean teletransportados al spawn
+
+# Todas las letras en minúsculas.
+DISABLED_COMMANDS:
+  MAIN_COMMANDS:
+    - 'command'
+  TEAM_SUBCOMMANDS:
+    - 'subcommand'
+
+RENAMING:
+  DENIED_NAMES:
+    - 'bitch'
+    - 'fuck'
+    - 'nigga'
+    - 'nigger'
+    - 'sex'
+    - 'kys'
+  DENIED_ITEMS:
+    - 'TRIPWIRE_HOOK'
+
+REPAIRING:
+  DENIED_ITEMS:
+    - 'TRIPWIRE_HOOK'
+
+COMBAT_TIMER:
+  HQ_TELEPORT: false
+  STUCK_TELEPORT: true
+  LOGOUT_COMMAND: false
+  END_ENTRY: false
+
+INVINCIBILITY:
+  END_ENTRY: true
+  HQ_TELEPORT: true
+  ENTER_OWN_CLAIM: true
+
+HQ_TIMER:
+  INSTANT_TP_SPAWN: true
+  ALLOW_TP_OTHER_CLAIM: true # Permitir teletransportes en las reclamaciones de otros jugadores
+
+PVP_TIMER:
+  END_ENTRY: false
+  HQ_TELEPORT: false
+  ENTER_OWN_CLAIM: false

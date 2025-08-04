@@ -1,0 +1,8 @@
+name: TitanCore
+main: me.titan.core.HCF
+version: 1.0-SNAPSHOT
+author: JuanPiece
+description: Titan Core Plugin
+api-version: 1.13
+depend:
+  - Vault

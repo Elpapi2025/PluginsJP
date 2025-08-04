@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jprewards</groupId>
+    <artifactId>JPRewards</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <name>JPRewards</name>
+    <description>JPRewards Minecraft Plugin</description>
+    <url>https://github.com/JuanPiece2025/jprewards-plugins</url>
+
+    <repositories>
+        <repository>
+            <id>placeholderapi</id>
+            <url>https://repo.extendedclip.com/releases/</url>
+        </repository>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.8.8-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>me.clip</groupId>
+            <artifactId>placeholderapi</artifactId>
+            <version>2.11.6</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>main/java</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.wvengen</groupId>
+                <artifactId>proguard-maven-plugin</artifactId>
+                <version>2.6.0</version> <!-- Puedes verificar si hay una versión más reciente en Maven Central -->
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>proguard</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <obfuscate>true</obfuscate>
+                    <injar>${project.build.finalName}.jar</injar>
+                    <outjar>${project.build.finalName}-obfuscated.jar</outjar>
+                    <options>
+                        <!-- Mantener la clase principal del plugin -->
+                        <option>-keep public class com.jprewards.JPRewards { public void onEnable(); public void onDisable(); }</option>
+                        <!-- Mantener clases de listeners y comandos -->
+                        <option>-keep public class com.jprewards.RewardsGUIListener { *; }</option>
+                        <option>-keep public class com.jprewards.PlayerJoinListener { *; }</option>
+                        <option>-keep public class com.jprewards.JPRewardsCommand { *; }</option>
+                        <!-- Mantener la expansión de PlaceholderAPI -->
+                        <option>-keep public class com.jprewards.expansion.JPRewardsExpansion { *; }</option>
+                        <!-- Mantener clases de datos (PlayerData, DataManager, etc.) -->
+                        <option>-keep public class com.jprewards.data.** { *; }</option>
+                        <!-- Mantener enums si los usas -->
+                        <option>-keep public enum * { *; }</option>
+                        <!-- Mantener clases que extienden de JavaPlugin, Listener, CommandExecutor, TabCompleter -->
+                        <option>-keep public class * extends org.bukkit.plugin.java.JavaPlugin</option>
+                        <option>-keep public class * implements org.bukkit.event.Listener</option>
+                        <option>-keep public class * implements org.bukkit.command.CommandExecutor</option>
+                        <option>-keep public class * implements org.bukkit.command.TabCompleter</option>
+                        <!-- Mantener constructores y métodos públicos de clases que se instancian por reflexión o en
+          plugin.yml -->
+                        <option>-keepclassmembers class * { public &lt;init&gt;(...); }</option>
+                        <option>-keepclassmembers class * { public static void main(java.lang.String[]); }</option>
+                        <!-- Otras opciones comunes -->
+                        <option>-dontwarn **</option> <!-- Suprime advertencias sobre clases no encontradas (útil para provided
+          scope) -->
+                        <option>-ignorewarnings</option>
+                        <option>-optimizations !code/simplification/arithmetic</option>
+                        <option>-keepattributes
+          Exceptions,InnerClasses,Signature,Deprecated,SourceFile,LineNumberTable,*Annotation*,EnclosingMethod</option>
+                    </options>
+                    <attach>false</attach> <!-- No adjuntar el JAR ofuscado al build principal -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

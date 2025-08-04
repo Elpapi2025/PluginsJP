@@ -1,0 +1,31 @@
+# Configuración de comandos personalizados para AxCommands
+# Puedes agregar más comandos siguiendo el formato de ejemplo
+
+commands:
+  freerank:
+    max-uses: 1
+    bypass-permission: axcommands.bypass.freerank
+    limit-message: '§cYa has reclamado tu freerank.'
+    cooldown: 60 # Cooldown en segundos (60 segundos = 1 minuto)
+    cooldown-message: '§cEste comando está en cooldown. Inténtalo de nuevo en §e%time% segundos.'
+    actions:
+      - 'console: give {player} diamond 1'
+      - 'message: §a¡Has recibido un diamante gratis!'
+  vip:
+    max-uses: 1
+    bypass-permission: axcommands.bypass.vip
+    limit-message: '§cYa has reclamado tu VIP.'
+    actions:
+      - 'console: lp user {player} parent add vip'
+      - 'message: §6¡Ahora eres VIP!'
+  broadcast_message:
+    actions:
+      - 'broadcast: §b¡{player} ha usado un comando de prueba de broadcast!'
+  teleport_player:
+    actions:
+      - 'teleport: 100 64 200' # Teleporta al jugador a las coordenadas X=100, Y=64, Z=200
+      - 'message: §a¡Has sido teletransportado!'
+  play_sound:
+    actions:
+      - 'sound: LEVEL_UP 1.0 1.0' # Reproduce el sonido LEVEL_UP con volumen 1.0 y tono 1.0
+      - 'message: §a¡Sonido reproducido!'

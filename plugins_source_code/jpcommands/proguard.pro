@@ -1,0 +1,31 @@
+-keep public class com.axcommands.AxCommandsPlugin { public void onEnable(); public void onDisable(); }
+-keepattributes Exceptions,InnerClasses,Signature,Deprecated,SourceFile,LineNumberTable,*Annotation*,EnclosingMethod
+-dontwarn org.bukkit.**
+-dontwarn com.google.gson.**
+-dontwarn net.md_5.bungeecord.chat.**
+-dontwarn sun.misc.**
+-dontwarn java.lang.invoke.**
+-dontoptimize
+-dontshrink
+-libraryjars /usr/local/sdkman/candidates/java/current/lib/jrt-fs.jar
+-libraryjars /root/.m2/repository/org/spigotmc/spigot-api/1.8.8-R0.1-SNAPSHOT/spigot-api-1.8.8-R0.1-20160221.082514-43.jar
+-injar target/jpcommand-1.0.jar
+-outjars jpcommand-1.0-obf.jar
+-dontwarn java.lang.Object
+-dontwarn java.lang.Class
+-dontwarn java.lang.String
+-dontwarn java.lang.StringBuilder
+-dontwarn java.lang.Long
+-dontwarn java.lang.Double
+-dontwarn java.lang.Float
+-dontwarn java.lang.IllegalArgumentException
+-dontwarn java.lang.NumberFormatException
+-dontwarn java.util.HashMap
+-dontwarn java.util.HashSet
+-dontwarn java.util.Map
+-dontwarn java.util.Set
+-dontwarn java.util.UUID
+-dontwarn java.util.List
+-dontwarn java.util.Iterator
+-dontwarn java.util.logging.Logger
+-dontwarn java.lang.System

@@ -1,0 +1,27 @@
+# Definición de monedas personalizadas
+# Cada moneda debe tener un ID único (clave del mapa)
+monedas:
+  souls:
+    name: "Almas"
+    symbol: "&5✦"  # Ejemplo de símbolo con código de color
+    initialBalance: 0.0 # Saldo inicial para nuevos jugadores
+    isDefault: true # Si es la moneda por defecto para algunos comandos o funcionalidades
+    decimalPlaces: 0 # Número de decimales permitidos (0 para enteros)
+    command: "souls" # Comando personalizado para esta moneda (ej. /souls)
+    permissions:
+      check: "economiaplugin.souls.check" # Permiso para /souls check
+      pay: "economiaplugin.souls.pay"     # Permiso para /souls pay
+      admin: "economiaplugin.souls.admin" # Permiso para comandos admin como /souls add/set/remove
+    requiresPermission: true
+  gold:
+    name: "Oro"
+    symbol: "&6⛁"
+    initialBalance: 100.0
+    isDefault: false
+    decimalPlaces: 2
+    command: "gold" # Comando personalizado para esta moneda (ej. /gold)
+    permissions:
+      check: "economiaplugin.gold.check"
+      pay: "economiaplugin.gold.pay"
+      admin: "economiaplugin.gold.admin"
+    requiresPermission: true
