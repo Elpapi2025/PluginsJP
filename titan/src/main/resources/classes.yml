@@ -2,9 +2,9 @@ BARD_CLASS:
   ENABLED: true
   MAX_ENERGY: 120
   BARD_DISTANCE: 25
-  BARD_COOLDOWN: 10 # Cooldown of bard effects
-  CLASS_LIMIT: -1 # -1 to disable
-  KNOCKBACK_ITEM: # Pushback effect when right-clicked
+  BARD_COOLDOWN: 10
+  CLASS_LIMIT: -1
+  KNOCKBACK_ITEM:
     ENABLED: true
     ENERGY_REQUIRED: 20
     MATERIAL: 'COAL'
@@ -22,7 +22,6 @@ BARD_CLASS:
     - 'REGENERATION, MAX_VALUE, 1'
     - 'DAMAGE_RESISTANCE, MAX_VALUE, 2'
   HOLDABLE_EFFECTS:
-    # Create as many as you want under this.
     SPEED:
       EFFECT: 'SPEED, 5s, 2'
       MATERIAL: SUGAR
@@ -73,7 +72,6 @@ BARD_CLASS:
       EFFECT_FRIENDLIES: true
       EFFECT_ENEMIES: false
   CLICKABLE_EFFECTS:
-    # Create as many as you want under this.
     SPEED:
       EFFECT: 'SPEED, 8s, 3'
       MATERIAL: SUGAR
@@ -143,8 +141,8 @@ MAGE_CLASS:
   ENABLED: true
   MAX_ENERGY: 120
   MAGE_DISTANCE: 25
-  MAGE_COOLDOWN: 10 # Cooldown of mage effects
-  CLASS_LIMIT: -1 # -1 to disable
+  MAGE_COOLDOWN: 10
+  CLASS_LIMIT: -1
   ARMOR:
     HELMET: 'GOLD_HELMET'
     CHESTPLATE: 'CHAINMAIL_CHESTPLATE'
@@ -155,7 +153,6 @@ MAGE_CLASS:
     - 'REGENERATION, MAX_VALUE, 1'
     - 'DAMAGE_RESISTANCE, MAX_VALUE, 2'
   CLICKABLE_EFFECTS:
-    # Create as many as you want under this.
     SLOWNESS:
       EFFECT: 'SLOW, 7s, 2'
       MATERIAL: GOLD_NUGGET
@@ -210,8 +207,8 @@ ARCHER_CLASS:
   ARCHER_TAG_DAMAGE: 2.0
   ARCHER_HALF_FORCE: 1.0
   ALREADY_TAGGED_DAMAGE: 1.5
-  TAGGED_DAMAGE_MULTIPLIER: 1.25 # eg 1.50 for 50% extra damage or 2.0 for 100% extra damage
-  CLASS_LIMIT: 3 # -1 to disable
+  TAGGED_DAMAGE_MULTIPLIER: 1.25
+  CLASS_LIMIT: 3
   TAKE_INVIS: true
   INVIS_TIME: 10
   ARMOR:
@@ -223,30 +220,29 @@ ARCHER_CLASS:
     - 'DAMAGE_RESISTANCE, MAX_VALUE, 2'
     - 'SPEED, MAX_VALUE, 3'
   ARCHER_BUFFS:
-    # Add as many as u want below
     SPEED:
       MATERIAL: 'SUGAR'
-      DISPLAY_NAME: '&b&lSpeed&7: &c' # Used in scoreboards
+      DISPLAY_NAME: '&b&lVelocidad&7: &c'
       DATA: 0
       COOLDOWN: 30
       EFFECT: 'SPEED, 6s, 4'
     JUMP:
       MATERIAL: 'FEATHER'
-      DISPLAY_NAME: '&a&lJump&7: &c' # Used in scoreboards
+      DISPLAY_NAME: '&a&lSalto&7: &c'
       DATA: 0
       COOLDOWN: 30
       EFFECT: 'JUMP, 6s, 7'
     RESISTANCE:
       MATERIAL: 'IRON_INGOT'
-      DISPLAY_NAME: '&8&lResistance&7: &c' # Used in scoreboards
+      DISPLAY_NAME: '&8&lResistencia&7: &c'
       DATA: 0
       COOLDOWN: 60
       EFFECT: 'DAMAGE_RESISTANCE, 5s, 3'
 
 MINER_CLASS:
   ENABLED: true
-  MINER_INVISIBILITY: 20 # Y-Level to receive invis
-  CLASS_LIMIT: -1 # -1 to disable
+  MINER_INVISIBILITY: 20
+  CLASS_LIMIT: -1
   ARMOR:
     HELMET: 'IRON_HELMET'
     CHESTPLATE: 'IRON_CHESTPLATE'
@@ -257,7 +253,6 @@ MINER_CLASS:
     - 'NIGHT_VISION, MAX_VALUE, 1'
     - 'FIRE_RESISTANCE, MAX_VALUE, 1'
   MINER_EFFECTS:
-    # Create as many as you want under this.
     50: 'FAST_DIGGING, MAX_VALUE, 3'
     100: 'SPEED, MAX_VALUE, 1'
     125: 'FAST_DIGGING, MAX_VALUE, 4'
@@ -269,13 +264,13 @@ MINER_CLASS:
 GHOST_CLASS:
   ENABLED: true
   MODE_ITEM: QUARTZ
-  TOTAL_TIME: 15 # You can choose what happens at each second
+  TOTAL_TIME: 15
   QUARTZ_COOLDOWN: 45
   DEFAULT_MODE: '&aNormal'
-  CLASS_LIMIT: 1 # -1 to disable
+  CLASS_LIMIT: 1
   SHOW_ARMOR_ON_HIT:
     ENABLED: true
-    MODE: '&7Stealth'
+    MODE: '&7Sigilo'
   ARMOR:
     HELMET: 'CHAINMAIL_HELMET'
     CHESTPLATE: 'DIAMOND_CHESTPLATE'
@@ -286,8 +281,8 @@ GHOST_CLASS:
     - 'DAMAGE_RESISTANCE, MAX_VALUE, 2'
     - 'FIRE_RESISTANCE, MAX_VALUE, 1'
   PER_SECOND_MODE:
-    0: # At the start we put them in stealth and hide armor and give effects
-      MODE: '&7Stealth'
+    0:
+      MODE: '&7Sigilo'
       HIDE_ARMOR: true
       HIDE_ARMOR_TIME: 5
       REMOVE_EFFECTS: { }
@@ -295,8 +290,8 @@ GHOST_CLASS:
         - 'SPEED, 5s, 5'
         - 'ABSORPTION, 5s, 1'
         - 'INVISIBILITY, 5s, 1'
-    4: # 5 Seconds in we show armor and remove speed/resistance
-      MODE: '&7Stealth'
+    4:
+      MODE: '&7Sigilo'
       HIDE_ARMOR: false
       HIDE_ARMOR_TIME: 5
       REMOVE_EFFECTS:
@@ -304,7 +299,7 @@ GHOST_CLASS:
         - 'SPEED'
       EFFECTS: { }
     9:
-      MODE: '&4Power'
+      MODE: '&4Poder'
       HIDE_ARMOR: false
       HIDE_ARMOR_TIME: 5
       REMOVE_EFFECTS: { }
@@ -329,7 +324,7 @@ ROGUE_CLASS:
   BACKSTAB_EFFECT: 'REDSTONE_BLOCK'
   BACKSTAB_DAMAGE: 3.5
   BACKSTAB_COOLDOWN: 3
-  CLASS_LIMIT: -1 # -1 to disable
+  CLASS_LIMIT: -1
   ARMOR:
     HELMET: 'CHAINMAIL_HELMET'
     CHESTPLATE: 'CHAINMAIL_CHESTPLATE'
@@ -339,25 +334,24 @@ ROGUE_CLASS:
     - 'SPEED, MAX_VALUE, 3'
     - 'JUMP, MAX_VALUE, 2'
     - 'DAMAGE_RESISTANCE, MAX_VALUE, 1'
-  BACKSTAB_EFFECTS: # for the player in rogue
+  BACKSTAB_EFFECTS:
     - 'SLOW, 3s, 3'
   ROGUE_BUFFS:
-    # Add as many as u want below
     SPEED:
       MATERIAL: 'SUGAR'
-      DISPLAY_NAME: '&b&lSpeed&7: &c' # Used in scoreboards
+      DISPLAY_NAME: '&b&lVelocidad&7: &c'
       DATA: 0
       COOLDOWN: 30
       EFFECT: 'SPEED, 6s, 5'
     JUMP:
       MATERIAL: 'FEATHER'
-      DISPLAY_NAME: '&a&lJump&7: &c' # Used in scoreboards
+      DISPLAY_NAME: '&a&lSalto&7: &c'
       DATA: 0
       COOLDOWN: 30
       EFFECT: 'JUMP, 6s, 7'
     RESISTANCE:
       MATERIAL: 'IRON_INGOT'
-      DISPLAY_NAME: '&8&lResistance&7: &c' # Used in scoreboards
+      DISPLAY_NAME: '&8&lResistencia&7: &c'
       DATA: 0
       COOLDOWN: 60
       EFFECT: 'DAMAGE_RESISTANCE, 5s, 3'

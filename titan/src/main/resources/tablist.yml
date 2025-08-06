@@ -4,11 +4,11 @@ TABLIST_INFO:
   HEADER:
     - '%title% &7┃ &fHCF'
   FOOTER:
-    - '&efThere is currently &dc%online%/%max-online% &efplayers.'
+    - '&fActualmente hay &c%online%/%max-online% &fjugadores.'
 
 TEAM_FORMAT:
   MEMBER_FORMAT: '&a%role%%player%'
-  MEMBER_SHOW_SKIN: true # Next to member name show skins
+  MEMBER_SHOW_SKIN: true
   CHANGE_TEAM_SKIN: true
   CHANGE_CLAIM_SKIN: true
   CLAIM_SKIN_CHANGE:
@@ -51,19 +51,16 @@ TEAM_FORMAT:
   TEAM_SKIN_CHANGE:
     VALUE: 'ewogICJ0aW1lc3RhbXAiIDogMTY5MjU0NTY5NTc2NywKICAicHJvZmlsZUlkIiA6ICI3NzUwYzFhNTM5M2Q0ZWQ0Yjc2NmQ4ZGUwOWY4MjU0NiIsCiAgInByb2ZpbGVOYW1lIiA6ICJSZWVkcmVsIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2RlYTI5YzdkZGQzOGNjMDE3NDg4OWFhN2M3MzAwMmJlOTVlMDgyNzkwNmQ3MDI4ZmJhNjJmZjFiYzNlMWJiN2EiCiAgICB9CiAgfQp9'
     SIGNATURE: 'V9Z9BPHGYdRdbTLCui3h2Zmc4n3Zr5s3Z4qJxwTJ/poYQdWSy9DARXYjfZ0vvhJL55E1A8ihSDuKSV82g7zDAn2GfImRRy/YNqVFdpwq40C/xS3MhylnPu83CdAncU2F4pBBCNR+m88AUisuArzdGYywyFOpnC1UIN2Tu5d1WNHwmvfzPQfk/I/7UnCxLoSx5wKhaUjU7OeNV3exRGU/o7Y3S1QKcavnTjlG9j1BY8azwZItN8igNOZh5WR9BBfO4oCoPcaFXJr28UW28D/pXLq07+fg+AT34irbs0ggJ2Su2K4OGkvaeNIsqXVyiiTjBU/LLBAegK+tqBPmpuxBHesifZ9gzt3kO0j3GduAuJapYKN6PjP18jUtPLa6ErR4WhVbWSB3f+0nCdHAyKTOMvQEFw3PD30mgOwuZKecvg1s8oBmQERYRoNBxbZyGLGMD/Qf9KYN4iAqdpv0OG9nRobPJGwTOA70y7ZNaiG/ZQoRF8C4J/IHYfD2ISoLpVcT/GKSdzlyF13PLjI5dXOmlCRywvhH93n0zHu48tr50FtabmMXjqWHQN+1IK9dOIuEDpRXDR31tFBCdXEer3+URNDMoqVL8e7sD07SSvT51mkFxMNE8gtTDqhD2w6D/XOfkWlsahlZx0JmA1Ym+cserG7L9jMuHhM/kTuFs8P/7AM='
-  LIST_FORMAT: # It uses the sorting of /f sort
+  LIST_FORMAT:
     DTR: '&r%team-name% &8[%dtr-color%%dtr%%dtr-symbol%&8]'
     ONLINE: '&r%team-name% &8[&a%team-online%&7/&a%team-max-online%&8]'
   NO_TEAM:
-    - '&7Create a team'
+    - '&7Crear un equipo'
     - '&7/team create'
-  IN_TEAM: # You can use %team-balance%, %team-online%  or %team-maxonline% too
+  IN_TEAM:
     - '&7DTR: %team-dtr-color%%team-dtr%%team-dtr-symbol%'
     - '&7HQ: &f%team-hq%'
 
-# https://minecraft-heads.com/player-heads
-# https://minecraft-heads.com/custom-heads/miscellaneous
-# Use https://mineskin.org to convert above usernames/skins to value/signature.
 SKINS:
   LIGHT_GRAY:
     VALUE: 'eyJ0aW1lc3RhbXAiOjE1MTE3Mzk5MDc1MzksInByb2ZpbGVJZCI6IjIzZDE4YjNhN2E1NjQyM2E4NDZmZGJlNGVjYjJmNzJmIiwicHJvZmlsZU5hbWUiOiJHZW1pbml4UGxheXMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2E1NmUyMWE5MzYyODE1ZDJiNzJiNjg5ZTc2NmZhZmQzYmVlY2U5OTRjM2QxMDI3ODg3ZjM3MmEyZjkyOWZmMyJ9fX0='
@@ -111,44 +108,42 @@ SKINS:
     VALUE: 'ewogICJ0aW1lc3RhbXAiIDogMTY2ODg5ODAzNDA2NCwKICAicHJvZmlsZUlkIiA6ICI4YTg3NGJhNmFiZDM0ZTc5OTljOWM1ODMwYWYyY2NmNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJSZXphMTExIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzgzYzliYmI3NWE5ZTVjNzg3MDg0ZTIwNWQ5ZDRjOTM1NmQxMDhkMDVlNmZiNzY1N2ExM2U3NDNkMzUzMDA5OTQiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=='
     SIGNATURE: 'IBMLpi+fRObu08G4F5k6q1NNCtlkOlwSiTdSi6VV0aeQ9jRbekzNp9tUg29ZwW1JpUICznL/naB5a47qsWBFcrgwA4QYsLKqfTN/Xz30680kfQJr03/RV9a6F1rNzhfCrTzDJUnKZh4nfvGYrOPNg85TUte266U2aa8omAK4E4IIkmTTIk2Unk6RmaWSP8mVSr0uNEwl7K2CIdRpcnephYHo4asbzj4mA06yr2fK+q2fteklTTLRG5yMk5hf0a4vt9i4Pr3IVSFRgMyBCkMoIsSHd4IHht4GdRL/S1cKggDtFq6ILQFwdnJ8051iprG581Zu3wxsqaNPIBVPCGKCkley1dmLVLuoBa3voR/j6tQPIZbOzHv+QeubNLBONgv2fZ3DsiWnJNPCIesGNGOgT2zYskTgXFTmRqkVI2Y1gwLZ9MSlooFj+ZZKNMkTuWd1WDI+ncDhYVav6PDwykMnphiKtOsPdY9VrrnGZjtH1t/OZf5O9SxuJzz1gnlR16flwxwRy0hBOQa8sqAc3r1w9S6IdpSsBPU8BRJOiNywhzZhamhE90PW6+z9kHgUDhCaYg3OuUHcD/1qQd2LhH0IOxyIte9Nu+F115sni4sXTsGHZkxJc5LhE087HApKdsgx3JSZdDvinE4qdfoy9tXlAuPEOImX8j2OSz0AM/6hHi0='
 
-TITLE_CONFIG: # Use %title% for placeholder
-  CHANGER_TICKS: 190 # Less for faster changing, more for slower changing
-  # Create as many as you want
+TITLE_CONFIG:
+  CHANGER_TICKS: 190
   CHANGES:
-    - '&dc&lTitan'
-    - '&dc&lTitan'
-    - '&dc&lTitan'
-    - '&dc&lTitan'
-    - '&dc&lTitan'
-    - '&dc&lTitan'
-    - '&dc&lTitan'
-    - '&dc&lTitan'
-    - '&dc&lTitan'
-    - '&dc&lTitan'
-    - '&4c&lA&dc&lzurite'
-    - '&dc&lA&4c&lz&dc&lurite'
-    - '&dc&lAz&4c&lu&dc&lrite'
-    - '&dc&lAzu&4c&lr&dc&lite'
-    - '&dc&lAzur&4c&li&dc&lte'
-    - '&dc&lAzuri&4c&lt&dc&le'
-    - '&dc&lAzurit&4c&le'
-    - '&4c&lTitan'
+    - '&c&lTitan'
+    - '&c&lTitan'
+    - '&c&lTitan'
+    - '&c&lTitan'
+    - '&c&lTitan'
+    - '&c&lTitan'
+    - '&c&lTitan'
+    - '&c&lTitan'
+    - '&c&lTitan'
+    - '&c&lTitan'
+    - '&4&lA&c&lzurite'
+    - '&c&lA&4&lz&c&lurite'
+    - '&c&lAz&4&lu&c&lrite'
+    - '&c&lAzu&4&lr&c&lite'
+    - '&c&lAzur&4&li&c&lte'
+    - '&c&lAzuri&4&lt&c&le'
+    - '&c&lAzurit&4&le'
+    - '&4&lTitan'
 
-# Format: Skin;Text - Use above as the skin.
 LEFT:
   - 'LIGHT_GRAY;'
-  - 'CHEST;&dc&lTeam Info'
+  - 'CHEST;&c&lInformación del Equipo'
   - 'LIGHT_GRAY;%teaminfo-0%'
   - 'LIGHT_GRAY;%teaminfo-1%'
   - 'LIGHT_GRAY;'
   - 'LIGHT_GRAY;'
-  - 'BOOK_SHELF;&dc&lPlayer Info'
-  - 'LIGHT_GRAY;&7Kills: &f%kills%'
-  - 'LIGHT_GRAY;&7Deaths: &f%deaths%'
-  - 'LIGHT_GRAY;&7Lives: &f%lives%'
+  - 'BOOK_SHELF;&c&lInformación del Jugador'
+  - 'LIGHT_GRAY;&7Asesinatos: &f%kills%'
+  - 'LIGHT_GRAY;&7Muertes: &f%deaths%'
+  - 'LIGHT_GRAY;&7Vidas: &f%lives%'
   - 'LIGHT_GRAY;'
   - 'LIGHT_GRAY;'
-  - 'EARTH;&dc&lLocation'
+  - 'EARTH;&c&lUbicación'
   - 'LIGHT_GRAY;&r%claim%'
   - 'LIGHT_GRAY;&f%location% &c[%direction%]'
   - 'LIGHT_GRAY;'
@@ -179,17 +174,17 @@ MIDDLE:
   - 'LIGHT_GRAY;%member-13%'
 RIGHT:
   - 'LIGHT_GRAY;'
-  - 'BORDER;&dc&lBorders'
+  - 'BORDER;&c&lBordes'
   - 'LIGHT_GRAY;&7Nether: &f2000'
   - 'LIGHT_GRAY;&7Overworld: &f3000'
   - 'LIGHT_GRAY;'
   - 'LIGHT_GRAY;'
-  - 'END_PORTAL;&dc&lEnd Portals'
-  - 'LIGHT_GRAY;&7Location: &f1000'
-  - 'LIGHT_GRAY;&7all quadrants'
+  - 'END_PORTAL;&c&lPortales del End'
+  - 'LIGHT_GRAY;&7Ubicación: &f1000'
+  - 'LIGHT_GRAY;&7todos los cuadrantes'
   - 'LIGHT_GRAY;'
   - 'LIGHT_GRAY;'
-  - 'PORTAL;&dc&lNext Event'
+  - 'PORTAL;&c&lPróximo Evento'
   - 'LIGHT_GRAY;&7%scheduled%'
   - 'LIGHT_GRAY;&7%scheduledtime%'
   - 'LIGHT_GRAY;'
@@ -200,7 +195,7 @@ RIGHT:
   - 'LIGHT_GRAY;'
 FAR_RIGHT:
   - 'LIGHT_GRAY;'
-  - 'LIST;&dc&lTeam List'
+  - 'LIST;&c&lLista de Equipos'
   - 'LIGHT_GRAY;%team-0%'
   - 'LIGHT_GRAY;%team-1%'
   - 'LIGHT_GRAY;%team-2%'

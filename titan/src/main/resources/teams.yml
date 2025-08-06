@@ -53,32 +53,32 @@ SYSTEM_TEAMS:
     - 'IRON_DOOR_BLOCK'
     - 'BREWING_STAND'
   SAFEZONE: '&a%team%'
-  ROADS: '&6%team% Road'
+  ROADS: '&6%team% Camino'
   EVENT: '&9%team%'
-  WARZONE: '&cWarzone'
-  WILDERNESS: '&7The Wilderness'
+  WARZONE: '&cZona de Guerra'
+  WILDERNESS: '&7El Yermo'
   ORE_MOUNTAIN: '&3%team%'
   GLOWSTONE: '&6%team%'
-  CITADEL: '&5c%team%'
+  CITADEL: '&c%team%'
   CONQUEST: '&4%team%'
 
 TEAM_DTR:
-  REGEN_PER_INTERVAL: 0.1 # DTR added with the interval below - So every 30s we will regenerate 0.1 dtr.
-  REGEN_DTR_INTERVAL: 30 # How long do we wait before adding dtr
-  REGEN_TIMER: 45 # Minutes
-  LOW_DTR: 0.25 # what is considered low dtr for the color below
-  DTR_FORMAT: '0.00' # 0.00 means all numbers will be shown 0.0# means if the last number is 0 it wont show
+  REGEN_PER_INTERVAL: 0.1
+  REGEN_DTR_INTERVAL: 30
+  REGEN_TIMER: 45
+  LOW_DTR: 0.25
+  DTR_FORMAT: '0.00'
   DTR_PER_MEMBER:
-    - '1.01' # 1
-    - '2.02' # 2
-    - '3.03' # 3
-    - '4.04' # 4
-    - '5.05' # 5
-    - '6.06' # 6
-    - '7.2' # 7
-    - '7.2' # 8
-    - '7.2' # 9
-    - '7.2' # 10
+    - '1.01'
+    - '2.02'
+    - '3.03'
+    - '4.04'
+    - '5.05'
+    - '6.06'
+    - '7.2'
+    - '7.2'
+    - '7.2'
+    - '7.2'
   DTR_LOSS:
     NORMAL: 1.0
     END: 1.0
@@ -87,7 +87,7 @@ TEAM_DTR:
     CITADEL: 0.75
   COLOR:
     RAIDABLE: '&4'
-    LOW_DTR: '&ef'
+    LOW_DTR: '&f'
     NORMAL: '&a'
   SYMBOL:
     FREEZE: '&c■'
@@ -98,8 +98,8 @@ RELATION_COLOR:
   TEAMMATE: '&2'
   ALLIED: '&9'
   ENEMY: '&c'
-  FOCUSED: '&d'
-  ARCHER_TAG: '&ef'
+  FOCUSED: '&c'
+  ARCHER_TAG: '&f'
   PVP_TIMER: '&6'
   INVINCIBILITY: '&6'
   KING: '&4'
@@ -111,7 +111,7 @@ RELATION_COLOR:
 FALLTRAP_CONFIG:
   TASK_DELAY: 3
   Y_LEVEL: 1
-  AMOUNT_PER_TICK: 5 # Used to speed up, don't make it too high
+  AMOUNT_PER_TICK: 5
   PARTICLE: 'NOTE'
   PARTICLE_AMOUNT: 1
   SOUND: 'NOTE_BASS_DRUM'
@@ -120,26 +120,26 @@ FALLTRAP_CONFIG:
     SYMBOL: '▋'
     NON_COMPLETE_COLOR: '&c'
     COMPLETE_COLOR: '&a'
-    ACTION_BAR: '&dFalltrap Progress&7: &r%actionbar% &9(%percent%%)'
+    ACTION_BAR: '&cProgreso de Falltrap&7: &r%actionbar% &9(%percent%%)'
   FALLTRAP_MENU:
-    TITLE: '&dFalltrap Wall'
+    TITLE: '&cMuro de Falltrap'
     SIZE: 9
-    FALLTRAP_WALLS: # Material, Data, Display name in menu
-      - 'CRAFTING_TABLE, 0, &efClick to select &6Crafting Table &efwalls.'
-      - 'STONE_BRICK, 0, &efClick to select &7Stone Brick &efwalls.'
-      - 'NONE, 0, &efClick to select &fNone &efwalls.'
+    FALLTRAP_WALLS:
+      - 'CRAFTING_TABLE, 0, &fClick para seleccionar muros de &6Mesa de Crafteo&f.'
+      - 'STONE_BRICK, 0, &fClick para seleccionar muros de &7Ladrillo de Piedra&f.'
+      - 'NONE, 0, &fClick para seleccionar &fNingún &fmuro.'
   FALLTRAP_WAND:
-    NAME: '&a&oFalltrap Wand'
+    NAME: '&a&oVarita de Falltrap'
     TYPE: 'WOOD_HOE'
     LORE:
-      - '&efRight/Left Click &6Block'
-      - '&b- &fSelect claim''s corners'
+      - '&fClick Derecho/Izquierdo &6Bloque'
+      - '&b- &fSeleccionar esquinas del claim'
       - ''
-      - '&efRight Click &6Air'
-      - '&b- &fCancel current claim'
+      - '&fClick Derecho &6Aire'
+      - '&b- &fCancelar claim actual'
       - ''
-      - '&9Crouch &efLeft Click &6Block/Air'
-      - '&b- &fPurchase current claim'
+      - '&9Agacharse &fClick Izquierdo &6Bloque/Aire'
+      - '&b- &fComprar claim actual'
 
 BASE_CONFIG:
   TASK_DELAY: 1
@@ -152,85 +152,85 @@ BASE_CONFIG:
     SYMBOL: '▋'
     NON_COMPLETE_COLOR: '&c'
     COMPLETE_COLOR: '&a'
-    ACTION_BAR: '&dBase Progress&7: &r%actionbar% &9(%percent%%)'
+    ACTION_BAR: '&cProgreso de Base&7: &r%actionbar% &9(%percent%%)'
   BASE_WALL_MENU:
-    TITLE: '&dBase Wall'
+    TITLE: '&cMuro de Base'
     SIZE: 9
-    BASE_WALLS: # Material, Data, Display name in menu
-      - 'STAINED_GLASS, 14, &efClick to select &4Red Glass &efwalls.'
-      - 'STAINED_GLASS, 10, &efClick to select &5cPurple Glass &efwalls.'
-      - 'STAINED_GLASS, 1, &efClick to select &6Orange Glass &efwalls'
+    BASE_WALLS:
+      - 'STAINED_GLASS, 14, &fClick para seleccionar muros de &4Cristal Rojo&f.'
+      - 'STAINED_GLASS, 10, &fClick para seleccionar muros de &cCristal Morado&f.'
+      - 'STAINED_GLASS, 1, &fClick para seleccionar muros de &6Cristal Naranja&f'
   BASE_HEIGHT_MENU:
-    TITLE: '&dBase Height'
+    TITLE: '&cAltura de Base'
     SIZE: 9
-    BASE_HEIGHTS: # Material, Data, Amount, Height, Display name in menu
-      - 'LADDER, 9, 9, 9, &efHeight: &c9 Blocks'
-      - 'LADDER, 8, 8, 8, &efHeight: &c8 Blocks'
-      - 'LADDER, 7, 7, 7, &efHeight: &c7 Blocks'
-      - 'LADDER, 6, 6, 6, &efHeight: &c6 Blocks'
-      - 'LADDER, 5, 5, 5, &efHeight: &c5 Blocks'
-      - 'LADDER, 4, 4, 4, &efHeight: &c4 Blocks'
-      - 'LADDER, 3, 3, 2, &efHeight: &c3 Blocks'
-      - 'LADDER, 2, 2, 3, &efHeight: &c2 Blocks'
+    BASE_HEIGHTS:
+      - 'LADDER, 9, 9, 9, &fAltura: &c9 Bloques'
+      - 'LADDER, 8, 8, 8, &fAltura: &c8 Bloques'
+      - 'LADDER, 7, 7, 7, &fAltura: &c7 Bloques'
+      - 'LADDER, 6, 6, 6, &fAltura: &c6 Bloques'
+      - 'LADDER, 5, 5, 5, &fAltura: &c5 Bloques'
+      - 'LADDER, 4, 4, 4, &fAltura: &c4 Bloques'
+      - 'LADDER, 3, 3, 2, &fAltura: &c3 Bloques'
+      - 'LADDER, 2, 2, 3, &fAltura: &c2 Bloques'
   BASE_OUTLINE_MENU:
-    TITLE: '&dBase Outline'
+    TITLE: '&cContorno de Base'
     SIZE: 9
-    BASE_OUTLINES: # Material, Data, Display name in menu
-      - 'STONE_BRICK, 0, &efClick to select &7Stone Brick &efoutline.'
-      - 'WOOD, 0, &efClick to select &6Wood &efoutline.'
-      - 'WOOL, 14, &efClick to select &4Red Wool &efoutline'
+    BASE_OUTLINES:
+      - 'STONE_BRICK, 0, &fClick para seleccionar contorno de &7Ladrillo de Piedra&f.'
+      - 'WOOD, 0, &fClick para seleccionar contorno de &6Madera&f.'
+      - 'WOOL, 14, &fClick para seleccionar contorno de &4Lana Roja&f'
   BASE_WAND:
-    NAME: '&a&oBase Wand'
+    NAME: '&a&oVarita de Base'
     TYPE: 'WOOD_HOE'
     LORE:
-      - '&efRight/Left Click &6Block'
-      - '&b- &fSelect claim''s corners'
+      - '&fClick Derecho/Izquierdo &6Bloque'
+      - '&b- &fSeleccionar esquinas del claim'
       - ''
-      - '&efRight Click &6Air'
-      - '&b- &fCancel current claim'
+      - '&fClick Derecho &6Aire'
+      - '&b- &fCancelar claim actual'
       - ''
-      - '&9Crouch &efLeft Click &6Block/Air'
-      - '&b- &fPurchase current claim'
+      - '&9Agacharse &fClick Izquierdo &6Bloque/Aire'
+      - '&b- &fComprar claim actual'
 
 CLAIMING:
   MIN_SIZE: 5
   MAX_SIZE: 40
-  CLAIM_SEPARATOR: 2 # Amount of blocks claims have to be apart from
+  CLAIM_SEPARATOR: 2
   PRICE_PER_BLOCK: 0.25
   SELL_MULTIPLIER: 0.8
-  MULTIPLIER_AREA: 250 # Amount of blocks a claim needs before it's multiplied
-  MULTIPLIER_CLAIM: 500 # Amount of claims times this will be added onto the price
+  MULTIPLIER_AREA: 250
+  MULTIPLIER_CLAIM: 500
   CLAIM_WAND:
-    NAME: '&a&oClaiming Wand'
+    NAME: '&a&oVarita de Reclamación'
     TYPE: 'WOOD_HOE'
     LORE:
-      - '&efRight/Left Click &6Block'
-      - '&b- &fSelect claim''s corners'
+      - '&fClick Derecho/Izquierdo &6Bloque'
+      - '&b- &fSeleccionar esquinas del claim'
       - ''
-      - '&efRight Click &6Air'
-      - '&b- &fCancel current claim'
+      - '&fClick Derecho &6Aire'
+      - '&b- &fCancelar claim actual'
       - ''
-      - '&9Crouch &efLeft Click &6Block/Air'
-      - '&b- &fPurchase current claim'
+      - '&9Agacharse &fClick Izquierdo &6Bloque/Aire'
+      - '&b- &fComprar claim actual'
 
 SKYBASE_CONFIG:
   Y_LEVEL: 250
   SKYBASE_MENU:
-    TITLE: '&dSkybase Wall'
+    TITLE: '&cMuro de Skybase'
     SIZE: 9
-    SKYBASE_WALLS: # Material, Data, Display name in menu
-      - 'GLASS, 0, &efClick to select &fGlass &efwalls.'
-      - 'OBSIDIAN, 0, &efClick to select &8Obsidian &efwalls.'
-      - 'NONE, 0, &efClick to select &fNone &efwalls.'
+    SKYBASE_WALLS:
+      - 'GLASS, 0, &fClick para seleccionar muros de &fCristal&f.'
+      - 'OBSIDIAN, 0, &fClick para seleccionar muros de &8Obsidiana&f.'
+      - 'NONE, 0, &fClick para seleccionar &fNingún &fmuro.'
   SKYBASE_WAND:
-    NAME: '&a&oSkybase Wand'
+    NAME: '&a&oVarita de Skybase'
     TYPE: 'WOOD_HOE'
     LORE:
-      - '&efRight/Left Click &6Block'
-      - '&b- &fSelect claim''s corners'
+      - '&fClick Derecho/Izquierdo &6Bloque'
+      - '&b- &fSeleccionar esquinas del claim'
       - ''
-      - '&efRight Click &6Air'
-      - '&b- &fCancel current claim'
+      - '&fClick Derecho &6Aire'
+      - '&b- &fCancelar claim actual'
       - ''
-      - '&9Crouch &efLeft Click &6Block/Air'
-      - '&b- &fPurchase current claim'
+      - '&9Agacharse &fClick Izquierdo &6Bloque/Aire'
+      - '&b- &fComprar claim actual'

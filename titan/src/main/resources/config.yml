@@ -1,12 +1,9 @@
-# Join support for a license if you don't already have one
 LICENSE_KEY: ''
 
-#JSON or MONGO
 STORAGE_TYPE: 'JSON'
 
-# Enable Mongo above to use this
 MONGO:
-  URI: '' # URI will be used if it is not empty.
+  URI: ''
   SERVER_IP: '127.0.0.1:27017'
   DATABASE: 'Titan'
   AUTH:
@@ -14,50 +11,50 @@ MONGO:
     USERNAME: 'admin'
     PASSWORD: 'Password'
 
-KITMAP_MODE: false # Is the server kits mode
-KITS_INFO_ONLY_SPAWN: true # Should the info on scoreboard only show in spawn
-TEAM_INFO_JOIN: true # Send team info on join
-SMELT_ON_MINE: true # Smelt block on mine
-GIVE_EXP_MINE: true # Give exp straight to player on mine
-WATER_MOVE_CLAIMS: true # Allow water/lava to flow into player claims
-GIVE_EXP_KILL: true # This is NOT for players, only mobs. Give exp instantly.
-GIVE_ITEM_ON_KILL: true # This is NOT for players, only mobs. Give drops instantly
-GIVE_BLOCK_ON_MINE: true # Give the block straight to the players inventory?
-DEFAULT_CLAIM_SCOREBOARD: false # What is the default for claim on scoreboard? (/settings)
-MOB_NATURAL_SPAWN: false # Do you want mobs to naturally spawn?
-MOB_SPAWN_WARZONE: false # Do you want mobs to spawn in warzone
-MESSAGE_SOUND: 'ORB_PICKUP' # Sound from /message
-HIDE_VANISH_FROM_MESSAGE: true # Hide vanished players from being able to be /messaged
-DISABLE_BEDS: true # Deny the placement of beds
-ALLOW_ORE_MINE_SPAWN: false # Allow the mining of ores in spawn
-ALLOW_BOW_BOOSTING: true # Allow bow boosting
-DENY_ENDERPEARL_TO_SPAWN: true # Deny teleporting into spawn from the outside
-DENY_ENDERPEARL_IN_SPAWN: false # Deny using an enderpearl while in spawn
-MILK_ONLY_REMOVE_NEGATIVE: true # Only remove negative effects when drinking milk
-DISABLE_ENDER_EYE: true # Disable the throwing of ender eyes
-ENDERMEN_HOSTILE: true # Should endermen target players
+KITMAP_MODE: false
+KITS_INFO_ONLY_SPAWN: true
+TEAM_INFO_JOIN: true
+SMELT_ON_MINE: true
+GIVE_EXP_MINE: true
+WATER_MOVE_CLAIMS: true
+GIVE_EXP_KILL: true
+GIVE_ITEM_ON_KILL: true
+GIVE_BLOCK_ON_MINE: true
+DEFAULT_CLAIM_SCOREBOARD: false
+MOB_NATURAL_SPAWN: false
+MOB_SPAWN_WARZONE: false
+MESSAGE_SOUND: 'ORB_PICKUP'
+HIDE_VANISH_FROM_MESSAGE: true
+DISABLE_BEDS: true
+ALLOW_ORE_MINE_SPAWN: false
+ALLOW_BOW_BOOSTING: true
+DENY_ENDERPEARL_TO_SPAWN: true
+DENY_ENDERPEARL_IN_SPAWN: false
+MILK_ONLY_REMOVE_NEGATIVE: true
+DISABLE_ENDER_EYE: true
+ENDERMEN_HOSTILE: true
 
 DEATHBANS:
   DEFAULT_TIME: 45
-  KILL_TIME: 5 # how much time to take when a deathbanned player gets a kill.
-  TIMES: # It will use the lowest if the player has permission.
-    - 'GOLD, 35' # titan.deathban.gold
-    - 'SILVER, 30' # titan.deathban.silver
-    - 'AZURITE, 20' # titan.deathban.titan
+  KILL_TIME: 5
+  TIMES:
+    - 'GOLD, 35'
+    - 'SILVER, 30'
+    - 'AZURITE, 20'
   SIGNS_CONFIG:
-    LIVES_SIGN: # create a sign with line 0 as [lives]
+    LIVES_SIGN:
       - '&0&m----------'
-      - 'Have lives?'
-      - '&aClick me!'
+      - '¿Tienes vidas?'
+      - '&a¡Haz clic aquí!'
       - '&0&m----------'
-    KILLED_BY: # create a sign with line 0 as [killedbysign]
+    KILLED_BY:
       - '&0&m----------'
-      - 'Killed By:'
-      - '&dc%reason%'
+      - 'Asesinado por:'
+      - '&c%reason%'
       - '&0&m----------'
-    DEATH_LOCATION: # create a sign with line 0 as [deathlocsign]
+    DEATH_LOCATION:
       - '&0&m----------'
-      - 'Death Location:'
+      - 'Lugar de muerte:'
       - '&c%location%'
       - '&0&m----------'
 
@@ -69,17 +66,17 @@ COBWEBS_CONFIG:
 
 DURABILITY_FIX:
   ENABLED: true
-  PERCENT: 75 # Chance to ignore durability damage
+  PERCENT: 75
 
 JOIN_ITEMS:
   ENABLED: true
   BOOK_ITEM:
     ENABLED: true
-    TITLE: '&6Welcome to Titan'
+    TITLE: '&6Bienvenido a Titan'
     AUTHOR: 'juanpiece'
     PAGES:
-      - '&9Welcome to the Titan Network.'
-  NORMAL_ITEMS: # MATERIAL, AMOUNT, ENCHANTS
+      - '&9Bienvenido a la Red Titan.'
+  NORMAL_ITEMS:
     - 'FISHING_ROD, 1, LURE:2'
     - 'COOKED_BEEF, 10, NONE'
 
@@ -87,13 +84,13 @@ MOTD_MESSAGE:
   ENABLED: true
   MOTD:
     - '&7&m----------------------'
-    - '&dc&lTitan Network'
+    - '&c&lRed Titan'
     - ''
     - '&9Discord&7: &fdiscord.titan.cc'
     - '&4Team Speak&7: &fteamspeak.titan.cc'
     - '&bTwitter&7: &ftwitter.titan.cc'
     - ''
-    - '&7Welcome to the Titan Network &dc%player%&7!'
+    - '&7¡Bienvenido a la Red Titan &c%player%&7!'
     - '&7&m----------------------'
 
 JOIN_COMMANDS:
@@ -112,9 +109,9 @@ DEATH_COMMANDS:
     - 'cr givekey %player% death 1'
 
 LIMIT_ENTRY_PER_TEAM:
-  EVENTS: 0 # 0 to allow any amount of members to enter event teams
-  CITADEL: 3 # Minimum of 3 members allowed to enter citadel teams
-  CONQUEST: 3 # Minimum of 3 members allowed to enter citadel teams
+  EVENTS: 0
+  CITADEL: 3
+  CONQUEST: 3
 
 MOB_STACKING:
   ENABLED: true
@@ -126,48 +123,48 @@ DISCORD_WEBHOOK:
   ENABLED: true
   REQUEST_WEBHOOK:
     WEBHOOK_URL: ''
-    CONTENT: '' # Shows out of embed
-    DESCRIPTION: '**%player%** needs assistance with **%request%**' # Shows in embed
-    COLOR: '#FF69B4' # Embed color
-    FOOTER: 'Requests info for titan.cc' # Footer of embed
-    FOOTER_ICON: 'https://img.icons8.com/fluency/2x/document.png' # Footer icon of embed
-    THUMBNAIL: 'https://img.icons8.com/fluency/2x/support.png' # Icon on the right of embed
-    AUTHOR: 'Titan Network Requests' # Author of embed
-    AUTHOR_URL: 'https://google.com' # When clicking author
-    AUTHOR_ICON: 'https://img.icons8.com/fluency/2x/checked.png' # Author icon
+    CONTENT: ''
+    DESCRIPTION: '**%player%** necesita ayuda con **%request%**'
+    COLOR: '#FF69B4'
+    FOOTER: 'Información de solicitudes para titan.cc'
+    FOOTER_ICON: 'https://img.icons8.com/fluency/2x/document.png'
+    THUMBNAIL: 'https://img.icons8.com/fluency/2x/support.png'
+    AUTHOR: 'Solicitudes de la Red Titan'
+    AUTHOR_URL: 'https://google.com'
+    AUTHOR_ICON: 'https://img.icons8.com/fluency/2x/checked.png'
   REPORT_WEBHOOK:
     WEBHOOK_URL: ''
-    CONTENT: '' # Shows out of embed
-    DESCRIPTION: '**%player%** has reported **%target%** for **%report%**' # Shows in embed
-    COLOR: '#90C1D7' # Embed color
-    FOOTER: 'Reports info for titan.cc' # Footer of embed
-    FOOTER_ICON: 'https://img.icons8.com/fluency/2x/document.png' # Footer icon of embed
-    THUMBNAIL: 'https://img.icons8.com/fluency/2x/support.png' # Icon on the right of embed
-    AUTHOR: 'Titan Network Reports' # Author of embed
-    AUTHOR_URL: 'https://google.com' # When clicking author
-    AUTHOR_ICON: 'https://img.icons8.com/fluency/2x/checked.png' # Author icon
+    CONTENT: ''
+    DESCRIPTION: '**%player%** ha reportado a **%target%** por **%report%**'
+    COLOR: '#90C1D7'
+    FOOTER: 'Información de reportes para titan.cc'
+    FOOTER_ICON: 'https://img.icons8.com/fluency/2x/document.png'
+    THUMBNAIL: 'https://img.icons8.com/fluency/2x/support.png'
+    AUTHOR: 'Reportes de la Red Titan'
+    AUTHOR_URL: 'https://google.com'
+    AUTHOR_ICON: 'https://img.icons8.com/fluency/2x/checked.png'
   KOTH_WEBHOOK:
     WEBHOOK_URL: ''
-    CONTENT: '' # Shows out of embed
-    DESCRIPTION: '**%koth%** KoTH is now active! [%time%]' # Shows in embed
-    COLOR: '#FF0000' # Embed color
-    FOOTER: 'KoTH info for titan.cc' # Footer of embed
-    FOOTER_ICON: 'https://img.icons8.com/external-kmg-design-flat-kmg-design/2x/external-sword-active-lifestyle-kmg-design-flat-kmg-design.png' # Footer icon of embed
-    THUMBNAIL: 'https://img.icons8.com/color/2x/fairytale.png' # Icon on the right of embed
-    AUTHOR: 'Titan Network KoTH' # Author of embed
-    AUTHOR_URL: 'https://google.com' # When clicking author
-    AUTHOR_ICON: 'https://img.icons8.com/fluency/2x/checked.png' # Author icon
+    CONTENT: ''
+    DESCRIPTION: '¡El KoTH **%koth%** ya está activo! [%time%]'
+    COLOR: '#FF0000'
+    FOOTER: 'Información de KoTH para titan.cc'
+    FOOTER_ICON: 'https://img.icons8.com/external-kmg-design-flat-kmg-design/2x/external-sword-active-lifestyle-kmg-design-flat-kmg-design.png'
+    THUMBNAIL: 'https://img.icons8.com/color/2x/fairytale.png'
+    AUTHOR: 'KoTH de la Red Titan'
+    AUTHOR_URL: 'https://google.com'
+    AUTHOR_ICON: 'https://img.icons8.com/fluency/2x/checked.png'
   RESTORE_WEBHOOK:
     WEBHOOK_URL: ''
-    CONTENT: '' # Shows out of embed
-    DESCRIPTION: '%player% has restored the inventory for %target% dated %date%' # Shows in embed
-    COLOR: '#FF0000' # Embed color
-    FOOTER: 'Restores info for titan.cc' # Footer of embed
-    FOOTER_ICON: 'https://img.icons8.com/external-kmg-design-flat-kmg-design/2x/external-sword-active-lifestyle-kmg-design-flat-kmg-design.png' # Footer icon of embed
-    THUMBNAIL: 'https://img.icons8.com/color/2x/fairytale.png' # Icon on the right of embed
-    AUTHOR: 'Titan Restores' # Author of embed
-    AUTHOR_URL: 'https://google.com' # When clicking author
-    AUTHOR_ICON: 'https://img.icons8.com/fluency/2x/checked.png' # Author icon
+    CONTENT: ''
+    DESCRIPTION: '%player% ha restaurado el inventario de %target% con fecha %date%'
+    COLOR: '#FF0000'
+    FOOTER: 'Información de restauraciones para titan.cc'
+    FOOTER_ICON: 'https://img.icons8.com/external-kmg-design-flat-kmg-design/2x/external-sword-active-lifestyle-kmg-design-flat-kmg-design.png'
+    THUMBNAIL: 'https://img.icons8.com/color/2x/fairytale.png'
+    AUTHOR: 'Restauraciones de Titan'
+    AUTHOR_URL: 'https://google.com'
+    AUTHOR_ICON: 'https://img.icons8.com/fluency/2x/checked.png'
 
 STRENGTH_FIX:
   ENABLED: true
@@ -176,92 +173,92 @@ STRENGTH_FIX:
   MULTIPLIER_LEVEL_3+: 0.30
 
 KILL_TAGS:
-  TITLE: '&dcKilltags'
+  TITLE: '&cKilltags'
   SIZE: 27
-  EQUIPPED_PLACEHOLDER: '&aYou have this killtag equipped.'
+  EQUIPPED_PLACEHOLDER: '&aTienes este killtag equipado.'
   RESET_BUTTON:
     SLOT: 27
-    NAME: '&cReset Killtag'
+    NAME: '&cReiniciar Killtag'
     MATERIAL: 'REDSTONE'
-  TYPES: # Add as many as u want below here
-    POOPED: # perm is titan.killtag.pooped
-      NAME: '&dcPooped On'
+  TYPES:
+    POOPED:
+      NAME: '&cPooped On'
       MATERIAL: 'NAME_TAG'
-      FORMAT: '%killer% &eftook a poop on %player% &efusing &c%item%&ef.'
+      FORMAT: '%killer% &fse cagó en %player% &fusando &c%item%&f.'
       SLOT: 1
       LORE:
-        - '&efRight click to select &dcPooped On&ef.'
-        - '&cTitan&4[0] &eftook a poop on &cMeeZoid&4[0]'
+        - '&fClick derecho para seleccionar &cPooped On&f.'
+        - '&cTitan&4[0] &fse cagó en &cMeeZoid&4[0]'
         - '%equipped%'
-    BEAMED: # perm is titan.killtag.beamed
-      NAME: '&dcBeamed'
+    BEAMED:
+      NAME: '&cBeamed'
       MATERIAL: 'NAME_TAG'
-      FORMAT: '%killer% &efwas beamed by %player% &efusing &c%item%&ef.'
+      FORMAT: '%killer% &ffue derrotado por %player% &fusando &c%item%&f.'
       SLOT: 2
       LORE:
-        - '&efRight click to select &dcBeamed&ef.'
-        - '&cTitan&4[0] &efbeamed &cMeeZoid&4[0]'
+        - '&fClick derecho para seleccionar &cBeamed&f.'
+        - '&cTitan&4[0] &fderrotó a &cMeeZoid&4[0]'
         - '%equipped%'
-    SMACKED: # perm is titan.killtag.smacked
-      NAME: '&dcSmacked'
+    SMACKED:
+      NAME: '&cSmacked'
       MATERIAL: 'NAME_TAG'
-      FORMAT: '%killer% &efsmacked %player% &efusing &c%item%&ef.'
+      FORMAT: '%killer% &fgolpeó a %player% &fusando &c%item%&f.'
       SLOT: 3
       LORE:
-        - '&efRight click to select &dcSmacked&ef.'
-        - '&cTitan&4[0] &efsmacked &cMeeZoid&4[0]'
+        - '&fClick derecho para seleccionar &cSmacked&f.'
+        - '&cTitan&4[0] &fgolpeó a &cMeeZoid&4[0]'
         - '%equipped%'
-    PISSED: # perm is titan.killtag.pissed
-      NAME: '&dcPissed'
+    PISSED:
+      NAME: '&cPissed'
       MATERIAL: 'NAME_TAG'
-      FORMAT: '%killer% &efpissed on %player% &efusing &c%item%&ef.'
+      FORMAT: '%killer% &forinó a %player% &fusando &c%item%&f.'
       SLOT: 4
       LORE:
-        - '&efRight click to select &dcPissed&ef.'
-        - '&cTitan&4[0] &efpissed on &cMeeZoid&4[0]'
+        - '&fClick derecho para seleccionar &cPissed&f.'
+        - '&cTitan&4[0] &forinó a &cMeeZoid&4[0]'
         - '%equipped%'
-    SHIT_ON: # perm is titan.killtag.shit_on
-      NAME: '&dcShit On'
+    SHIT_ON:
+      NAME: '&cShit On'
       MATERIAL: 'NAME_TAG'
-      FORMAT: '%killer% &eftook a shit on %player% &efusing &c%item%&ef.'
+      FORMAT: '%killer% &fse cagó en %player% &fusando &c%item%&f.'
       SLOT: 5
       LORE:
-        - '&efRight click to select &dcShit on&ef.'
-        - '&cTitan&4[0] &eftook a shit on &cMeeZoid&4[0]'
+        - '&fClick derecho para seleccionar &cShit on&f.'
+        - '&cTitan&4[0] &fse cagó en &cMeeZoid&4[0]'
         - '%equipped%'
 
 HOLOGRAM_PLACEHOLDER:
   NONE: '&7%number%. &fN/A'
-  FTOP: '&7%number%. &dc%team% &f(%points% points)'
-  FTOP_RAIDABLE: '&7%number%. &dc%team% &f(%raidablepoints% raidable)'
-  KILLS_TOP: '&7%number%. &dc%player% &f(%kills% kills)'
-  DEATHS_TOP: '&7%number%. &dc%player% &f(%deaths% deaths)'
-  KDR_TOP: '&7%number%. &dc%player% &f(%kdr% KDR)'
-  KILLSTREAK_TOP: '&7%number%. &dc%player% &f(%killstreak% killstreak)'
+  FTOP: '&7%number%. &c%team% &f(%points% puntos)'
+  FTOP_RAIDABLE: '&7%number%. &c%team% &f(%raidablepoints% raideable)'
+  KILLS_TOP: '&7%number%. &c%player% &f(%kills% asesinatos)'
+  DEATHS_TOP: '&7%number%. &c%player% &f(%deaths% muertes)'
+  KDR_TOP: '&7%number%. &c%player% &f(%kdr% KDR)'
+  KILLSTREAK_TOP: '&7%number%. &c%player% &f(%killstreak% racha de asesinatos)'
 
 GOLDEN_APPLE_LIMIT:
-  NORMAL: -1 # -1 unchanged
+  NORMAL: -1
   NETHER: 16
   THE_END: 16
 
 CONQUEST:
-  SECONDS_PER_CAPZONE: 30 # How long does it take to cap each zone
-  POINTS_CAPTURE: 150 # How many points to win conquest
-  POINTS_DEATH: 5 # How many points to take when a player dies
-  TEAM_POINTS_WON: 100 # How many points is awarded after capturing conquest
-  SCOREBOARD_ONLY_CONQUEST_CLAIM: true # Only show conquest scoreboard in claim
+  SECONDS_PER_CAPZONE: 30
+  POINTS_CAPTURE: 150
+  POINTS_DEATH: 5
+  TEAM_POINTS_WON: 100
+  SCOREBOARD_ONLY_CONQUEST_CLAIM: true
   COMMANDS_WON:
     - 'cr givekey %player% event 3'
     - 'cr givekey %player% conquest 5'
 
 STAFF_MODE:
-  STAFF_MODE_ON_JOIN: true # Enable staff on join
-  LUNAR_STAFF_MODULES: true # Enable lunar staff modules
+  STAFF_MODE_ON_JOIN: true
+  LUNAR_STAFF_MODULES: true
   ACTION_BAR_ENABLED: true
-  ACTION_BAR_STRING: '&dcVanish: %vanished% &7┃ &dcBuild: %staffbuild% &7┃ &dcHide Staff: %hidestaff%'
-  SILENT_VIEW_TITLE: 'Silently viewing...' # When clicking a chest or hopper in staff mode.
+  ACTION_BAR_STRING: '&cVanish: %vanished% &7┃ &cConstruir: %staffbuild% &7┃ &cOcultar Staff: %hidestaff%'
+  SILENT_VIEW_TITLE: 'Viendo silenciosamente...'
   FREEZE_MESSAGE_INTERVAL: 3
-  RANDOM_TP_MINER_Y: 25 # For random tp miner player has to be below this y level
+  RANDOM_TP_MINER_Y: 25
   PAUSE_PLAYTIME_STAFF: true
   PLACEHOLDERS:
     TRUE_PLACEHOLDER: '&a✓'
@@ -273,126 +270,126 @@ STAFF_MODE:
     - 'team home'
     - 'logout'
   REPORTS_MENU:
-    TITLE: '&dcReports'
+    TITLE: '&cReportes'
     SIZE: 54
     REPORT_FORMAT:
-      NAME: '&dcReport: &ef%reported%'
+      NAME: '&cReporte: &f%reported%'
       MATERIAL: 'PAPER'
       COMMAND: '/teleport %reported%'
       DATA: 0
       LORE:
         - '&7&m----------------------------'
-        - '&efPlayer: &c%player%'
-        - '&efReported: &c%reported%'
-        - '&efReason: &c%reason%'
+        - '&fJugador: &c%player%'
+        - '&fReportado: &c%reported%'
+        - '&fRazón: &c%reason%'
         - ''
-        - '&efClick to teleport to &dc%reported%&ef.'
+        - '&fClick para teletransportarse a &c%reported%&f.'
         - '&7&m----------------------------'
   REQUESTS_MENU:
-    TITLE: '&dcRequests'
+    TITLE: '&cSolicitudes'
     SIZE: 54
     REQUEST_FORMAT:
-      NAME: '&dcRequest: &ef%player%'
+      NAME: '&cSolicitud: &f%player%'
       MATERIAL: 'PAPER'
       COMMAND: '/teleport %player%'
       DATA: 0
       LORE:
         - '&7&m----------------------------'
-        - '&efPlayer: &c%player%'
-        - '&efRequest: &c%reason%'
+        - '&fJugador: &c%player%'
+        - '&fSolicitud: &c%reason%'
         - ''
-        - '&efClick to teleport to &dc%player%&ef.'
+        - '&fClick para teletransportarse a &c%player%&f.'
         - '&7&m----------------------------'
   STAFF_ITEMS:
     VANISH_ON:
-      NAME: '&dcVanish &c(Disabled)'
-      ACTION: 'VANISH_ON' # Can be: VANISH_OFF, VANISH_ON, INSPECTION, FREEZE, INTERACT_PLAYER
+      NAME: '&cVanish &c(Desactivado)'
+      ACTION: 'VANISH_ON'
       MATERIAL: 'INK_SACK'
       DATA: 8
       SLOT: 1
-      REPLACE: 'VANISH_OFF' # When clicked, which item should replace this one.
+      REPLACE: 'VANISH_OFF'
       COMMAND: ''
       LORE:
-        - '&efClick to appear to all online players. '
+        - '&fClick para aparecer a todos los jugadores en línea.'
     VANISH_OFF:
-      NAME: '&dcVanish &a(Enabled)'
-      ACTION: 'VANISH_OFF' # Can be: VANISH_OFF, VANISH_ON, INSPECTION, FREEZE, INTERACT_PLAYER
+      NAME: '&cVanish &a(Activado)'
+      ACTION: 'VANISH_OFF'
       MATERIAL: 'INK_SACK'
       DATA: 10
       SLOT: 1
-      REPLACE: 'VANISH_ON' # When clicked, which item should replace this one.
+      REPLACE: 'VANISH_ON'
       COMMAND: ''
       LORE:
-        - '&efClick to vanish from all online players.'
+        - '&fClick para desaparecer de todos los jugadores en línea.'
     FREEZE:
-      NAME: '&dcFreeze'
-      ACTION: 'FREEZE' # Can be: VANISH_OFF, VANISH_ON, INSPECTION, FREEZE, INTERACT_PLAYER
+      NAME: '&cCongelar'
+      ACTION: 'FREEZE'
       MATERIAL: 'ICE'
       DATA: 0
       SLOT: 2
-      REPLACE: '' # When clicked, which item should replace this one.
+      REPLACE: ''
       COMMAND: ''
       LORE:
-        - '&efClick a player to freeze them.'
+        - '&fClick en un jugador para congelarlo.'
     RANDOM_TP:
-      NAME: '&dcRandom Teleport'
-      ACTION: '' # Can be: VANISH_OFF, VANISH_ON, INSPECTION, FREEZE, INTERACT_PLAYER
+      NAME: '&cTeletransporte Aleatorio'
+      ACTION: ''
       MATERIAL: 'WATCH'
       DATA: 0
       SLOT: 8
-      REPLACE: '' # When clicked, which item should replace this one.
+      REPLACE: ''
       COMMAND: '/randomtp'
       LORE:
-        - '&efClick to randomly teleport to a online player..'
+        - '&fClick para teletransportarse aleatoriamente a un jugador en línea.'
     INSPECTION:
-      NAME: '&dcInventory Inspect'
-      ACTION: 'INSPECTION' # Can be: VANISH_OFF, VANISH_ON, INSPECTION, FREEZE, INTERACT_PLAYER
+      NAME: '&cInspeccionar Inventario'
+      ACTION: 'INSPECTION'
       MATERIAL: 'BOOK'
       DATA: 0
       SLOT: 9
-      REPLACE: '' # When clicked, which item should replace this one.
+      REPLACE: ''
       COMMAND: ''
       LORE:
-        - '&efClick a player to inspect their inventory.'
+        - '&fClick en un jugador para inspeccionar su inventario.'
     COMPASS:
-      NAME: '&dcWall Teleport'
-      ACTION: '' # Can be: VANISH_OFF, VANISH_ON, INSPECTION, FREEZE, INTERACT_PLAYER
+      NAME: '&cTeletransporte a través de Paredes'
+      ACTION: ''
       MATERIAL: 'COMPASS'
       DATA: 0
       SLOT: 5
-      REPLACE: '' # When clicked, which item should replace this one.
+      REPLACE: ''
       COMMAND: ''
       LORE:
-        - '&efClick a wall to teleport through it.'
+        - '&fClick en una pared para teletransportarse a través de ella.'
   INSPECTION_MENU:
-    TITLE: '&dcInspection Menu'
+    TITLE: '&cMenú de Inspección'
     SIZE: 54
     FILLER:
       NAME: '&7'
       MATERIAL: STAINED_GLASS_PANE
       DATA: 3
     POTIONS_VIEWER:
-      NAME: '&dcActive Effects'
+      NAME: '&cEfectos Activos'
       MATERIAL: BREWING_STAND_ITEM
       DATA: 0
       SLOT: 50
-      FORMAT: '&ef%effect% &7(&dc%time% &dcLVL: %amplifier%&7)'
+      FORMAT: '&f%effect% &7(&c%time% &cNIVEL: %amplifier%&7)'
     PLAYER_INFO:
-      NAME: '&efPlayer Info&7: &dc%player%'
+      NAME: '&fInformación del Jugador&7: &c%player%'
       MATERIAL: 'SKULL_ITEM'
       DATA: 0
       SLOT: 51
       LORE:
-        - '&dcKills&7: &f%kills%'
-        - '&dcDeaths&7: &f%deaths%'
-        - '&dcLives&7: &f%lives%'
+        - '&cAsesinatos&7: &f%kills%'
+        - '&cMuertes&7: &f%deaths%'
+        - '&cVidas&7: &f%lives%'
     CLOSE_INSPECTION:
-      NAME: '&cClose Inspection'
+      NAME: '&cCerrar Inspección'
       MATERIAL: 'WOOL'
       DATA: 14
       SLOT: 54
       LORE:
-        - '&efClick to close inspection.'
+        - '&fClick para cerrar la inspección.'
     HELMET_SLOT: 46
     CHESTPLATE_SLOT: 47
     LEGGINGS_SLOT: 48
@@ -400,60 +397,58 @@ STAFF_MODE:
 
 SPAWNERS_CONFIG:
   ITEM:
-    NAME: '&dcMob Spawner'
+    NAME: '&cGenerador de Mobs'
     LORE:
-      - '&efEntity Type: &c%spawner%'
-  TYPES: # Entity Type, Display name
-    - 'ENDERMAN, &4cEndermen'
+      - '&fTipo de Entidad: &c%spawner%'
+  TYPES:
+    - 'ENDERMAN, &cEnderman'
     - 'BLAZE, &6Blaze'
     - 'CREEPER, &aCreeper'
-    - 'SPIDER, &8Spider'
-    - 'COW, &7Cow'
-    - 'PIG, &dcPig'
-    - 'SKELETON, &7Skeleton'
-    - 'CAVE_SPIDER, &cCave Spider'
+    - 'SPIDER, &8Araña'
+    - 'COW, &7Vaca'
+    - 'PIG, &cCerdo'
+    - 'SKELETON, &7Esqueleto'
+    - 'CAVE_SPIDER, &cAraña de Cueva'
 
 STARTING_BALANCES:
   DEFAULT_MEMBER: 500
   PER_RANK:
-    IRON: '2, 600' # titan.balance.iron
-    GOLD: '3, 700' # titan.balance.gold
-    AZURITE: '4, 800' # titan.balance.titan
+    IRON: '2, 600'
+    GOLD: '3, 700'
+    AZURITE: '4, 800'
 
 CROWBARS:
-  NAME: '&dcCrowbar'
+  NAME: '&cPalanca'
   MATERIAL: 'GOLD_HOE'
-  SPAWNER_LINE: '&efSpawner: &c%spawner%'
-  END_FRAME_LINE: '&efEnd Frame: &c%endframe%'
+  SPAWNER_LINE: '&fGenerador: &c%spawner%'
+  END_FRAME_LINE: '&fMarco del End: &c%endframe%'
   SPAWNER_AMOUNT: 5
   END_FRAME_AMOUNT: 5
 
 REDEEMS:
   KEANO:
     NAME: 'juanpiece'
-    COMMANDS: # Command, Chance of running command
+    COMMANDS:
       - 'cr givekey %player% juanpiece 5, 100%'
       - 'cr give partnerpackage %player% 1, 100%'
       - 'lootbox give %player% 1, 100%'
   PEQRLZ:
     NAME: 'Peqrlz'
-    COMMANDS: # Command, Chance of running command
+    COMMANDS:
       - 'cr givekey %player% juanpiece 5, 3%'
       - 'cr give partnerpackage %player% 1, 5%'
       - 'lootbox give %player% 1, 1%'
   ANDREW:
     NAME: 'Andrew'
-    COMMANDS: # Command, Chance of running command
+    COMMANDS:
       - 'cr givekey %player% juanpiece 5, 3%'
       - 'cr give partnerpackage %player% 1, 5%'
       - 'lootbox give %player% 1, 1%'
 
-# Should the player be banned from using the portal after dying
 DEATH_PORTAL_BAN:
-  NETHER: 3 # 3 Minutes, -1 = No change
-  END: 3 # 3 Minutes, -1 = No change
+  NETHER: 3
+  END: 3
 
-# If you don't want multicolor just set all the same
 WALLS:
   PVP_TIMER:
     TYPE: 'STAINED_GLASS'
@@ -489,78 +484,70 @@ STATS_TRACKER:
   SPACE_BEFORE_KILLS: true
   SPACE_BEFORE_DEATHS: true
   KILLS_ONLY_SWORD: true
-  MAX_KILLS_STATS: 3 # -1 for no limit
-  MAX_DEATHS_STATS: 3 # -1 for no limit
-  KILLS_PLACEHOLDER: '&4&lKills: &f'
-  DEATHS_PLACEHOLDER: '&4&lDeaths:'
-  KILL_STAT: '&ef%playerPrefix%%playerColor%%player% &fkilled &ef%targetPrefix%%targetColor%%target%'
-  DEATH_STAT: '&ef%player% &fkilled by &ef%target% &6%date% %time%'
+  MAX_KILLS_STATS: 3
+  MAX_DEATHS_STATS: 3
+  KILLS_PLACEHOLDER: '&4&lAsesinatos: &f'
+  DEATHS_PLACEHOLDER: '&4&lMuertes:'
+  KILL_STAT: '&f%playerPrefix%%playerColor%%player% &fasesinó a &f%targetPrefix%%targetColor%%target%'
+  DEATH_STAT: '&f%player% &fasesinado por &f%target% &6%date% %time%'
 
 KOTHS_CONFIG:
-  # Allow players without teams to cap
   ALLOW_NO_TEAM_CAP: true
-  # When should we send the capturing message, currently every 20 seconds.
   SEND_CAPTURING_MESSAGE: 20
-  # What percentage of koth should atleast be captured to send the lost control message
   LOST_CONTROL_PERCENT: 70
-  # When should we tell the team they are controlling the koth, currently every 60 seconds.
   TEAM_SEND_CAPTURING_MESSAGE: 60
-  # How many koths are able to run at once
   MAX_KOTHS_ACTIVE: 1
-  # Commands to run when a player captures a koth
   COMMANDS_ON_CAPTURE:
     - 'cr givekey %player% event 3'
     - 'cr givekey %player% koth 5'
 
 CITADEL:
   CHEST_CONFIG:
-    # The amount of items per chest (Will be randomized)
     MIN_ITEM_AMOUNT: 2
     MAX_ITEM_AMOUNT: 5
-    RANDOM_ITEMS: # Material, Amount, Data, Name, Enchants, Lore, Percentage
-      - 'DIAMOND_SWORD, 1, 0, &4c&lCitadel &dc&lSword, DAMAGE_ALL:2;DURABILITY:4, &cNutrition III;&cjuanpiece IX, 30%'
-      - 'DIAMOND_HELMET, 1, 0, &4c&lCitadel &dc&lHelmet, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
-      - 'DIAMOND_CHESTPLATE, 1, 0, &4c&lCitadel &4&lChestplate, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cFire Resistance I, 20%'
-      - 'DIAMOND_LEGGINGS, 1, 0, &4c&lCitadel &4&lLeggings, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
-      - 'DIAMOND_BOOTS, 1, 0, &4c&lCitadel &4&lBoots, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cSpeed II, 15%'
-      - 'COOKIE, 1, 0, &4c&lCitadel &dc&lCookie, none, &4c&kii&r &dcjuanpiece''s &dcMagical &dcCookie &4c&kii&r, 10%'
+    RANDOM_ITEMS:
+      - 'DIAMOND_SWORD, 1, 0, &c&lEspada de la Ciudadela, DAMAGE_ALL:2;DURABILITY:4, &cNutrición III;&cjuanpiece IX, 30%'
+      - 'DIAMOND_HELMET, 1, 0, &c&lCasco de la Ciudadela, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
+      - 'DIAMOND_CHESTPLATE, 1, 0, &c&lPechera de la Ciudadela, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cResistencia al Fuego I, 20%'
+      - 'DIAMOND_LEGGINGS, 1, 0, &c&lPantalones de la Ciudadela, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
+      - 'DIAMOND_BOOTS, 1, 0, &c&lBotas de la Ciudadela, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cVelocidad II, 15%'
+      - 'COOKIE, 1, 0, &c&lGalleta de la Ciudadela, none, &c&kii&r &cjuanpiece''s &cGalleta Mágica &c&kii&r, 10%'
       - 'GOLDEN_APPLE, 16, 0, none, none, none, 45%'
       - 'GOLDEN_APPLE, 1, 1, none, none, none, 10%'
       - 'ENDER_PEARL, 8, 0, none, none, none, 30%'
       - 'GLOWSTONE_DUST, 16, 0, none, none, none, 35%'
-      - 'SULPHUR, 16, 0, none, none, none, 35%' # gunpowder named sulphur
+      - 'SULPHUR, 16, 0, none, none, none, 35%'
       - 'EMERALD_BLOCK, 16, 0, none, none, none, 20%'
       - 'DIAMOND_BLOCK, 16, 0, none, none, none, 25%'
       - 'GOLD_BLOCK, 16, 0, none, none, none, 30%'
       - 'IRON_BLOCK, 16, 0, none, none, none, 35%'
-      - 'ABILITY:Switcher, 4, 15%' # Abilities are like this. Ability, Amount, Chance
-      - 'ABILITY:AntiBuild, 4, 15%' # Abilities are like this. Ability, Amount, Chance
+      - 'ABILITY:Switcher, 4, 15%'
+      - 'ABILITY:AntiBuild, 4, 15%'
 
 MOUNTAINS:
   ORE_MOUNTAIN:
     CHEST_CONFIG:
-      # The amount of items per chest (Will be randomized)
       MIN_ITEM_AMOUNT: 2
       MAX_ITEM_AMOUNT: 5
-      RANDOM_ITEMS: # Material, Amount, Data, Name, Enchants, Lore, Percentage
-        - 'DIAMOND_SWORD, 1, 0, &2&lMountain &4&lSword, DAMAGE_ALL:2;DURABILITY:4, &cNutrition III;&cjuanpiece IX, 30%'
-        - 'DIAMOND_HELMET, 1, 0, &2&lMountain &4&lHelmet, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
-        - 'DIAMOND_CHESTPLATE, 1, 0, &2&lMountain &4&lChestplate, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cFire Resistance I, 20%'
-        - 'DIAMOND_LEGGINGS, 1, 0, &2&lMountain &4&lLeggings, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
-        - 'DIAMOND_BOOTS, 1, 0, &2&lMountain &4&lBoots, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cSpeed II, 15%'
-        - 'COOKIE, 1, 0, &2&lMountain &4&lCookie, none, &4c&kii&r &dcjuanpiece''s &dcMagical &dcCookie &4c&kii&r, 10%'
+      RANDOM_ITEMS:
+        - 'DIAMOND_SWORD, 1, 0, &2&lEspada de la Montaña, DAMAGE_ALL:2;DURABILITY:4, &cNutrición III;&cjuanpiece IX, 30%'
+        - 'DIAMOND_HELMET, 1, 0, &2&lCasco de la Montaña, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
+        - 'DIAMOND_CHESTPLATE, 1, 0, &2&lPechera de la Montaña, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cResistencia al Fuego I, 20%'
+        - 'DIAMOND_LEGGINGS, 1, 0, &2&lPantalones de la Montaña, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
+        - 'DIAMOND_BOOTS, 1, 0, &2&lBotas de la Montaña, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cVelocidad II, 15%'
+        - 'COOKIE, 1, 0, &2&lGalleta de la Montaña, none, &c&kii&r &cjuanpiece''s &cGalleta Mágica &c&kii&r, 10%'
         - 'GOLDEN_APPLE, 16, 0, none, none, none, 45%'
         - 'GOLDEN_APPLE, 1, 1, none, none, none, 10%'
         - 'ENDER_PEARL, 8, 0, none, none, none, 30%'
         - 'GLOWSTONE_DUST, 16, 0, none, none, none, 35%'
-        - 'SULPHUR, 16, 0, none, none, none, 35%' # gunpowder named sulphur
+        - 'SULPHUR, 16, 0, none, none, none, 35%'
         - 'EMERALD_BLOCK, 16, 0, none, none, none, 20%'
         - 'DIAMOND_BLOCK, 16, 0, none, none, none, 25%'
         - 'GOLD_BLOCK, 16, 0, none, none, none, 30%'
         - 'IRON_BLOCK, 16, 0, none, none, none, 35%'
-        - 'ABILITY:Switcher, 4, 15%' # Abilities are like this. Ability, Amount, Chance
-        - 'ABILITY:AntiBuild, 4, 15%' # Abilities are like this. Ability, Amount, Chance
-    ALLOWED_BREAK: # The items to respawn/allowed breaking.
+        - 'ABILITY:Switcher, 4, 15%'
+        - 'ABILITY:AntiBuild, 4, 15%'
+    ALLOWED_BREAK:
       - 'EMERALD_ORE'
       - 'DIAMOND_ORE'
       - 'GOLD_ORE'
@@ -576,7 +563,7 @@ MOUNTAINS:
       MIN_ITEM_AMOUNT: 0
       MAX_ITEM_AMOUNT: 0
       RANDOM_ITEMS: { }
-    ALLOWED_BREAK: # The items to respawn/allowed breaking.
+    ALLOWED_BREAK:
       - 'GLOWSTONE'
 
 BORDERS:
@@ -585,31 +572,31 @@ BORDERS:
   world_the_end: 1000
 
 INVENTORY_RESTORE:
-  RESTORES_LIMIT: 9 # Highly suggest lowering this as saving 9 inventories isn't ideal.
+  RESTORES_LIMIT: 9
   RESTORE_MENU:
-    TITLE: '&dcRestore: &ef%player%'
+    TITLE: '&cRestaurar: &f%player%'
     SIZE: 9
-    NAME: '&dcInventory Restore: &c%date%'
+    NAME: '&cRestauración de Inventario: &c%date%'
     RESTORE_ITEM: 'PAPER'
     FORMAT:
       - '&7&m----------------------------'
-      - '&efArmor Content: &c%armoramount%'
-      - '&efContent: &c%contentamount%'
-      - '&efDate: &c%date%'
+      - '&fContenido de Armadura: &c%armoramount%'
+      - '&fContenido: &c%contentamount%'
+      - '&fFecha: &c%date%'
       - ''
-      - '&aClick to preview inventory.'
+      - '&aClick para previsualizar el inventario.'
       - '&7&m----------------------------'
   INVENTORY_MENU:
     TITLE: '&c%date%'
     SIZE: 54
     CONFIRM_RESTORE:
-      NAME: '&aConfirm Button'
+      NAME: '&aBotón de Confirmar'
       MATERIAL: 'WOOL'
       DATA: 5
       SLOT: 54
       LORE: { }
     BACK_BUTTON:
-      NAME: '&cBack Button'
+      NAME: '&cBotón de Retroceder'
       MATERIAL: 'WOOL'
       DATA: 14
       SLOT: 53
@@ -624,16 +611,16 @@ INVENTORY_RESTORE:
     BOOTS_SLOT: 49
 
 LOGGERS:
-  COLOR: '&ef'
-  DESPAWN: 15 # Seconds
+  COLOR: '&f'
+  DESPAWN: 15
 
 ONLINE_DONOR:
-  INTERVAL: 120 # Seconds
-  SOUND: '' # Empty to disable
-  MESSAGE: # Permission: titan.donor - Won't count opped players.
+  INTERVAL: 120
+  SOUND: ''
+  MESSAGE:
     - '&7&m--------------------------'
-    - '&dc&lTitan Donors&7: &f%members%'
-    - '&efPurchase &dcTitan Rank &efat store.titan.cc'
+    - '&c&lDonadores de Titan&7: &f%members%'
+    - '&fCompra el &cRango Titan &fen store.titan.cc'
     - '&7&m--------------------------'
 
 CHAT_FORMAT:
@@ -642,103 +629,103 @@ CHAT_FORMAT:
     - 'BITCH'
     - 'KYS'
     - 'STFU'
-  COOLDOWN: 3 # seconds
+  COOLDOWN: 3
   PUBLIC_NO_TEAM: '%killtop%%tag%%prefix%%color%%player%%suffix%&7: &f%s'
   PUBLIC_TEAM: '&6[%ftop%%ftop-color%%team%&6]&r %killtop%%tag%%prefix%%color%%player%%suffix%&7: &f%s'
   KILL_TOP_FORMAT: '&8[%killtop%&8] &r'
   FTOP_FORMAT: '%ftop% '
   STAFF:
-    FORMAT: '&dc(Staff) %player%: &ef%s'
+    FORMAT: '&c(Staff) %player%: &f%s'
   TEAM_CHAT:
     ENABLED: true
-    FORMAT: '&2(Team) %player%: &ef%s'
-    SHORTCUT: '@' # Type @ before a message for it to be in team chat
+    FORMAT: '&2(Equipo) %player%: &f%s'
+    SHORTCUT: '@'
   ALLY_CHAT:
     ENABLED: true
-    FORMAT: '&9(Ally) %player%: &ef%s'
-    SHORTCUT: '' # Leave empty to disable
+    FORMAT: '&9(Aliado) %player%: &f%s'
+    SHORTCUT: ''
   OFFICER_CHAT:
     ENABLED: true
-    FORMAT: '&dc(Officer) %player%: &ef%s'
-    SHORTCUT: '' # Leave empty to disable
+    FORMAT: '&c(Oficial) %player%: &f%s'
+    SHORTCUT: ''
   CO_LEADER_CHAT:
     ENABLED: true
-    FORMAT: '&3(Co-Leader) %player%: &ef%s'
-    SHORTCUT: '' # Leave empty to disable
+    FORMAT: '&3(Co-Líder) %player%: &f%s'
+    SHORTCUT: ''
 
 FIXES:
   ENDERCHEST_CRAFTING: false
-  BOAT_PLACING: true # Will only work in water if this is true
+  BOAT_PLACING: true
   OBSIDIAN_GENS: false
   MOB_SPAWN_WARZONE: false
   EASIER_GLISTERING_CRAFT: true
 
 MULTIPLIERS:
-  NETHER_MULTIPLIER: 2 # 1k 1k Overworld will be 500 500 nether
+  NETHER_MULTIPLIER: 2
   SMELT_MULTIPLIER: 2
 
 SIGNS_CONFIG:
   UP_SIGN:
     ENABLED: true
     LINES:
-      - '&4[Elevator]'
-      - 'Up'
+      - '&4[Ascensor]'
+      - 'Arriba'
       - ''
       - ''
   DOWN_SIGN:
     ENABLED: true
     LINES:
-      - '&4[Elevator]'
-      - 'Down'
+      - '&4[Ascensor]'
+      - 'Abajo'
       - ''
       - ''
   BUY_SIGN:
     ENABLED: true
     LINES:
-      - '&a- Buy -'
+      - '&a- Comprar -'
       - '%material%'
       - '%amount%'
       - '$%price%'
   SELL_SIGN:
     ENABLED: true
     LINES:
-      - '&c- Sell -'
+      - '&c- Vender -'
       - '%material%'
       - '%amount%'
       - '$%price%'
   KIT_SIGN:
     ENABLED: true
     LINES:
-      - '&9- Kit -' # Create with [kit]!
+      - '&9- Kit -'
       - '%kit%'
       - ''
       - ''
   SUBCLAIM_SIGN:
     ENABLED: true
     LINES:
-      - '&4[Subclaim]' # Create with [subclaim]!
+      - '&4[Subclaim]'
       - '%member%'
       - ''
       - ''
-  REFILL_SIGN: # Create with [refill]
+  REFILL_SIGN:
     ENABLED: true
-    MENU_TITLE: '&dcRefill'
+    MENU_TITLE: '&cRellenar'
     MENU_SIZE: 27
     COOLDOWN: 5
     LINES:
       - ''
-      - '&6[Refill]'
-      - '(Right Click)'
+      - '&6[Rellenar]'
+      - '(Click Derecho)'
       - ''
   QUICK_REFILL_SIGN:
     ENABLED: true
-    MENU_TITLE: '&dcQuick Refill' # Create with [quickrefill]
+    MENU_TITLE: '&cRelleno Rápido'
     MENU_SIZE: 54
     COOLDOWN: 120
     LINES:
       - ''
-      - '&3[Quick Refill]'
-      - '(Right Click)'
+      - '&3[Relleno Rápido]'
+      - '(Click Derecho)'
       - ''
 
 TIMERS_COOLDOWN:
@@ -772,9 +759,9 @@ ANTI_CLEAN:
   RADIUS: 1000
 
 EOTW_TIMER:
-  PRE_EOTW: 45 # Minutes before EOTW koth is started and teams raidable.
+  PRE_EOTW: 45
   RAIDABLE_TIME: 1d12h
-  COMMAND: 'koth start eotw' # When Pre EOTW ends which command should we run
+  COMMAND: 'koth start eotw'
 
 ROD_TIMER:
   TIME: 3
@@ -798,14 +785,14 @@ PURGE_TIMER:
     - 'STONE_BUTTON'
 
 SOTW_FLY:
-  ALLOW_SPAWN: true # Allow fly in spawn
-  ALLOW_OWN_CLAIM: true # Allow fly in own claim
-  ALLOW_ANYWHERE: false # Allow fly anywhere
+  ALLOW_SPAWN: true
+  ALLOW_OWN_CLAIM: true
+  ALLOW_ANYWHERE: false
 
 SPAWN_TIMER:
-  ENABLED: false # /spawn start a countdown to teleport to spawn?
+  ENABLED: false
   INSTANT_TP_SOTW: true
-  TIME: 45 # Time before they are teleported to spawn
+  TIME: 45
 
 CAMP_TIMER:
   ALLOW_COMBAT: false
@@ -820,7 +807,6 @@ LAST_DEATHS:
   LIMIT: 5
   MESSAGE: '%deathmessage% &7(&f%x%x, %y%y, %z%z&7) &7(%date%&7)'
 
-# All small letters.
 DISABLED_COMMANDS:
   MAIN_COMMANDS:
     - 'command'
@@ -862,7 +848,7 @@ INVINCIBILITY:
 HQ_TIMER:
   INSTANT_TP_SPAWN: true
   INSTANT_TP_SOTW: true
-  ALLOW_TP_OTHER_CLAIM: true # Allow teleports in other players claims
+  ALLOW_TP_OTHER_CLAIM: true
 
 PVP_TIMER:
   END_ENTRY: false
