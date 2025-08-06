@@ -76,7 +76,7 @@ JOIN_ITEMS:
   BOOK_ITEM:
     ENABLED: true
     TITLE: '&6Welcome to Titan'
-    AUTHOR: 'Keqno'
+    AUTHOR: 'juanpiece'
     PAGES:
       - '&9Welcome to the Titan Network.'
   NORMAL_ITEMS: # MATERIAL, AMOUNT, ENCHANTS
@@ -404,7 +404,7 @@ SPAWNERS_CONFIG:
     LORE:
       - '&efEntity Type: &c%spawner%'
   TYPES: # Entity Type, Display name
-    - 'ENDERMAN, &5cEndermen'
+    - 'ENDERMAN, &4cEndermen'
     - 'BLAZE, &6Blaze'
     - 'CREEPER, &aCreeper'
     - 'SPIDER, &8Spider'
@@ -430,7 +430,7 @@ CROWBARS:
 
 REDEEMS:
   KEANO:
-    NAME: 'Keano'
+    NAME: 'juanpiece'
     COMMANDS: # Command, Chance of running command
       - 'cr givekey %player% juanpiece 5, 100%'
       - 'cr give partnerpackage %player% 1, 100%'
@@ -518,12 +518,12 @@ CITADEL:
     MIN_ITEM_AMOUNT: 2
     MAX_ITEM_AMOUNT: 5
     RANDOM_ITEMS: # Material, Amount, Data, Name, Enchants, Lore, Percentage
-      - 'DIAMOND_SWORD, 1, 0, &5c&lCitadel &dc&lSword, DAMAGE_ALL:2;DURABILITY:4, &cNutrition III;&cKeano IX, 30%'
-      - 'DIAMOND_HELMET, 1, 0, &5c&lCitadel &dc&lHelmet, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
-      - 'DIAMOND_CHESTPLATE, 1, 0, &5c&lCitadel &4&lChestplate, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cFire Resistance I, 20%'
-      - 'DIAMOND_LEGGINGS, 1, 0, &5c&lCitadel &4&lLeggings, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
-      - 'DIAMOND_BOOTS, 1, 0, &5c&lCitadel &4&lBoots, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cSpeed II, 15%'
-      - 'COOKIE, 1, 0, &5c&lCitadel &dc&lCookie, none, &5c&kii&r &dcKeano''s &dcMagical &dcCookie &5c&kii&r, 10%'
+      - 'DIAMOND_SWORD, 1, 0, &4c&lCitadel &dc&lSword, DAMAGE_ALL:2;DURABILITY:4, &cNutrition III;&cjuanpiece IX, 30%'
+      - 'DIAMOND_HELMET, 1, 0, &4c&lCitadel &dc&lHelmet, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
+      - 'DIAMOND_CHESTPLATE, 1, 0, &4c&lCitadel &4&lChestplate, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cFire Resistance I, 20%'
+      - 'DIAMOND_LEGGINGS, 1, 0, &4c&lCitadel &4&lLeggings, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
+      - 'DIAMOND_BOOTS, 1, 0, &4c&lCitadel &4&lBoots, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cSpeed II, 15%'
+      - 'COOKIE, 1, 0, &4c&lCitadel &dc&lCookie, none, &4c&kii&r &dcjuanpiece''s &dcMagical &dcCookie &4c&kii&r, 10%'
       - 'GOLDEN_APPLE, 16, 0, none, none, none, 45%'
       - 'GOLDEN_APPLE, 1, 1, none, none, none, 10%'
       - 'ENDER_PEARL, 8, 0, none, none, none, 30%'
@@ -543,12 +543,12 @@ MOUNTAINS:
       MIN_ITEM_AMOUNT: 2
       MAX_ITEM_AMOUNT: 5
       RANDOM_ITEMS: # Material, Amount, Data, Name, Enchants, Lore, Percentage
-        - 'DIAMOND_SWORD, 1, 0, &2&lMountain &4&lSword, DAMAGE_ALL:2;DURABILITY:4, &cNutrition III;&cKeano IX, 30%'
+        - 'DIAMOND_SWORD, 1, 0, &2&lMountain &4&lSword, DAMAGE_ALL:2;DURABILITY:4, &cNutrition III;&cjuanpiece IX, 30%'
         - 'DIAMOND_HELMET, 1, 0, &2&lMountain &4&lHelmet, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
         - 'DIAMOND_CHESTPLATE, 1, 0, &2&lMountain &4&lChestplate, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cFire Resistance I, 20%'
         - 'DIAMOND_LEGGINGS, 1, 0, &2&lMountain &4&lLeggings, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, none, 20%'
         - 'DIAMOND_BOOTS, 1, 0, &2&lMountain &4&lBoots, PROTECTION_ENVIRONMENTAL:2;DURABILITY:4, &cSpeed II, 15%'
-        - 'COOKIE, 1, 0, &2&lMountain &4&lCookie, none, &5c&kii&r &dcKeano''s &dcMagical &dcCookie &5c&kii&r, 10%'
+        - 'COOKIE, 1, 0, &2&lMountain &4&lCookie, none, &4c&kii&r &dcjuanpiece''s &dcMagical &dcCookie &4c&kii&r, 10%'
         - 'GOLDEN_APPLE, 16, 0, none, none, none, 45%'
         - 'GOLDEN_APPLE, 1, 1, none, none, none, 10%'
         - 'ENDER_PEARL, 8, 0, none, none, none, 30%'

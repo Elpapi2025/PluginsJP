@@ -302,7 +302,7 @@
             <artifactId>RankAPI13</artifactId>
             <version>1</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/libs/ranks/TitanCore.jar</systemPath>
+            <systemPath>${project.basedir}/libs/ranks/AzuriteCore.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>me.juanpiece.titan</groupId>

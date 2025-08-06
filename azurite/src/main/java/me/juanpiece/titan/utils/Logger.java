@@ -4,20 +4,20 @@ import org.bukkit.Bukkit;
 
 public class Logger {
 
-    public static final String LINE_CONSOLE = CC.t("&5=========================");
+    public static final String LINE_CONSOLE = CC.t("&4=========================");
 
     public static void state(String state, int managers, int teams, int users, int kits, int koths) {
         print(LINE_CONSOLE);
-        print("- &dLoading Titan HCF...");
-        print("- &d" + convert(state) + " &f" + managers + " &dmanagers.");
-        print("- &d" + convert(state) + " &f" + teams + " &dteams.");
-        print("- &d" + convert(state) + " &f" + users + " &dusers");
-        print("- &d" + convert(state) + " &f" + koths + " &dkoths");
-        print("- &d" + convert(state) + " &f" + kits + " &dkits");
+        print("- &cLoading Titan HCF...");
+        print("- &c" + convert(state) + " &f" + managers + " &cmanagers.");
+        print("- &c" + convert(state) + " &f" + teams + " &cteams.");
+        print("- &c" + convert(state) + " &f" + users + " &cusers");
+        print("- &c" + convert(state) + " &f" + koths + " &ckoths");
+        print("- &c" + convert(state) + " &f" + kits + " &ckits");
         print(LINE_CONSOLE);
-        print("- &dAuthor&f: Keqno");
-        print("- &dVersion&f: " + Bukkit.getPluginManager().getPlugin("Titan").getDescription().getVersion());
-        print("- &dState&f: " + state);
+        print("- &cAuthor&f: juanpiece");
+        print("- &cVersion&f: " + Bukkit.getPluginManager().getPlugin("Titan").getDescription().getVersion());
+        print("- &cState&f: " + state);
         print(LINE_CONSOLE);
     }
 

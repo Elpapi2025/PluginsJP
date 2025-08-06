@@ -1,7 +1,7 @@
 name: Titan
 main: me.juanpiece.titan.HCF
 version: 1.0-SNAPSHOT
-author: Keqno
+author: juanpiece
 description: Made for Titan
 api-version: 1.13
 loadbefore:

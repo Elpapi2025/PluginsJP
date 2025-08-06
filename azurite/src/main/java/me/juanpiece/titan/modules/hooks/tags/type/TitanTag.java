@@ -2,7 +2,7 @@ package me.juanpiece.titan.modules.hooks.tags.type;
 
 import me.juanpiece.titan.HCF;
 import me.juanpiece.titan.modules.hooks.tags.Tag;
-import me.juanpiece.core.CoreAPI;
+import me.keano.core.CoreAPI;
 import org.bukkit.entity.Player;
 
 /**

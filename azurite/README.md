@@ -1,2 +1,2 @@
-# Azurite-HCF
+# Titan-HCF
 HCF core with modern features.

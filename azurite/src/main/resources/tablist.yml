@@ -80,7 +80,7 @@ SKINS:
   TWITTER:
     VALUE: 'ewogICJ0aW1lc3RhbXAiIDogMTYzOTU5NDcxNzczMSwKICAicHJvZmlsZUlkIiA6ICIwYTUzMDU0MTM4YWI0YjIyOTVhMGNlZmJiMGU4MmFkYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJQX0hpc2lybyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82YWQ0NmE0MjJhZTU5NjAzZmQ4ODljMjUzNDRmZjY3YmM4NDNhZjhlZTUxODkzMmMyZTJhZDA3Y2RiZjkzOWIzIgogICAgfQogIH0KfQ=='
     SIGNATURE: 'pLLFuTOBQsm4aMKCULZRXBLYfo+EgZDZDyMbPuYpW8u82zo1ZJDooqrrWTIuEDQ5bBU1ukqpBA05M4p1/RQzbRLhEy2AOLqK+yscuW+5y2Ba+wXU3er2kPQqxW00iTxdtn+eFvssiQMGzUT6GL1NNUmxlBfA4ssNMnTBS0rdBxjFcNbzO/kxvDsygmYY+cSJ6ZAX6j8KJk9Ep1IMq5bXLUsZtb0LU4nCLXr9dRNLOmUnI7fjuRC8XFB5stOzRInfL1R3L8KffdbEd+/+L+UbETPNK52fwJpERP0HAoQee/BBkPV+15+WIIceoY5+hi6Py8c5WPUZXAftj5wMVgwasu5uIpHtmsIpqpGiGXrxAUn0X1vzekGjLdHWWhoUB3o6Kj+0OhTSLl+EL/kJAur5Cm0ZEA29bqU+gz/xNDaZDXCJA5mK/z/y1LNM/KViTW6JtzygxG8v1LpKm9hgDwVsfsgqqtc+zhwq+rhXC2KEHP7Z5IJhatFAxIAvfzvLQL1D4uOPPS/qpvaJ0ihktDc/QjtMkNywLtJqM3SR3uEEA1XaVpYoZL7ElBSu4ocx8abZUutqmeSCN0h6EaDo5euYTDMr43bB2nVT9spoCMFl3GdqPVs8Othrprg7OXBk8THFh1QKowtCcKHZhCMHCGWFkP7UXAiux/TZ9OgzuCLJpAY='
-  AZURITE:
+  PURPLE:
     VALUE: 'ewogICJ0aW1lc3RhbXAiIDogMTY0NzY4MjkxMjA0MiwKICAicHJvZmlsZUlkIiA6ICIwNjNhMTc2Y2RkMTU0ODRiYjU1MjRhNjQyMGM1YjdhNCIsCiAgInByb2ZpbGVOYW1lIiA6ICJkYXZpcGF0dXJ5IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYyNjBhNTYxMDZjOWFlNTU1N2ExMmQ1Y2MyOTE1OTFmMmVhZjI2NzcwMTJkM2JlZWM1OGQ0NThkZGI5MmFlYjkiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=='
     SIGNATURE: 'xeG388HlKGok//bZ5/WrW2hlH1GDfL1KxlnJmf254TW0o+kpTCIznBOZBSeyaRph8RtiC3pSI8P0cNi1kVeX1YOHwGJGBmQspxh9dO3Re8qLxjM5Q6PGvn3DxGzQ+neJ+M/IwaekYklT+RIkxXDVGgxy5Cl1qP1pGTMgcgiZFGdhcrda2Q7bwWjrXU4ehSnkvxR7b1VWgH4sXyRlizkxHKiPTsI6SDuwII1mpA3mItMvVv3pc410VxdLCFYMyXXdwPPSXNBbZXZYY774Y5Itab+YPqpZK9ABVR0hWhsV93JbciJUsMURHh2lyy5ULMduP8rqx/H1wx2fS9Zx2GLWUdyhsbYP+JHq4nWddWcvZflC/PdkEvE8oF5RQq3Cic8gpAbl+D0YjpnlOJMyvi8+q05e7/rMHp3V4QhN0aX+HSOpOQ2fOgTQITGsci9oQY26xL9OIg2Ha34YI0JEnFrN6IZK3h7zD5lth3md12o/l9euMUvqUH0vUzWLTWnnFshJpbpN7dMsRCVpMtM0wgQfARXDjJHBx1g30uMQbE4xk51UUUPewAwHU1omQ1lyBayRjloT1qDTbvoEnY3kcTDu8nS+kX5LpzX3UJ4UdzRgez25FxgBcWbwpDZYKq+Cc1wvBLgQ6kzZgvFQbhHL0AdlfuKumGly3xCIB2o9WmW3Xik='
   PURPLE:
@@ -125,14 +125,14 @@ TITLE_CONFIG: # Use %title% for placeholder
     - '&dc&lTitan'
     - '&dc&lTitan'
     - '&dc&lTitan'
-    - '&5c&lA&dc&lzurite'
-    - '&dc&lA&5c&lz&dc&lurite'
-    - '&dc&lAz&5c&lu&dc&lrite'
-    - '&dc&lAzu&5c&lr&dc&lite'
-    - '&dc&lAzur&5c&li&dc&lte'
-    - '&dc&lAzuri&5c&lt&dc&le'
-    - '&dc&lAzurit&5c&le'
-    - '&5c&lTitan'
+    - '&4c&lA&dc&lzurite'
+    - '&dc&lA&4c&lz&dc&lurite'
+    - '&dc&lAz&4c&lu&dc&lrite'
+    - '&dc&lAzu&4c&lr&dc&lite'
+    - '&dc&lAzur&4c&li&dc&lte'
+    - '&dc&lAzuri&4c&lt&dc&le'
+    - '&dc&lAzurit&4c&le'
+    - '&4c&lTitan'
 
 # Format: Skin;Text - Use above as the skin.
 LEFT:
