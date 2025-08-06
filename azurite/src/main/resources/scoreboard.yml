@@ -1,6 +1,6 @@
 SCOREBOARD_INFO:
   ENABLED: true
-  TITLE: '&d&lAzurite &7┃ &fHCF' # If changer not enabled
+  TITLE: '&dc&lTitan &7┃ &fHCF' # If changer not enabled
   LINES: '&7&m--------------------' # Cannot be empty. If you want it blank make it &7
   LINES_ENABLED: true
   LAST_LINE_ENABLED: true
@@ -11,24 +11,24 @@ TITLE_CONFIG:
   CHANGER_TICKS: 160 # Less for faster changing, more for slower changing
   # Create as many as you want
   CHANGES:
-    - '&d&lAzurite &7┃ &fHCF'
-    - '&d&lAzurite &7┃ &fHCF'
-    - '&d&lAzurite &7┃ &fHCF'
-    - '&d&lAzurite &7┃ &fHCF'
-    - '&d&lAzurite &7┃ &fHCF'
-    - '&d&lAzurite &7┃ &fHCF'
-    - '&d&lAzurite &7┃ &fHCF'
-    - '&d&lAzurite &7┃ &fHCF'
-    - '&d&lAzurite &7┃ &fHCF'
-    - '&d&lAzurite &7┃ &fHCF'
-    - '&5&lA&d&lzurite &7┃ &fHCF'
-    - '&d&lA&5&lz&d&lurite &7┃ &fHCF'
-    - '&d&lAz&5&lu&d&lrite &7┃ &fHCF'
-    - '&d&lAzu&5&lr&d&lite &7┃ &fHCF'
-    - '&d&lAzur&5&li&d&lte &7┃ &fHCF'
-    - '&d&lAzuri&5&lt&d&le &7┃ &fHCF'
-    - '&d&lAzurit&5&le &7┃ &fHCF'
-    - '&5&lAzurite &7┃ &fHCF'
+    - '&dc&lTitan &7┃ &fHCF'
+    - '&dc&lTitan &7┃ &fHCF'
+    - '&dc&lTitan &7┃ &fHCF'
+    - '&dc&lTitan &7┃ &fHCF'
+    - '&dc&lTitan &7┃ &fHCF'
+    - '&dc&lTitan &7┃ &fHCF'
+    - '&dc&lTitan &7┃ &fHCF'
+    - '&dc&lTitan &7┃ &fHCF'
+    - '&dc&lTitan &7┃ &fHCF'
+    - '&dc&lTitan &7┃ &fHCF'
+    - '&5c&lA&dc&lzurite &7┃ &fHCF'
+    - '&dc&lA&5c&lz&dc&lurite &7┃ &fHCF'
+    - '&dc&lAz&5c&lu&dc&lrite &7┃ &fHCF'
+    - '&dc&lAzu&5c&lr&dc&lite &7┃ &fHCF'
+    - '&dc&lAzur&5c&li&dc&lte &7┃ &fHCF'
+    - '&dc&lAzuri&5c&lt&dc&le &7┃ &fHCF'
+    - '&dc&lAzurit&5c&le &7┃ &fHCF'
+    - '&5c&lTitan &7┃ &fHCF'
 
 FOOTER:
   ENABLED: true
@@ -51,41 +51,41 @@ FOOTER_CONFIG:
   CHANGER_TICKS: 3000 # Less for faster changing, more for slower changing
   # Create as many as you want
   CHANGES:
-    - '&7store.azurite.cc'
-    - '&7play.azurite.cc'
-    - '&7discord.azurite.cc'
+    - '&7store.titan.cc'
+    - '&7play.titan.cc'
+    - '&7discord.titan.cc'
 
 KITS_INFO:
-  - ' &d&lKills&7: &f%kills%'
-  - ' &d&lDeaths&7: &f%deaths%'
+  - ' &dc&lKills&7: &f%kills%'
+  - ' &dc&lDeaths&7: &f%deaths%'
 
 DEATHBAN_INFO:
   TIME: '&c&lDeathban&7: &c'
   LIVES: '&a&lLives&7: &c'
 
 PLAYER_TIMERS:
-  SOTW: '&d&lSOTW&7: &c'
-  SOTW_OFF: '&d&l&mSOTW&r&7: &c'
+  SOTW: '&dc&lSOTW&7: &c'
+  SOTW_OFF: '&dc&l&mSOTW&r&7: &c'
   INVINCIBILITY: '&a&lInvincibility&7: &c'
   PVP_TIMER: '&a&lPvP Timer&7: &c'
   COMBAT_TAG: '&c&lSpawn Tag&7: &c'
-  ENDER_PEARL: '&e&lEnderpearl&7: &c'
+  ENDER_PEARL: '&ef&lEnderpearl&7: &c'
   APPLE: '&6&lApple&7: &c'
-  GAPPLE: '&e&lGapple&7: &c'
+  GAPPLE: '&ef&lGapple&7: &c'
   STUCK: '&4&lStuck&7: &c'
   HQ: '&9&lHome&7: &9'
   ARCHER_TAG: '&6&lArcher Tag&7: &c'
   WARMUP: '&b&lClass Warmup&7: &c'
   LOGOUT: '&4&lLogout&7: &c'
-  ACTIVE_CLASS: '&d&lClass&7: &c'
+  ACTIVE_CLASS: '&dc&lClass&7: &c'
   SPAWN: '&a&lSpawn&7: &c'
   ABILITIES: '' # %ability%&7: &c if you want per ability cooldown
-  GLOBAL_ABILITIES: '&d&lPartner Item&7: &c'
+  GLOBAL_ABILITIES: '&dc&lPartner Item&7: &c'
   PRE_EOTW: '&4&lPRE-EOTW&7: &c'
   PURGE: '&4&lPurge&7: &c'
   FISHING_ROD: '&b&lFishing Rod&7: &c'
-  APPLE_LIMIT: '&d&lApple Limit&7: &c%amount%/%max-amount%'
-  CAMP: '&e&lCamp&7: &c'
+  APPLE_LIMIT: '&dc&lApple Limit&7: &c%amount%/%max-amount%'
+  CAMP: '&ef&lCamp&7: &c'
   ANTI_CLEAN: '&6&lAntiClean&7: &c'
 
 BARD_CLASS:
@@ -108,14 +108,14 @@ MINER_CLASS:
   DIAMONDS: '&b&lDiamonds&7: &c'
 
 CONQUEST:
-  FORMAT_POINTS: '&e%team% &f- %points%'
+  FORMAT_POINTS: '&ef%team% &f- %points%'
   LINES:
     - '&7&m--------------------'
     - '&6&lConquest'
     - '&71. &f%points-1%'
     - '&72. &f%points-2%'
     - '&73. &f%points-3%'
-    - ' &e%yellow%  &c%red% '
+    - ' &ef%yellow%  &c%red% '
     - ' &a%green%  &9%blue%'
 
 KILL_THE_KING:
@@ -130,25 +130,25 @@ TEAM_FOCUS:
   ENABLED: true
   LINES_PLAYER:
     - '&7&m--------------------'
-    - '&d[%team%] &f%hq%'
+    - '&dc[%team%] &f%hq%'
     - '&6DTR&7: &f%dtr-color%%dtr%%dtr-symbol%'
     - '&6Online&7: &f%online%/%max-online%'
   LINES_SYSTEM:
     - '&7&m--------------------'
-    - '&d[%team%] &f%hq%'
+    - '&dc[%team%] &f%hq%'
 
 STAFF_MODE:
   ENABLED: true
   VANISH_NO_MODMODE: # They are vanished but not in staff mode.
-    - '&5&lStaff Mode'
-    - '&dVanished&7: &7%vanished%'
+    - '&5c&lStaff Mode'
+    - '&dcVanished&7: &7%vanished%'
     - '&7&m--------------------'
   MOD_MODE:
-    - '&5&lStaff Mode'
-    - '&dVanished&7: &7%vanished%'
-    - '&dPlayers&7: &7%players%'
-    - '&dStaff Online&7: &7%staff%'
-    - '&dTPS&7: &7%tps%'
+    - '&5c&lStaff Mode'
+    - '&dcVanished&7: &7%vanished%'
+    - '&dcPlayers&7: &7%players%'
+    - '&dcStaff Online&7: &7%staff%'
+    - '&dcTPS&7: &7%tps%'
     - '&7&m--------------------'
 
 CUSTOM_TIMERS:

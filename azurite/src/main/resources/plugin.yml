@@ -1,14 +1,14 @@
-name: Azurite
-main: me.keano.azurite.HCF
+name: Titan
+main: me.juanpiece.titan.HCF
 version: 1.0-SNAPSHOT
 author: Keqno
-description: Made for Azurite
+description: Made for Titan
 api-version: 1.13
 loadbefore:
   - ShopGUIPlus
   - EconomyShopGUI
 softdepend:
-  - Azurite-Core
+  - Titan-Core
   - LunarClient-API
   - ViaVersion
   - ProtocolSupport

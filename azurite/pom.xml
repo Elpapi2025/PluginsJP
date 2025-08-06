@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.keano.azurite</groupId>
-    <artifactId>Azurite</artifactId>
+    <groupId>me.juanpiece.titan</groupId>
+    <artifactId>Titan</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -113,7 +113,7 @@
 
         <!-- Holograms -->
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>HologramAPI</artifactId>
             <version>1</version>
             <scope>system</scope>
@@ -138,14 +138,14 @@
 
         <!-- Abilities -->
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>AbilityAPI</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/abilities/PandaAbilityAPI.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>AbilityAPI1</artifactId>
             <version>1</version>
             <scope>system</scope>
@@ -154,7 +154,7 @@
 
         <!-- Pearls -->
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>PearlAPI</artifactId>
             <version>1</version>
             <scope>system</scope>
@@ -207,105 +207,105 @@
 
         <!-- Rank Cores -->
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ranks/AquaCoreAPI.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI1</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ranks/Zoot.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI2</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ranks/ZoomAPI.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI3</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ranks/Vault.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI4</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ranks/MizuAPI.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI5</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ranks/AtomAPI.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI6</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ranks/CoreAPI.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI7</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ranks/zPermissions.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI8</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ranks/HestiaAPI.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI9</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ranks/pxAPI.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI10</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ranks/Alchemist.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI11</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ranks/Holiday.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI12</artifactId>
             <version>1</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/libs/ranks/Akuma.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI13</artifactId>
             <version>1</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/libs/ranks/AzuriteCore.jar</systemPath>
+            <systemPath>${project.basedir}/libs/ranks/TitanCore.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>RankAPI14</artifactId>
             <version>1</version>
             <scope>system</scope>
@@ -314,7 +314,7 @@
 
         <!-- Tags -->
         <dependency>
-            <groupId>me.keano.azurite</groupId>
+            <groupId>me.juanpiece.titan</groupId>
             <artifactId>TagAPI1</artifactId>
             <version>1</version>
             <scope>system</scope>

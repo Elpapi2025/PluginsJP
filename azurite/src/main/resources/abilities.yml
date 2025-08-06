@@ -1,7 +1,7 @@
 GLOBAL_ABILITY: # Global ability cooldown
   ENABLED: true
   COOLDOWN: 10
-  ABILITY_MENU_TITLE: '&dAbilities'
+  ABILITY_MENU_TITLE: '&dcAbilities'
   DISABLE_IN_CITADEL: true
   DISABLE_IN_EVENTS: true
   DISABLE_IN_NETHER: true
@@ -13,11 +13,11 @@ ACTION_BAR_COOLDOWN:
   SYMBOL: '▋'
   NON_COMPLETE_COLOR: '&c'
   COMPLETE_COLOR: '&a'
-  ACTION_BAR: '&d%abilityname% &r%actionbar% &7%remaining%'
+  ACTION_BAR: '&dc%abilityname% &r%actionbar% &7%remaining%'
 
 SWITCHER:
   ENABLED: true
-  DISPLAY_NAME: '&d&lSwitcher'
+  DISPLAY_NAME: '&dc&lSwitcher'
   MATERIAL: 'SNOW_BALL' # Only egg/snowball works.
   COOLDOWN: 30
   ADD_GLOW: true
@@ -27,11 +27,11 @@ SWITCHER:
     - '&7Throw this snowball at a player to switch'
     - '&7positions with them, max range of 8 blocks.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 LIGHTNING:
   ENABLED: true
-  DISPLAY_NAME: '&d&lThunderbolt'
+  DISPLAY_NAME: '&dc&lThunderbolt'
   MATERIAL: 'GOLD_INGOT'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -45,11 +45,11 @@ LIGHTNING:
     - '&710 seconds you have a chance to strike'
     - '&7your opponent with lightning dealing -1.5'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 COMBO_ABILITY:
   ENABLED: true
-  DISPLAY_NAME: '&d&lCombo Ability'
+  DISPLAY_NAME: '&dc&lCombo Ability'
   MATERIAL: 'RAW_FISH'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -63,11 +63,11 @@ COMBO_ABILITY:
     - '&7Right click this item and for the next 10 seconds'
     - '&7each hit you get will give you a second of strength'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 LUCKY_MODE:
   ENABLED: true
-  DISPLAY_NAME: '&d&lLucky Mode'
+  DISPLAY_NAME: '&dc&lLucky Mode'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -81,11 +81,11 @@ LUCKY_MODE:
     - '&7next 10 seconds you will be given a damage'
     - '&7change from -10% to 35% extra damage.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 RAGE_BALL:
   ENABLED: true
-  DISPLAY_NAME: '&d&lRage Ball'
+  DISPLAY_NAME: '&dc&lRage Ball'
   MATERIAL: 'EGG'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -104,11 +104,11 @@ RAGE_BALL:
     - '&7Teammates: Strength 2, Resistance 3'
     - '&7Enemies: Wither 2'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 CRAFTING_CHAOS:
   ENABLED: true
-  DISPLAY_NAME: '&d&lCrafting Chaos'
+  DISPLAY_NAME: '&dc&lCrafting Chaos'
   MATERIAL: 'WORKBENCH'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -122,11 +122,11 @@ CRAFTING_CHAOS:
     - '&7have a chance of putting them in a'
     - '&7crafting table when you hit them.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 FOCUS_MODE:
   ENABLED: true
-  DISPLAY_NAME: '&d&lFocus Mode'
+  DISPLAY_NAME: '&dc&lFocus Mode'
   MATERIAL: 'GOLD_NUGGET'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -139,11 +139,11 @@ FOCUS_MODE:
     - '&7Right click this item and the last person'
     - '&7who hit you will take 25% more damage.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 NINJA_ABILITY:
   ENABLED: true
-  DISPLAY_NAME: '&d&lNinja Ability'
+  DISPLAY_NAME: '&dc&lNinja Ability'
   MATERIAL: 'NETHER_STAR'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -155,11 +155,11 @@ NINJA_ABILITY:
     - '&7Right click this item to teleport to'
     - '&7the last person who hit you in 3s.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 ANTI_BUILD:
   ENABLED: true
-  DISPLAY_NAME: '&d&lExotic Bone'
+  DISPLAY_NAME: '&dc&lExotic Bone'
   MATERIAL: 'BONE'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -179,11 +179,11 @@ ANTI_BUILD:
     - '&7they will not be able to build, place or'
     - '&7open blocks for 15s. You also get Speed 3.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 PORTABLE_ARCHER:
   ENABLED: true
-  DISPLAY_NAME: '&d&lPortable Archer'
+  DISPLAY_NAME: '&dc&lPortable Archer'
   MATERIAL: 'BOW'
   COOLDOWN: 60
   ADD_GLOW: true
@@ -195,12 +195,12 @@ PORTABLE_ARCHER:
     - '&7Shoot someone with this bow'
     - '&7to archer tag them for 10s.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
     - '&cUnrepairable'
 
 INVISIBILITY:
   ENABLED: true
-  DISPLAY_NAME: '&d&lInvisibility'
+  DISPLAY_NAME: '&dc&lInvisibility'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -212,11 +212,11 @@ INVISIBILITY:
     - '&7Right click this item and you will be'
     - '&7turned invisible even with armor on.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 TIME_WARP:
   ENABLED: true
-  DISPLAY_NAME: '&d&lTime Warp'
+  DISPLAY_NAME: '&dc&lTime Warp'
   MATERIAL: 'FEATHER'
   COOLDOWN: 90
   ADD_GLOW: true
@@ -228,11 +228,11 @@ TIME_WARP:
     - '&7Right click this item to teleport to'
     - '&7your last pearl location in 2 seconds.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 POCKETBARD:
   ENABLED: true
-  DISPLAY_NAME: '&d&lPocket Bard'
+  DISPLAY_NAME: '&dc&lPocket Bard'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 60
   ADD_GLOW: true
@@ -242,7 +242,7 @@ POCKETBARD:
     - '&7Right click this item to open the'
     - '&7portable bard selection.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
   TYPES:
     # Add as many below this.
     # These are the items itself (not in menu!)
@@ -279,7 +279,7 @@ POCKETBARD:
       LORE:
         - '&7* &aTeam Members'
   POCKETBARD_MENU:
-    TITLE: '&dPocketbard Selection'
+    TITLE: '&dcPocketbard Selection'
     SIZE: 9
     ITEMS:
       # Add as many below this.
@@ -315,7 +315,7 @@ POCKETBARD:
 
 BERSERK:
   ENABLED: true
-  DISPLAY_NAME: '&d&lBerserk'
+  DISPLAY_NAME: '&dc&lBerserk'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 180
   ADD_GLOW: true
@@ -333,11 +333,11 @@ BERSERK:
     - '&7Right click this item to receive godly'
     - '&7effects but you are unable to pot for 8s'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 CLOSE_CALL:
   ENABLED: true
-  DISPLAY_NAME: '&d&lClose Call'
+  DISPLAY_NAME: '&dc&lClose Call'
   MATERIAL: 'COOKIE'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -351,11 +351,11 @@ CLOSE_CALL:
     - '&7Right click this item to receive godly'
     - '&7effects when you are lower than 3.5 hearts.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 SWITCH_STICK:
   ENABLED: true
-  DISPLAY_NAME: '&d&lSwitch Stick'
+  DISPLAY_NAME: '&dc&lSwitch Stick'
   MATERIAL: 'STICK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -369,11 +369,11 @@ SWITCH_STICK:
     - '&7period where you are able to turn around the'
     - '&7player you are attacking.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 TELEPORT_EYE:
   ENABLED: true
-  DISPLAY_NAME: '&d&lTeleport Eye'
+  DISPLAY_NAME: '&dc&lTeleport Eye'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -385,11 +385,11 @@ TELEPORT_EYE:
     - '&7Right click this item when in water to teleport'
     - '&7to the last player who hit you.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 SAMURAI:
   ENABLED: true
-  DISPLAY_NAME: '&d&lSamurai'
+  DISPLAY_NAME: '&dc&lSamurai'
   MATERIAL: 'DIAMOND_SWORD'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -408,11 +408,11 @@ SAMURAI:
     - '&7antibuild and enderpearl cooldown and receive'
     - '&7overpowered effects.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 MAGIC_ROCK:
   ENABLED: true
-  DISPLAY_NAME: '&d&lMagic Rock'
+  DISPLAY_NAME: '&dc&lMagic Rock'
   MATERIAL: 'COAL'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -428,11 +428,11 @@ MAGIC_ROCK:
     - '&7effects dependent on the block above that player,'
     - '&7the less space above the players head the more effects.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 BELCH_BOMB:
   ENABLED: true
-  DISPLAY_NAME: '&d&lBelch Bomb'
+  DISPLAY_NAME: '&dc&lBelch Bomb'
   MATERIAL: 'SLIME_BALL'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -446,11 +446,11 @@ BELCH_BOMB:
     - '&7Right click this item to give all enemies in a'
     - '&7radius of 8 blocks slowness and blindness.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 ANTI_TRAP_STAR:
   ENABLED: true
-  DISPLAY_NAME: '&d&lAnti Trap Star'
+  DISPLAY_NAME: '&dc&lAnti Trap Star'
   MATERIAL: 'NETHER_STAR'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -462,11 +462,11 @@ ANTI_TRAP_STAR:
     - '&7Right click this item to teleport to the last'
     - '&7person who hit you with a projectile.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 MED_KIT:
   ENABLED: true
-  DISPLAY_NAME: '&d&lMed Kit'
+  DISPLAY_NAME: '&dc&lMed Kit'
   MATERIAL: 'PAPER'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -480,11 +480,11 @@ MED_KIT:
     - '&7Right click to receive resistance,'
     - '&7regeneration and absorption.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 ROCKET:
   ENABLED: true
-  DISPLAY_NAME: '&d&lRocket'
+  DISPLAY_NAME: '&dc&lRocket'
   MATERIAL: 'FIREWORK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -496,11 +496,11 @@ ROCKET:
     - '&7Right click to launch yourself,'
     - '&7in the direction you facing.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 ANTI_TRAP_BEACON:
   ENABLED: true
-  DISPLAY_NAME: '&d&lAnti Trap Beacon'
+  DISPLAY_NAME: '&dc&lAnti Trap Beacon'
   MATERIAL: 'BEACON'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -522,11 +522,11 @@ ANTI_TRAP_BEACON:
     - '&7placing and interacting in a radius'
     - '&7of 8 blocks.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 ANTI_PEARL:
   ENABLED: true
-  DISPLAY_NAME: '&d&lAnti Pearl'
+  DISPLAY_NAME: '&dc&lAnti Pearl'
   MATERIAL: 'EYE_OF_ENDER'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -538,11 +538,11 @@ ANTI_PEARL:
     - '&7Hit a player 3 times to put them'
     - '&7on enderpearl cooldown for 16 seconds'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 ULTIMATE_ABILITY:
   ENABLED: true
-  DISPLAY_NAME: '&d&lUltimate Ability'
+  DISPLAY_NAME: '&dc&lUltimate Ability'
   MATERIAL: 'FIREBALL'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -557,11 +557,11 @@ ULTIMATE_ABILITY:
     - '&7Right click this item to save your location'
     - '&7and receive effects and you will be teleported back'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 GRAPPLE:
   ENABLED: true
-  DISPLAY_NAME: '&d&lGrappler Ability'
+  DISPLAY_NAME: '&dc&lGrappler Ability'
   MATERIAL: 'FISHING_ROD'
   COOLDOWN: 20
   ADD_GLOW: true
@@ -573,11 +573,11 @@ GRAPPLE:
     - '&7Throw this item to be pulled towards'
     - '&7the direction its thrown.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 TANK_INGOT:
   ENABLED: true
-  DISPLAY_NAME: '&d&lTank Ingot'
+  DISPLAY_NAME: '&dc&lTank Ingot'
   MATERIAL: 'IRON_INGOT'
   COOLDOWN: 180
   ADD_GLOW: true
@@ -593,11 +593,11 @@ TANK_INGOT:
     - '&7resistance dependent on the players.'
     - '&7around you.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 TELEPORT_BOW:
   ENABLED: true
-  DISPLAY_NAME: '&d&lTeleport Bow'
+  DISPLAY_NAME: '&dc&lTeleport Bow'
   MATERIAL: 'BOW'
   COOLDOWN: 60
   ADD_GLOW: true
@@ -610,12 +610,12 @@ TELEPORT_BOW:
     - '&7Shoot someone with this bow'
     - '&7to teleport to them in 3s.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
     - '&cUnrepairable'
 
 EXPLOSIVE_EGG:
   ENABLED: true
-  DISPLAY_NAME: '&d&lExplosive Egg'
+  DISPLAY_NAME: '&dc&lExplosive Egg'
   MATERIAL: 'EGG'
   COOLDOWN: 180
   ADD_GLOW: true
@@ -629,17 +629,17 @@ EXPLOSIVE_EGG:
     - '&7all the players in a radius'
     - '&7of 8 blocks towards you.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 PORTABLE_BARD:
   ENABLED: true
-  DISPLAY_NAME: '&d&lPortable Bard'
+  DISPLAY_NAME: '&dc&lPortable Bard'
   MATERIAL: 'MONSTER_EGG'
   COOLDOWN: 180
   ADD_GLOW: true
   TAKE_ITEM: true
   DATA: 51
-  NAME: '&d%player%''s Bard &c%health% ❤'
+  NAME: '&dc%player%''s Bard &c%health% ❤'
   HEALTH: 10
   RADIUS: 20 # radius for the bard
   UPGRADE_EVERY: 15 # every 10s upgrade random effect
@@ -662,11 +662,11 @@ PORTABLE_BARD:
     - '&7Place down this skeleton to imitate'
     - '&7a bard. Must be in a radius of 20 blocks'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 PORTABLE_ROGUE:
   ENABLED: true
-  DISPLAY_NAME: '&d&lPortable Rogue'
+  DISPLAY_NAME: '&dc&lPortable Rogue'
   MATERIAL: 'GOLD_SWORD'
   COOLDOWN: 180
   ADD_GLOW: true
@@ -682,11 +682,11 @@ PORTABLE_ROGUE:
     - '&7Hit a player in the back to imitate the rogue'
     - '&7backstab ability.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'
 
 ANTITRAP_HALO:
   ENABLED: true
-  DISPLAY_NAME: '&d&lAnti-Trap Halo'
+  DISPLAY_NAME: '&dc&lAnti-Trap Halo'
   MATERIAL: 'BLAZE_ROD'
   COOLDOWN: 180
   ADD_GLOW: true
@@ -706,4 +706,4 @@ ANTITRAP_HALO:
     - '&7placing of blocks for anyone in a'
     - '&76 block radius for 30 seconds.'
     - ''
-    - '&d⁕ &fstore.azurite.cc &d⁕'
+    - '&dc⁕ &fstore.titan.cc &dc⁕'

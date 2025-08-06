@@ -1,36 +1,36 @@
 RECLAIMS:
-  IRON: # permission is azurite.reclaim.iron
+  IRON: # permission is titan.reclaim.iron
     PRIORITY: 80 # if player has permission to this and another, the one with the higher priority will be given.
     COMMANDS:
       - 'cr givekey %player% iron 3'
       - 'partnerpackage give %player% 3'
-      - 'broadcast &f%player% &ehas redeemed the &f&lIron &erank rewards using &7/reclaim&e.'
-  GOLD: # permission is azurite.reclaim.gold
+      - 'broadcast &f%player% &efhas redeemed the &f&lIron &efrank rewards using &7/reclaim&ef.'
+  GOLD: # permission is titan.reclaim.gold
     PRIORITY: 90 # if player has permission to this and another, the one with the higher priority will be given.
     COMMANDS:
       - 'cr givekey %player% iron 5'
       - 'partnerpackage give %player% 5'
-      - 'broadcast &6%player% &ehas redeemed the &6&lGold &erank rewards using &7/reclaim&e.'
-  AZURITE: # permission is azurite.reclaim.azurite
+      - 'broadcast &6%player% &efhas redeemed the &6&lGold &efrank rewards using &7/reclaim&ef.'
+  AZURITE: # permission is titan.reclaim.titan
     PRIORITY: 100 # if player has permission to this and another, the one with the higher priority will be given.
     COMMANDS:
       - 'cr givekey %player% iron 7'
       - 'partnerpackage give %player% 7'
-      - 'broadcast &d%player% &ehas redeemed the &d&lAzurite &erank rewards using &7/reclaim&e.'
+      - 'broadcast &dc%player% &efhas redeemed the &dc&lTitan &efrank rewards using &7/reclaim&ef.'
 
 DAILY:
-  IRON: # permission is azurite.reclaim.iron
+  IRON: # permission is titan.reclaim.iron
     PRIORITY: 80 # if player has permission to this and another, the one with the higher priority will be given.
     COMMANDS:
       - 'cr givekey %player% iron 3'
-      - 'broadcast &f%player% &ehas redeemed the &f&lIron &edaily rewards using &7/daily&e.'
-  GOLD: # permission is azurite.reclaim.gold
+      - 'broadcast &f%player% &efhas redeemed the &f&lIron &efdaily rewards using &7/daily&ef.'
+  GOLD: # permission is titan.reclaim.gold
     PRIORITY: 90 # if player has permission to this and another, the one with the higher priority will be given.
     COMMANDS:
       - 'cr givekey %player% iron 5'
-      - 'broadcast &6%player% &ehas redeemed the &6&lGold &edaily rewards using &7/daily&e.'
-  AZURITE: # permission is azurite.reclaim.azurite
+      - 'broadcast &6%player% &efhas redeemed the &6&lGold &efdaily rewards using &7/daily&ef.'
+  AZURITE: # permission is titan.reclaim.titan
     PRIORITY: 100 # if player has permission to this and another, the one with the higher priority will be given.
     COMMANDS:
       - 'cr givekey %player% iron 7'
-      - 'broadcast &d%player% &ehas redeemed the &d&lAzurite &edaily rewards using &7/daily&e.'
+      - 'broadcast &dc%player% &efhas redeemed the &dc&lTitan &efdaily rewards using &7/daily&ef.'
