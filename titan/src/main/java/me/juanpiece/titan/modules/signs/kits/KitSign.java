@@ -1,0 +1,50 @@
+package me.juanpiece.titan.modules.signs.kits;
+
+import lombok.Getter;
+import me.juanpiece.titan.modules.kits.Kit;
+import me.juanpiece.titan.modules.signs.CustomSign;
+import me.juanpiece.titan.modules.signs.CustomSignManager;
+import org.bukkit.block.Sign;
+import org.bukkit.entity.Player;
+
+/**
+ * Copyright (c) 2023. Juanpiece
+ * Use or redistribution of source or file is
+ * only permitted if given explicit permission.
+ */
+@Getter
+public class KitSign extends CustomSign {
+
+    private final int kitIndex, kitTypeIndex;
+
+    public KitSign(CustomSignManager manager) {
+        super(
+                manager,
+                manager.getConfig().getStringList("SIGNS_CONFIG.KIT_SIGN.LINES")
+        );
+        this.kitIndex = getIndex("kit");
+        this.kitTypeIndex = getIndex("%kit%");
+    }
+
+    @Override
+    public void onClick(Player player, Sign sign) {
+        Kit kit = getInstance().getKitManager().getKit(sign.getLine(kitTypeIndex));
+
+        if (kit == null) {
+            player.sendMessage(getLanguageConfig().getString("CUSTOM_SIGNS.KIT_SIGNS.KIT_NOT_FOUND"));
+            return;
+        }
+
+        if (kit.getCooldown().hasCooldown(player)) {
+            player.sendMessage(getLanguageConfig().getString("KIT_COMMAND.ON_COOLDOWN")
+                    .replace("%seconds%", kit.getCooldown().getRemaining(player))
+            );
+            return;
+        }
+
+        kit.equip(player);
+        player.sendMessage(getLanguageConfig().getString("CUSTOM_SIGNS.KIT_SIGNS.EQUIPPED")
+                .replace("%kit%", kit.getName())
+        );
+    }
+}

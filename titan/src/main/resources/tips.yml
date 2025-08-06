@@ -1,0 +1,61 @@
+TIPS:
+  ENABLED: true
+  SECONDS: 180 # 3mins we send a tip
+  SOUND: '' # Empty to disable
+  TIP_TYPES: # Create as many as u like under here
+    TEAM_LIST:
+      - '&7&m----------------------'
+      - '&dc&lTeam List Tip'
+      - '&efYou can use /team sort to sort how'
+      - '&efyou would like /team list and tablists'
+      - '&efteam list to look.'
+      - '&7&m----------------------'
+    SCHEDULE:
+      - '&7&m----------------------'
+      - '&dc&lScheduler Tip'
+      - '&efYou can use /schedule to view'
+      - '&efwhat time our events happen.'
+      - '&7&m----------------------'
+    PUSHBACK:
+      - '&7&m----------------------'
+      - '&dc&lBard Pushback Tip'
+      - '&efYou can right click a piece of coal'
+      - '&efwhile being active in the bard class'
+      - '&efto pushback any near enemies.'
+      - '&7&m----------------------'
+    ABILITIES:
+      - '&7&m----------------------'
+      - '&dc&lAbilities Tip'
+      - '&efYou can view our abilities by'
+      - '&eftyping the command /abilities'
+      - '&7&m----------------------'
+    CLAIM_SCOREBOARD:
+      - '&7&m----------------------'
+      - '&dc&lClaim Scoreboard Tip'
+      - '&efYou can use /settings to toggle'
+      - '&efthe claim shown on your scoreboard.'
+      - '&7&m----------------------'
+    STATS:
+      - '&7&m----------------------'
+      - '&dc&lStats Tip'
+      - '&efYou can view your stats by'
+      - '&efrunning the command /stats.'
+      - '&7&m----------------------'
+    KILLTAGS:
+      - '&7&m----------------------'
+      - '&dc&lKilltags Tip'
+      - '&efYou can change the way your kill'
+      - '&efmessages look via /killtags.'
+      - '&7&m----------------------'
+    FALLTRAP:
+      - '&7&m----------------------'
+      - '&dc&lFalltrap Tip'
+      - '&efYou can create a auto falltrap task'
+      - '&efvia the command /f falltrap'
+      - '&7&m----------------------'
+    BASE:
+      - '&7&m----------------------'
+      - '&dc&lBase Tip'
+      - '&efYou can create a auto base task'
+      - '&efvia the command /f base'
+      - '&7&m----------------------'

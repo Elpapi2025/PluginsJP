@@ -1,0 +1,23 @@
+# TimeZone for scheduler, Use https://garygregory.wordpress.com/2013/06/18/what-are-the-java-timezone-ids/
+TIME_ZONE: 'America/New_York'
+
+SCHEDULES:
+  HOURLY: # Name, Hour, Commands
+    - '&6Glowstone Reset, 00, broadcast &6[Glowstone Mountain] &efGlowstone Mountain has been reset.;mountain respawn Glowstone'
+    - '&3Ore Mountain Reset, 00, broadcast &3[Ore Mountain] &efOre Mountain has been reset.;mountain respawn OreMountain'
+  DAILY: # Name, Time, Commands
+    - 'NONE, 23:30, broadcast &4&l[REBOOT] &efServer will be rebooting in 30mins.;customtimer create reboot &4&lReboot 30m'
+    - 'NONE, 23:45, broadcast &4&l[REBOOT] &efServer will be rebooting in 15mins.'
+    - 'NONE, 23:55, broadcast &4&l[REBOOT] &efServer will be rebooting in 5mins.'
+    - 'NONE, 23:59, broadcast &4&l[REBOOT] &efServer will be rebooting in 1min. Saving data now!;save-all;titan forcesave'
+    - '&4Reboot, 00:00, restart'
+  NORMAL: # Name, Time, Day, Commands
+    - '&aSOTW, 15:00, SATURDAY, sotw start 2h;whitelist off'
+    - '&5cCitadel, 15:00, SUNDAY, koth  start citadel'
+
+KOTH_SCHEDULES: # Name, Time, Day, Commands
+  - '&9Angel Koth, 15:00, 16, koth start angel;command2;command3'
+  - '&5cCitadel, 16:00, 15, koth start citadel;command2;command3'
+  - '&4Purge, 15:00, 14, purge start 1h;command2;command3'
+  - '&dcTitan Koth, 20:00, DAILY, koth start titan;koth start next' # Run at 8PM daily
+  - '&4Pearl Koth, 14:00, DAILY, koth start pearl;koth start opel' # Run at 2PM daily

@@ -1,0 +1,36 @@
+RECLAIMS:
+  IRON: # permission is titan.reclaim.iron
+    PRIORITY: 80 # if player has permission to this and another, the one with the higher priority will be given.
+    COMMANDS:
+      - 'cr givekey %player% iron 3'
+      - 'partnerpackage give %player% 3'
+      - 'broadcast &f%player% &efhas redeemed the &f&lIron &efrank rewards using &7/reclaim&ef.'
+  GOLD: # permission is titan.reclaim.gold
+    PRIORITY: 90 # if player has permission to this and another, the one with the higher priority will be given.
+    COMMANDS:
+      - 'cr givekey %player% iron 5'
+      - 'partnerpackage give %player% 5'
+      - 'broadcast &6%player% &efhas redeemed the &6&lGold &efrank rewards using &7/reclaim&ef.'
+  TITAN: # permission is titan.reclaim.titan
+    PRIORITY: 100 # if player has permission to this and another, the one with the higher priority will be given.
+    COMMANDS:
+      - 'cr givekey %player% iron 7'
+      - 'partnerpackage give %player% 7'
+      - 'broadcast &cc%player% &efhas redeemed the &cc&lTitan &efrank rewards using &7/reclaim&ef.'
+
+DAILY:
+  IRON: # permission is titan.reclaim.iron
+    PRIORITY: 80 # if player has permission to this and another, the one with the higher priority will be given.
+    COMMANDS:
+      - 'cr givekey %player% iron 3'
+      - 'broadcast &f%player% &efhas redeemed the &f&lIron &efdaily rewards using &7/daily&ef.'
+  GOLD: # permission is titan.reclaim.gold
+    PRIORITY: 90 # if player has permission to this and another, the one with the higher priority will be given.
+    COMMANDS:
+      - 'cr givekey %player% iron 5'
+      - 'broadcast &6%player% &efhas redeemed the &6&lGold &efdaily rewards using &7/daily&ef.'
+  TITAN: # permission is titan.reclaim.titan
+    PRIORITY: 100 # if player has permission to this and another, the one with the higher priority will be given.
+    COMMANDS:
+      - 'cr givekey %player% iron 7'
+      - 'broadcast &cc%player% &efhas redeemed the &cc&lTitan &efdaily rewards using &7/daily&ef.'

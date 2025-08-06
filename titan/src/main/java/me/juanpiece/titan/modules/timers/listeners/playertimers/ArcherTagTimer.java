@@ -1,0 +1,53 @@
+package me.juanpiece.titan.modules.timers.listeners.playertimers;
+
+import me.juanpiece.titan.modules.timers.TimerManager;
+import me.juanpiece.titan.modules.timers.event.AsyncTimerExpireEvent;
+import me.juanpiece.titan.modules.timers.type.PlayerTimer;
+import me.juanpiece.titan.utils.Tasks;
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
+
+/**
+ * Copyright (c) 2023. Juanpiece
+ * Use or redistribution of source or file is
+ * only permitted if given explicit permission.
+ */
+public class ArcherTagTimer extends PlayerTimer {
+
+    public ArcherTagTimer(TimerManager manager) {
+        super(
+                manager,
+                false,
+                "ArcherTag",
+                "PLAYER_TIMERS.ARCHER_TAG",
+                manager.getConfig().getInt("TIMERS_COOLDOWN.ARCHER_TAG")
+        );
+    }
+
+    @Override
+    public void reload() {
+        this.fetchScoreboard();
+        this.seconds = getConfig().getInt("TIMERS_COOLDOWN.ARCHER_TAG");
+    }
+
+    @EventHandler
+    public void onExpire(AsyncTimerExpireEvent e) {
+        if (e.getTimer() != this) return;
+
+        Player player = Bukkit.getPlayer(e.getPlayer());
+
+        if (player != null) {
+            // Below cannot be async
+            Tasks.execute(getManager(), () -> {
+                PotionEffect restore = getInstance().getClassManager().getRestores().remove(player.getUniqueId(), PotionEffectType.INVISIBILITY);
+
+                if (restore != null) {
+                    player.addPotionEffect(restore);
+                }
+            });
+        }
+    }
+}
