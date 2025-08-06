@@ -11,6 +11,9 @@ import me.juanpiece.titan.modules.teams.player.Member;
 import me.juanpiece.titan.modules.teams.player.Role;
 import me.juanpiece.titan.modules.teams.task.BaseTask;
 import me.juanpiece.titan.modules.teams.task.FalltrapTask;
+import me.juanpiece.titan.modules.teams.task.SkybaseTask;
+import me.juanpiece.titan.modules.teams.TeamManager;
+import me.juanpiece.titan.modules.teams.task.SkybaseTask;
 import me.juanpiece.titan.utils.cuboid.Cuboid;
 import me.juanpiece.titan.utils.extra.Pair;
 import org.bukkit.Bukkit;
@@ -142,6 +145,29 @@ public class Serializer {
         return new BaseTask(manager,
                 UUID.fromString(split[1]), claim, BukkitSerialization.itemStackArrayFromBase64(split[2])[0],
                 BukkitSerialization.itemStackArrayFromBase64(split[2])[1], Integer.parseInt(split[3]), Integer.parseInt(split[4])
+        );
+    }
+
+    public static String serializeSkybaseTask(SkybaseTask task) {
+        String claim = serializeClaim(task.getClaim());
+        String item = BukkitSerialization.itemStackArrayToBase64(new ItemStack[]{task.getWall()});
+        return claim + ";" + task.getUniqueId() + ";" + item;
+    }
+
+    public static SkybaseTask deserializeSkybaseTask(Manager manager, String string) {
+        String[] split = string.split(";");
+        String[] secSplit = split[0].split(", ");
+        Claim claim = new Claim(
+                UUID.fromString(secSplit[0]),
+                new Location(Bukkit.getWorld(secSplit[1]), parseInt(secSplit[2]), parseInt(secSplit[3]), parseInt(secSplit[4])),
+                new Location(Bukkit.getWorld(secSplit[1]), parseInt(secSplit[5]), parseInt(secSplit[6]), parseInt(secSplit[7]))
+        );
+
+        claim.setY1(parseInt(secSplit[3]));
+        claim.setY2(parseInt(secSplit[6]));
+
+        return new SkybaseTask((TeamManager) manager,
+                UUID.fromString(split[1]), claim, BukkitSerialization.itemStackArrayFromBase64(split[2])[0]
         );
     }
 

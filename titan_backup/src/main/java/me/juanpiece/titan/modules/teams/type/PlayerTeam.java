@@ -13,6 +13,7 @@ import me.juanpiece.titan.modules.teams.player.Member;
 import me.juanpiece.titan.modules.teams.player.Role;
 import me.juanpiece.titan.modules.teams.task.BaseTask;
 import me.juanpiece.titan.modules.teams.task.FalltrapTask;
+import me.juanpiece.titan.modules.teams.task.SkybaseTask;
 import me.juanpiece.titan.modules.users.User;
 import me.juanpiece.titan.modules.waypoints.WaypointManager;
 import me.juanpiece.titan.utils.CC;
@@ -51,6 +52,7 @@ public class PlayerTeam extends Team {
     private Set<Member> members;
     private Set<FalltrapTask> falltrapTasks;
     private Set<BaseTask> baseTasks;
+    private Set<SkybaseTask> skybaseTasks;
 
     private BukkitRunnable teamViewerTask;
 
@@ -107,6 +109,9 @@ public class PlayerTeam extends Team {
         this.baseTasks = Utils.createList(map.get("baseTasks"), String.class)
                 .stream().map(s -> Serializer.deserializeBaseTask(manager, s)).collect(Collectors.toSet());
 
+        this.skybaseTasks = Utils.createList(map.get("skybaseTasks"), String.class)
+                .stream().map(s -> Serializer.deserializeSkybaseTask(manager, s)).collect(Collectors.toSet());
+
         this.balance = Integer.parseInt((String) map.get("balance"));
         this.kothCaptures = Integer.parseInt((String) map.get("kothCaptures"));
         this.points = Integer.parseInt((String) map.get("points"));
@@ -152,6 +157,7 @@ public class PlayerTeam extends Team {
         this.members = new HashSet<>(Collections.singletonList(new Member(leader, Role.LEADER)));
         this.falltrapTasks = new HashSet<>();
         this.baseTasks = new HashSet<>();
+        this.skybaseTasks = new HashSet<>();
 
         this.balance = 0;
         this.kothCaptures = 0;
@@ -196,6 +202,7 @@ public class PlayerTeam extends Team {
         map.put("members", members.stream().map(Serializer::serializeMember).collect(Collectors.toList()));
         map.put("falltrapTasks", falltrapTasks.stream().map(Serializer::serializeFalltrapTask).collect(Collectors.toList()));
         map.put("baseTasks", baseTasks.stream().map(Serializer::serializeBaseTask).collect(Collectors.toList()));
+        map.put("skybaseTasks", skybaseTasks.stream().map(Serializer::serializeSkybaseTask).collect(Collectors.toList()));
         map.put("allies", allies.stream().map(UUID::toString).collect(Collectors.toList()));
         map.put("singularFocus", singularFocus.stream().map(UUID::toString).collect(Collectors.toList()));
         map.put("roster", roster.stream().map(UUID::toString).collect(Collectors.toList()));

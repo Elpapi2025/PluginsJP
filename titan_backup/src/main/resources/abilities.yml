@@ -1,73 +1,73 @@
-GLOBAL_ABILITY: # Global ability cooldown
+GLOBAL_ABILITY:
   ENABLED: true
   COOLDOWN: 10
-  ABILITY_MENU_TITLE: '&dcAbilities'
+  ABILITY_MENU_TITLE: '&cAbilities'
   DISABLE_IN_CITADEL: true
   DISABLE_IN_EVENTS: true
   DISABLE_IN_NETHER: true
   DISABLE_IN_END: true
-  DISABLE_IN_RADIUS: 1000 # -1 no change
+  DISABLE_IN_RADIUS: 1000
 
 ACTION_BAR_COOLDOWN:
   BARS_AMOUNT: 12
   SYMBOL: '▋'
   NON_COMPLETE_COLOR: '&c'
   COMPLETE_COLOR: '&a'
-  ACTION_BAR: '&dc%abilityname% &r%actionbar% &7%remaining%'
+  ACTION_BAR: '&c%abilityname% &r%actionbar% &7%remaining%'
 
 SWITCHER:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lSwitcher'
-  MATERIAL: 'SNOW_BALL' # Only egg/snowball works.
+  DISPLAY_NAME: '&c&lIntercambiador'
+  MATERIAL: 'SNOW_BALL'
   COOLDOWN: 30
   ADD_GLOW: true
   DATA: 0
   DISTANCE: 8
   LORE:
-    - '&7Throw this snowball at a player to switch'
-    - '&7positions with them, max range of 8 blocks.'
+    - '&7Lanza esta bola de nieve a un jugador para intercambiar'
+    - '&7posiciones con él, rango máximo de 8 bloques.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 LIGHTNING:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lThunderbolt'
+  DISPLAY_NAME: '&c&lRayo'
   MATERIAL: 'GOLD_INGOT'
   COOLDOWN: 120
   ADD_GLOW: true
   TAKE_ITEM: true
   DATA: 0
-  CHANCE: 20 # Chance of striking lightning
-  SECONDS: 10 # How long do we strike lightning for
-  DAMAGE: 1.5 # When struck with lightning how much damage should we do
+  CHANCE: 20
+  SECONDS: 10
+  DAMAGE: 1.5
   LORE:
-    - '&7Right click this item and for the next'
-    - '&710 seconds you have a chance to strike'
-    - '&7your opponent with lightning dealing -1.5'
+    - '&7Haz clic derecho en este objeto y durante los próximos'
+    - '&710 segundos tendrás la oportunidad de golpear'
+    - '&7a tu oponente con un rayo que inflige -1.5 de daño'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 COMBO_ABILITY:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lCombo Ability'
+  DISPLAY_NAME: '&c&lHabilidad de Combo'
   MATERIAL: 'RAW_FISH'
   COOLDOWN: 120
   ADD_GLOW: true
   TAKE_ITEM: true
   DATA: 3
   MAX_HITS: 12
-  SECONDS: 10 # How long till they get the effect
-  AMOUNT_PER_HIT: 1 # How many seconds should we put per hit
-  EFFECT: 'INCREASE_DAMAGE, 2' # Duration determined by hits
+  SECONDS: 10
+  AMOUNT_PER_HIT: 1
+  EFFECT: 'INCREASE_DAMAGE, 2'
   LORE:
-    - '&7Right click this item and for the next 10 seconds'
-    - '&7each hit you get will give you a second of strength'
+    - '&7Haz clic derecho en este objeto y durante los próximos 10 segundos'
+    - '&7cada golpe que des te dará un segundo de fuerza'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 LUCKY_MODE:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lLucky Mode'
+  DISPLAY_NAME: '&c&lModo Suerte'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -77,21 +77,21 @@ LUCKY_MODE:
   MINIMUM_MULTIPLIER: -10.0
   MAXIMUM_MULTIPLIER: 35.0
   LORE:
-    - '&7Right click this item and for the next'
-    - '&7next 10 seconds you will be given a damage'
-    - '&7change from -10% to 35% extra damage.'
+    - '&7Haz clic derecho en este objeto y durante los'
+    - '&7próximos 10 segundos se te dará un cambio de daño'
+    - '&7de -10% a 35% de daño extra.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 RAGE_BALL:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lRage Ball'
+  DISPLAY_NAME: '&c&lBola de Furia'
   MATERIAL: 'EGG'
   COOLDOWN: 120
   ADD_GLOW: true
   DATA: 0
-  COOLDOWN_WHOLE_TEAM: true # Put the whole cooldown on rage ball cooldown?
-  RADIUS: 8 # Radius of the rage ball
+  COOLDOWN_WHOLE_TEAM: true
+  RADIUS: 8
   EFFECT: 'EXPLOSION_LARGE'
   FRIENDLY_EFFECTS:
     - 'INCREASE_DAMAGE, 8s, 2'
@@ -99,67 +99,67 @@ RAGE_BALL:
   ENEMY_EFFECTS:
     - 'WITHER, 8s, 2'
   LORE:
-    - '&7Throw this and when it lands every player'
-    - '&7in a radius of 8 blocks will be given effects:'
-    - '&7Teammates: Strength 2, Resistance 3'
-    - '&7Enemies: Wither 2'
+    - '&7Lanza esto y cuando aterrice, todos los jugadores'
+    - '&7en un radio de 8 bloques recibirán efectos:'
+    - '&7Compañeros: Fuerza 2, Resistencia 3'
+    - '&7Enemigos: Wither 2'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 CRAFTING_CHAOS:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lCrafting Chaos'
+  DISPLAY_NAME: '&c&lCaos de Crafteo'
   MATERIAL: 'WORKBENCH'
   COOLDOWN: 120
   ADD_GLOW: true
   TAKE_ITEM: true
   DATA: 0
   HITS_REQUIRED: 3
-  CHANCE: 20 # Chance of putting player in crafting table
-  SECONDS: 10 # Seconds of being crafting chaos
+  CHANCE: 20
+  SECONDS: 10
   LORE:
-    - '&7Hit a player with this item and have'
-    - '&7have a chance of putting them in a'
-    - '&7crafting table when you hit them.'
+    - '&7Golpea a un jugador con este objeto y tendrás'
+    - '&7la oportunidad de ponerlo en una mesa de'
+    - '&7crafteo cuando lo golpees.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 FOCUS_MODE:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lFocus Mode'
+  DISPLAY_NAME: '&c&lModo Concentración'
   MATERIAL: 'GOLD_NUGGET'
   COOLDOWN: 120
   ADD_GLOW: true
   TAKE_ITEM: true
   DATA: 0
-  DAMAGE_MULTIPLIER: 1.25 # 25% more damage
+  DAMAGE_MULTIPLIER: 1.25
   SECONDS: 10
-  HITS_VALID: 15 # How long ago did a player have to get hit to focus mode on them?
+  HITS_VALID: 15
   LORE:
-    - '&7Right click this item and the last person'
-    - '&7who hit you will take 25% more damage.'
+    - '&7Haz clic derecho en este objeto y la última persona'
+    - '&7que te golpeó recibirá un 25% más de daño.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 NINJA_ABILITY:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lNinja Ability'
+  DISPLAY_NAME: '&c&lHabilidad Ninja'
   MATERIAL: 'NETHER_STAR'
   COOLDOWN: 120
   ADD_GLOW: true
   TAKE_ITEM: true
   DATA: 0
-  SECONDS: 3 # How long till teleporting?
-  HITS_VALID: 15 # How long ago did a player have to get hit to ninja star to them?
+  SECONDS: 3
+  HITS_VALID: 15
   LORE:
-    - '&7Right click this item to teleport to'
-    - '&7the last person who hit you in 3s.'
+    - '&7Haz clic derecho en este objeto para teletransportarte a'
+    - '&7la última persona que te golpeó en 3s.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 ANTI_BUILD:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lExotic Bone'
+  DISPLAY_NAME: '&c&lHueso Exótico'
   MATERIAL: 'BONE'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -172,35 +172,35 @@ ANTI_BUILD:
     - FENCE_GATE
     - TRAPPED_CHEST
     - TRAP_DOOR
-  EFFECTS_DAMAGER: # The effects the damager gets
+  EFFECTS_DAMAGER:
     - 'SPEED, 10s, 3'
   LORE:
-    - '&7Hit a player with this item 3 times and'
-    - '&7they will not be able to build, place or'
-    - '&7open blocks for 15s. You also get Speed 3.'
+    - '&7Golpea a un jugador con este objeto 3 veces y'
+    - '&7no podrá construir, colocar o'
+    - '&7abrir bloques durante 15s. También obtienes Velocidad 3.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 PORTABLE_ARCHER:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lPortable Archer'
+  DISPLAY_NAME: '&c&lArquero Portátil'
   MATERIAL: 'BOW'
   COOLDOWN: 60
   ADD_GLOW: true
   DATA: 0
-  DURABILITY: 5 # 5 Uses
+  DURABILITY: 5
   ENCHANTS:
     - 'ARROW_INFINITE, 1'
   LORE:
-    - '&7Shoot someone with this bow'
-    - '&7to archer tag them for 10s.'
+    - '&7Dispara a alguien con este arco'
+    - '&7para marcarlo como arquero durante 10s.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
-    - '&cUnrepairable'
+    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&cIrreparable'
 
 INVISIBILITY:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lInvisibility'
+  DISPLAY_NAME: '&c&lInvisibilidad'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -209,113 +209,109 @@ INVISIBILITY:
   INVIS_EFFECT: 'INVISIBILITY, 120s, 2'
   TAKE_INVIS_ON_HIT: true
   LORE:
-    - '&7Right click this item and you will be'
-    - '&7turned invisible even with armor on.'
+    - '&7Haz clic derecho en este objeto y te volverás'
+    - '&7invisible incluso con armadura puesta.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 TIME_WARP:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lTime Warp'
+  DISPLAY_NAME: '&c&lSalto Temporal'
   MATERIAL: 'FEATHER'
   COOLDOWN: 90
   ADD_GLOW: true
   TAKE_ITEM: true
   DATA: 0
-  PEARL_DELAY: 15 # How long ago did the pearl have to be thrown
-  DELAY: 2 # How long before getting teleported back
+  PEARL_DELAY: 15
+  DELAY: 2
   LORE:
-    - '&7Right click this item to teleport to'
-    - '&7your last pearl location in 2 seconds.'
+    - '&7Haz clic derecho en este objeto para teletransportarte a'
+    - '&7la ubicación de tu última perla en 2 segundos.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 POCKETBARD:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lPocket Bard'
+  DISPLAY_NAME: '&c&lBardo de Bolsillo'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 60
   ADD_GLOW: true
   TAKE_ITEM: true
   DATA: 14
   LORE:
-    - '&7Right click this item to open the'
-    - '&7portable bard selection.'
+    - '&7Haz clic derecho en este objeto para abrir la'
+    - '&7selección de bardo portátil.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
   TYPES:
-    # Add as many below this.
-    # These are the items itself (not in menu!)
-    STRENGTH: # the name
-      NAME: '&6Strength II'
+    STRENGTH:
+      NAME: '&6Fuerza II'
       MATERIAL: 'BLAZE_POWDER'
       DATA: 0
       AMOUNT: 3
       EFFECT: 'INCREASE_DAMAGE, 6s, 2'
       LORE:
-        - '&7* &aTeam Members'
-    RESISTANCE: # The name
-      NAME: '&6Resistance III'
+        - '&7* &aMiembros del Equipo'
+    RESISTANCE:
+      NAME: '&6Resistencia III'
       MATERIAL: 'IRON_INGOT'
       DATA: 0
       AMOUNT: 3
       EFFECT: 'DAMAGE_RESISTANCE, 6s, 3'
       LORE:
-        - '&7* &aTeam Members'
-    JUMP_BOOST: # The name
-      NAME: '&6Jump VII'
+        - '&7* &aMiembros del Equipo'
+    JUMP_BOOST:
+      NAME: '&6Salto VII'
       MATERIAL: 'FEATHER'
       DATA: 0
       AMOUNT: 3
       EFFECT: 'JUMP, 6s, 7'
       LORE:
-        - '&7* &aTeam Members'
-    SPEED: # The name
-      NAME: '&6Speed III'
+        - '&7* &aMiembros del Equipo'
+    SPEED:
+      NAME: '&6Velocidad III'
       MATERIAL: 'SUGAR'
       DATA: 0
       AMOUNT: 3
       EFFECT: 'SPEED, 6s, 3'
       LORE:
-        - '&7* &aTeam Members'
+        - '&7* &aMiembros del Equipo'
   POCKETBARD_MENU:
-    TITLE: '&dcPocketbard Selection'
+    TITLE: '&cSelección de Bardo de Bolsillo'
     SIZE: 9
     ITEMS:
-      # Add as many below this.
-      # These are the items in the menu!
       STRENGTH:
-        NAME: '&c3x Strength'
+        NAME: '&c3x Fuerza'
         MATERIAL: 'BLAZE_POWDER'
         SLOT: 1
         DATA: 0
-        POCKET_BARD: 'STRENGTH' # Which pocket bard from above is this item representing?
+        POCKET_BARD: 'STRENGTH'
         LORE: { }
       RESISTANCE:
-        NAME: '&73x Resistance'
+        NAME: '&73x Resistencia'
         MATERIAL: 'IRON_INGOT'
         SLOT: 2
         DATA: 0
-        POCKET_BARD: 'RESISTANCE' # Which pocket bard from above is this item representing?
+        POCKET_BARD: 'RESISTANCE'
         LORE: { }
       JUMP_BOOST:
-        NAME: '&a3x Jump'
+        NAME: '&a3x Salto'
         MATERIAL: 'FEATHER'
         SLOT: 3
         DATA: 0
-        POCKET_BARD: 'JUMP_BOOST' # Which pocket bard from above is this item representing?
+        POCKET_BARD: 'JUMP_BOOST'
         LORE: { }
       SPEED:
-        NAME: '&b3x Speed'
+        NAME: '&b3x Velocidad'
         MATERIAL: 'SUGAR'
         SLOT: 4
         DATA: 0
-        POCKET_BARD: 'SPEED' # Which pocket bard from above is this item representing?
+        POCKET_BARD: 'SPEED'
         LORE: { }
 
 BERSERK:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lBerserk'
+  DISPLAY_NAME: '&c&lBerserk'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 180
   ADD_GLOW: true
@@ -330,14 +326,14 @@ BERSERK:
     - 'DAMAGE_RESISTANCE, 8s, 3'
     - 'REGENERATION, 8s, 3'
   LORE:
-    - '&7Right click this item to receive godly'
-    - '&7effects but you are unable to pot for 8s'
+    - '&7Haz clic derecho en este objeto para recibir efectos'
+    - '&7divinos pero no podrás usar pociones durante 8s'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 CLOSE_CALL:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lClose Call'
+  DISPLAY_NAME: '&c&lLlamada Cercana'
   MATERIAL: 'COOKIE'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -348,14 +344,14 @@ CLOSE_CALL:
     - 'INCREASE_DAMAGE, 6s, 2'
     - 'REGENERATION, 6s, 5'
   LORE:
-    - '&7Right click this item to receive godly'
-    - '&7effects when you are lower than 3.5 hearts.'
+    - '&7Haz clic derecho en este objeto para recibir efectos'
+    - '&7divinos cuando tengas menos de 3.5 corazones.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 SWITCH_STICK:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lSwitch Stick'
+  DISPLAY_NAME: '&c&lPalo de Intercambio'
   MATERIAL: 'STICK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -365,54 +361,54 @@ SWITCH_STICK:
   DEGREES: 180
   TIME: 10
   LORE:
-    - '&7Right click this item to start a 10 second'
-    - '&7period where you are able to turn around the'
-    - '&7player you are attacking.'
+    - '&7Haz clic derecho en este objeto para iniciar un período de 10 segundos'
+    - '&7en el que podrás dar la vuelta al'
+    - '&7jugador que estás atacando.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 TELEPORT_EYE:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lTeleport Eye'
+  DISPLAY_NAME: '&c&lOjo Teletransportador'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 120
   ADD_GLOW: true
   TAKE_ITEM: true
   DATA: 5
-  SECONDS: 3 # How long till teleporting?
-  HITS_VALID: 15 # How long ago did a player have to get hit to teleport to them?
+  SECONDS: 3
+  HITS_VALID: 15
   LORE:
-    - '&7Right click this item when in water to teleport'
-    - '&7to the last player who hit you.'
+    - '&7Haz clic derecho en este objeto cuando estés en el agua para teletransportarte'
+    - '&7al último jugador que te golpeó.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 SAMURAI:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lSamurai'
+  DISPLAY_NAME: '&c&lSamurai'
   MATERIAL: 'DIAMOND_SWORD'
   COOLDOWN: 120
   ADD_GLOW: true
   TAKE_ITEM: false
   DATA: 0
-  SECONDS: 3 # How long till teleporting?
-  HITS_VALID: 15 # How long ago did a player have to get hit to teleport to them?
+  SECONDS: 3
+  HITS_VALID: 15
   ANTI_BUILD_TIME: 15
   ENDER_PEARL_TIME: 16
   EFFECTS_ON_TELEPORT:
     - 'INCREASE_DAMAGE, 8s, 2'
     - 'SPEED, 8s, 3'
   LORE:
-    - '&7Right click this item to teleport to the last'
-    - '&7player who hit you while putting them under'
-    - '&7antibuild and enderpearl cooldown and receive'
-    - '&7overpowered effects.'
+    - '&7Haz clic derecho en este objeto para teletransportarte al último'
+    - '&7jugador que te golpeó mientras lo pones bajo'
+    - '&7enfriamiento de anti-construcción y perla de ender y recibes'
+    - '&7efectos superpoderosos.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 MAGIC_ROCK:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lMagic Rock'
+  DISPLAY_NAME: '&c&lRoca Mágica'
   MATERIAL: 'COAL'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -424,15 +420,15 @@ MAGIC_ROCK:
     - '4: INCREASE_DAMAGE, 4s, 2'
     - '5: INCREASE_DAMAGE, 2s, 2'
   LORE:
-    - '&7Hit a player with this item and you will receive'
-    - '&7effects dependent on the block above that player,'
-    - '&7the less space above the players head the more effects.'
+    - '&7Golpea a un jugador con este objeto y recibirás'
+    - '&7efectos dependiendo del bloque sobre ese jugador,'
+    - '&7cuanto menos espacio sobre la cabeza del jugador, más efectos.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 BELCH_BOMB:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lBelch Bomb'
+  DISPLAY_NAME: '&c&lBomba de Eructo'
   MATERIAL: 'SLIME_BALL'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -443,30 +439,30 @@ BELCH_BOMB:
     - 'SLOW, 6s, 2'
     - 'BLINDNESS, 6s, 2'
   LORE:
-    - '&7Right click this item to give all enemies in a'
-    - '&7radius of 8 blocks slowness and blindness.'
+    - '&7Haz clic derecho en este objeto para dar a todos los enemigos en un'
+    - '&7radio de 8 bloques lentitud y ceguera.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 ANTI_TRAP_STAR:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lAnti Trap Star'
+  DISPLAY_NAME: '&c&lEstrella Anti-Trampas'
   MATERIAL: 'NETHER_STAR'
   COOLDOWN: 120
   ADD_GLOW: true
   TAKE_ITEM: true
   DATA: 0
-  SECONDS: 3 # How long till teleporting?
-  HITS_VALID: 15 # How long ago did a player have to get hit to teleport to them?
+  SECONDS: 3
+  HITS_VALID: 15
   LORE:
-    - '&7Right click this item to teleport to the last'
-    - '&7person who hit you with a projectile.'
+    - '&7Haz clic derecho en este objeto para teletransportarte a la última'
+    - '&7persona que te golpeó con un proyectil.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 MED_KIT:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lMed Kit'
+  DISPLAY_NAME: '&c&lBotiquín Médico'
   MATERIAL: 'PAPER'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -477,14 +473,14 @@ MED_KIT:
     - 'REGENERATION, 8s, 3'
     - 'ABSORPTION, 60s, 3'
   LORE:
-    - '&7Right click to receive resistance,'
-    - '&7regeneration and absorption.'
+    - '&7Haz clic derecho para recibir resistencia,'
+    - '&7regeneración y absorción.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 ROCKET:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lRocket'
+  DISPLAY_NAME: '&c&lCohete'
   MATERIAL: 'FIREWORK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -493,14 +489,14 @@ ROCKET:
   MULTIPLIER: 1.6
   Y_VALUE: 0.8
   LORE:
-    - '&7Right click to launch yourself,'
-    - '&7in the direction you facing.'
+    - '&7Haz clic derecho para lanzarte,'
+    - '&7en la dirección en la que miras.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 ANTI_TRAP_BEACON:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lAnti Trap Beacon'
+  DISPLAY_NAME: '&c&lFaro Anti-Trampas'
   MATERIAL: 'BEACON'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -518,15 +514,15 @@ ANTI_TRAP_BEACON:
     - TRAPPED_CHEST
     - TRAP_DOOR
   LORE:
-    - '&7Place this beacon to deny block'
-    - '&7placing and interacting in a radius'
-    - '&7of 8 blocks.'
+    - '&7Coloca este faro para denegar la colocación'
+    - '&7de bloques y la interacción en un radio'
+    - '&7de 8 bloques.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 ANTI_PEARL:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lAnti Pearl'
+  DISPLAY_NAME: '&c&lAnti Perla'
   MATERIAL: 'EYE_OF_ENDER'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -535,14 +531,14 @@ ANTI_PEARL:
   HITS_REQUIRED: 3
   ENDERPEARL_SECONDS: 16
   LORE:
-    - '&7Hit a player 3 times to put them'
-    - '&7on enderpearl cooldown for 16 seconds'
+    - '&7Golpea a un jugador 3 veces para ponerlo'
+    - '&7en enfriamiento de perla de ender durante 16 segundos'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 ULTIMATE_ABILITY:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lUltimate Ability'
+  DISPLAY_NAME: '&c&lHabilidad Definitiva'
   MATERIAL: 'FIREBALL'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -554,14 +550,14 @@ ULTIMATE_ABILITY:
     - 'REGENERATION, 8s, 3'
     - 'INCREASE_DAMAGE, 8s, 2'
   LORE:
-    - '&7Right click this item to save your location'
-    - '&7and receive effects and you will be teleported back'
+    - '&7Haz clic derecho en este objeto para guardar tu ubicación'
+    - '&7y recibir efectos y serás teletransportado de vuelta'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 GRAPPLE:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lGrappler Ability'
+  DISPLAY_NAME: '&c&lHabilidad de Agarre'
   MATERIAL: 'FISHING_ROD'
   COOLDOWN: 20
   ADD_GLOW: true
@@ -570,14 +566,14 @@ GRAPPLE:
   MULTIPLIER: 0.25
   Y_MULTIPLIER: 0.45
   LORE:
-    - '&7Throw this item to be pulled towards'
-    - '&7the direction its thrown.'
+    - '&7Lanza este objeto para ser jalado hacia'
+    - '&7la dirección en que fue lanzado.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 TANK_INGOT:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lTank Ingot'
+  DISPLAY_NAME: '&c&lLingote de Tanque'
   MATERIAL: 'IRON_INGOT'
   COOLDOWN: 180
   ADD_GLOW: true
@@ -589,33 +585,33 @@ TANK_INGOT:
   EFFECTS:
     - 'DAMAGE_RESISTANCE, %duration%, 3'
   LORE:
-    - '&7Right click this item to receive'
-    - '&7resistance dependent on the players.'
-    - '&7around you.'
+    - '&7Haz clic derecho en este objeto para recibir'
+    - '&7resistencia dependiendo de los jugadores.'
+    - '&7a tu alrededor.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 TELEPORT_BOW:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lTeleport Bow'
+  DISPLAY_NAME: '&c&lArco Teletransportador'
   MATERIAL: 'BOW'
   COOLDOWN: 60
   ADD_GLOW: true
   DATA: 0
-  DURABILITY: 5 # 5 Uses
+  DURABILITY: 5
   SECONDS: 3
   ENCHANTS:
     - 'ARROW_INFINITE, 1'
   LORE:
-    - '&7Shoot someone with this bow'
-    - '&7to teleport to them in 3s.'
+    - '&7Dispara a alguien con este arco'
+    - '&7para teletransportarte a él en 3s.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
-    - '&cUnrepairable'
+    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&cIrreparable'
 
 EXPLOSIVE_EGG:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lExplosive Egg'
+  DISPLAY_NAME: '&c&lHuevo Explosivo'
   MATERIAL: 'EGG'
   COOLDOWN: 180
   ADD_GLOW: true
@@ -625,26 +621,26 @@ EXPLOSIVE_EGG:
   Y_MULTIPLIER: 0.45
   EFFECT: 'EXPLOSION_HUGE'
   LORE:
-    - '&7Throw this at an area to pull'
-    - '&7all the players in a radius'
-    - '&7of 8 blocks towards you.'
+    - '&7Lanza esto a un área para jalar'
+    - '&7a todos los jugadores en un radio'
+    - '&7de 8 bloques hacia ti.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 PORTABLE_BARD:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lPortable Bard'
+  DISPLAY_NAME: '&c&lBardo Portátil'
   MATERIAL: 'MONSTER_EGG'
   COOLDOWN: 180
   ADD_GLOW: true
   TAKE_ITEM: true
   DATA: 51
-  NAME: '&dc%player%''s Bard &c%health% ❤'
+  NAME: '&c&lBardo de %player% &c%health% ❤'
   HEALTH: 10
-  RADIUS: 20 # radius for the bard
-  UPGRADE_EVERY: 15 # every 10s upgrade random effect
-  TIME_ALIVE: 60 # time bard is alive without being killed
-  ENTITY_TYPE: 'SKELETON' # can only be living entities!
+  RADIUS: 20
+  UPGRADE_EVERY: 15
+  TIME_ALIVE: 60
+  ENTITY_TYPE: 'SKELETON'
   EFFECTS:
     RESISTANCE:
       EFFECT: 'DAMAGE_RESISTANCE, 6s, 1'
@@ -659,14 +655,14 @@ PORTABLE_BARD:
       EFFECT_UPGRADE: 'REGENERATION, 6s, 3'
       MATERIAL: 'GHAST_TEAR'
   LORE:
-    - '&7Place down this skeleton to imitate'
-    - '&7a bard. Must be in a radius of 20 blocks'
+    - '&7Coloca este esqueleto para imitar'
+    - '&7a un bardo. Debe estar en un radio de 20 bloques'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 PORTABLE_ROGUE:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lPortable Rogue'
+  DISPLAY_NAME: '&c&lPícaro Portátil'
   MATERIAL: 'GOLD_SWORD'
   COOLDOWN: 180
   ADD_GLOW: true
@@ -679,14 +675,14 @@ PORTABLE_ROGUE:
   BACKSTAB_EFFECTS:
     - 'SLOW, 3s, 3'
   LORE:
-    - '&7Hit a player in the back to imitate the rogue'
-    - '&7backstab ability.'
+    - '&7Golpea a un jugador por la espalda para imitar la'
+    - '&7habilidad de apuñalar del pícaro.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'
 
 ANTITRAP_HALO:
   ENABLED: true
-  DISPLAY_NAME: '&dc&lAnti-Trap Halo'
+  DISPLAY_NAME: '&c&lHalo Anti-Trampas'
   MATERIAL: 'BLAZE_ROD'
   COOLDOWN: 180
   ADD_GLOW: true
@@ -702,8 +698,8 @@ ANTITRAP_HALO:
     - 'TRAPPED_CHEST'
     - 'FENCE_GATE'
   LORE:
-    - '&7Right click this ability to deny the'
-    - '&7placing of blocks for anyone in a'
-    - '&76 block radius for 30 seconds.'
+    - '&7Haz clic derecho en esta habilidad para denegar la'
+    - '&7colocación de bloques para cualquiera en un'
+    - '&7radio de 6 bloques durante 30 segundos.'
     - ''
-    - '&dc⁕ &fstore.titan.cc &dc⁕'
+    - '&c⁕ &fstore.titan.cc &c⁕'

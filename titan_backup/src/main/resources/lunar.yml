@@ -1,15 +1,15 @@
 LUNAR_API:
   ENABLED: true
-  FIX_1_8_HIT_DELAY: true # Viper does this aswell, it fixes the hit delay for lunar client only!
+  FIX_1_8_HIT_DELAY: true
   TEAM_VIEWER: true
 
 NAMETAGS:
   NORMAL: '&6[%name% %dtr-color%%dtr%%dtr-symbol%&6]'
   TEAM_TOP: '&6[%pos% %pos-color%%name% %dtr-color%%dtr%%dtr-symbol%&6]'
   VANISHED_SYMBOL: '&b*'
-  FORMAT: # You can use %rank-name% and %rank-color% aswell
+  FORMAT:
     MOD_MODE:
-      - '&3[Mod Mode]'
+      - '&3[Modo Mod]'
       - '%vanishsymbol%%name%'
     IN_TEAM:
       - '%teamtag%'
@@ -34,7 +34,6 @@ LUNAR_PREFIXES:
     TWO: '&2#2 '
     THREE: '&7#3 '
 
-# Just google '<color> hex code'
 WAYPOINTS:
   SPAWN:
     ENABLED: true
@@ -42,11 +41,11 @@ WAYPOINTS:
     COLOR: '#00FF00'
   END_SPAWN:
     ENABLED: true
-    NAME: 'End Spawn'
+    NAME: 'Spawn del End'
     COLOR: '#800080'
   NETHER_SPAWN:
     ENABLED: true
-    NAME: 'Nether Spawn'
+    NAME: 'Spawn del Nether'
     COLOR: '#ff0000'
   HQ:
     ENABLED: true
@@ -54,29 +53,29 @@ WAYPOINTS:
     COLOR: '#0000FF'
   FOCUS:
     ENABLED: true
-    NAME: '%team%''s HQ'
+    NAME: 'HQ de %team%'
     COLOR: '#FFC0CB'
   RALLY_POINT:
     ENABLED: true
-    NAME: 'Rally Point'
+    NAME: 'Punto de Reunión'
     COLOR: '#FF0000'
   GLOWSTONE:
     ENABLED: true
-    NAME: 'Glowstone Mountain'
+    NAME: 'Montaña de Glowstone'
     COLOR: '#FFD700'
   ORE_MOUNTAIN:
     ENABLED: true
-    NAME: 'Ore Mountain'
+    NAME: 'Montaña de Minerales'
     COLOR: '#00FFFF'
   KOTH:
     ENABLED: true
-    NAME: '%name% KoTH'
+    NAME: 'KoTH de %name%'
     COLOR: '#0000FF'
-  END_EXIT: # This is in the end world.
+  END_EXIT:
     ENABLED: true
-    NAME: 'End Exit'
+    NAME: 'Salida del End'
     COLOR: '#9400D3'
   CONQUEST:
     ENABLED: true
-    NAME: '%name% Zone'
+    NAME: 'Zona de %name%'
     COLOR: '%color%'

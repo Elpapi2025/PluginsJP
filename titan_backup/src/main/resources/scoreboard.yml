@@ -1,34 +1,33 @@
 SCOREBOARD_INFO:
   ENABLED: true
-  TITLE: '&dc&lTitan &7┃ &fHCF' # If changer not enabled
-  LINES: '&7&m--------------------' # Cannot be empty. If you want it blank make it &7
+  TITLE: '&c&lTitan &7┃ &fHCF'
+  LINES: '&7&m--------------------'
   LINES_ENABLED: true
   LAST_LINE_ENABLED: true
   SHOW_KILLSTREAK_ONLY_POSITIVE: true
 
 TITLE_CONFIG:
   CHANGER_ENABLED: true
-  CHANGER_TICKS: 160 # Less for faster changing, more for slower changing
-  # Create as many as you want
+  CHANGER_TICKS: 160
   CHANGES:
-    - '&dc&lTitan &7┃ &fHCF'
-    - '&dc&lTitan &7┃ &fHCF'
-    - '&dc&lTitan &7┃ &fHCF'
-    - '&dc&lTitan &7┃ &fHCF'
-    - '&dc&lTitan &7┃ &fHCF'
-    - '&dc&lTitan &7┃ &fHCF'
-    - '&dc&lTitan &7┃ &fHCF'
-    - '&dc&lTitan &7┃ &fHCF'
-    - '&dc&lTitan &7┃ &fHCF'
-    - '&dc&lTitan &7┃ &fHCF'
-    - '&5c&lA&dc&lzurite &7┃ &fHCF'
-    - '&dc&lA&5c&lz&dc&lurite &7┃ &fHCF'
-    - '&dc&lAz&5c&lu&dc&lrite &7┃ &fHCF'
-    - '&dc&lAzu&5c&lr&dc&lite &7┃ &fHCF'
-    - '&dc&lAzur&5c&li&dc&lte &7┃ &fHCF'
-    - '&dc&lAzuri&5c&lt&dc&le &7┃ &fHCF'
-    - '&dc&lAzurit&5c&le &7┃ &fHCF'
-    - '&5c&lTitan &7┃ &fHCF'
+    - '&c&lTitan &7┃ &fHCF'
+    - '&c&lTitan &7┃ &fHCF'
+    - '&c&lTitan &7┃ &fHCF'
+    - '&c&lTitan &7┃ &fHCF'
+    - '&c&lTitan &7┃ &fHCF'
+    - '&c&lTitan &7┃ &fHCF'
+    - '&c&lTitan &7┃ &fHCF'
+    - '&c&lTitan &7┃ &fHCF'
+    - '&c&lTitan &7┃ &fHCF'
+    - '&c&lTitan &7┃ &fHCF'
+    - '&c&lA&c&lzurite &7┃ &fHCF'
+    - '&c&lA&c&lz&c&lurite &7┃ &fHCF'
+    - '&c&lAz&c&lu&c&lrite &7┃ &fHCF'
+    - '&c&lAzu&c&lr&c&lite &7┃ &fHCF'
+    - '&c&lAzur&c&li&c&lte &7┃ &fHCF'
+    - '&c&lAzuri&c&lt&c&le &7┃ &fHCF'
+    - '&c&lAzurit&c&le &7┃ &fHCF'
+    - '&c&lTitan &7┃ &fHCF'
 
 FOOTER:
   ENABLED: true
@@ -39,7 +38,7 @@ FOOTER:
 CLAIM:
   ENABLED: true
   LINES:
-    - '&6&lClaim&7: %claim%'
+    - '&6&lReclamo&7: %claim%'
 
 KOTH:
   ENABLED: true
@@ -48,107 +47,106 @@ KOTH:
     - ' &8» &f%loc%'
 
 FOOTER_CONFIG:
-  CHANGER_TICKS: 3000 # Less for faster changing, more for slower changing
-  # Create as many as you want
+  CHANGER_TICKS: 3000
   CHANGES:
     - '&7store.titan.cc'
     - '&7play.titan.cc'
     - '&7discord.titan.cc'
 
 KITS_INFO:
-  - ' &dc&lKills&7: &f%kills%'
-  - ' &dc&lDeaths&7: &f%deaths%'
+  - ' &c&lAsesinatos&7: &f%kills%'
+  - ' &c&lMuertes&7: &f%deaths%'
 
 DEATHBAN_INFO:
   TIME: '&c&lDeathban&7: &c'
-  LIVES: '&a&lLives&7: &c'
+  LIVES: '&a&lVidas&7: &c'
 
 PLAYER_TIMERS:
-  SOTW: '&dc&lSOTW&7: &c'
-  SOTW_OFF: '&dc&l&mSOTW&r&7: &c'
-  INVINCIBILITY: '&a&lInvincibility&7: &c'
-  PVP_TIMER: '&a&lPvP Timer&7: &c'
-  COMBAT_TAG: '&c&lSpawn Tag&7: &c'
-  ENDER_PEARL: '&ef&lEnderpearl&7: &c'
-  APPLE: '&6&lApple&7: &c'
-  GAPPLE: '&ef&lGapple&7: &c'
-  STUCK: '&4&lStuck&7: &c'
-  HQ: '&9&lHome&7: &9'
-  ARCHER_TAG: '&6&lArcher Tag&7: &c'
-  WARMUP: '&b&lClass Warmup&7: &c'
-  LOGOUT: '&4&lLogout&7: &c'
-  ACTIVE_CLASS: '&dc&lClass&7: &c'
+  SOTW: '&c&lSOTW&7: &c'
+  SOTW_OFF: '&c&l&mSOTW&r&7: &c'
+  INVINCIBILITY: '&a&lInvencibilidad&7: &c'
+  PVP_TIMER: '&a&lTemporizador PvP&7: &c'
+  COMBAT_TAG: '&c&lTag de Combate&7: &c'
+  ENDER_PEARL: '&f&lEnderpearl&7: &c'
+  APPLE: '&6&lManzana&7: &c'
+  GAPPLE: '&f&lManzana Dorada&7: &c'
+  STUCK: '&4&lAtascado&7: &c'
+  HQ: '&9&lHogar&7: &9'
+  ARCHER_TAG: '&6&lTag de Arquero&7: &c'
+  WARMUP: '&b&lCalentamiento de Clase&7: &c'
+  LOGOUT: '&4&lDesconexión&7: &c'
+  ACTIVE_CLASS: '&c&lClase&7: &c'
   SPAWN: '&a&lSpawn&7: &c'
-  ABILITIES: '' # %ability%&7: &c if you want per ability cooldown
-  GLOBAL_ABILITIES: '&dc&lPartner Item&7: &c'
+  ABILITIES: ''
+  GLOBAL_ABILITIES: '&c&lObjeto de Compañero&7: &c'
   PRE_EOTW: '&4&lPRE-EOTW&7: &c'
-  PURGE: '&4&lPurge&7: &c'
-  FISHING_ROD: '&b&lFishing Rod&7: &c'
-  APPLE_LIMIT: '&dc&lApple Limit&7: &c%amount%/%max-amount%'
-  CAMP: '&ef&lCamp&7: &c'
-  ANTI_CLEAN: '&6&lAntiClean&7: &c'
+  PURGE: '&4&lPurga&7: &c'
+  FISHING_ROD: '&b&lCaña de Pescar&7: &c'
+  APPLE_LIMIT: '&c&lLímite de Manzanas&7: &c%amount%/%max-amount%'
+  CAMP: '&f&lCampamento&7: &c'
+  ANTI_CLEAN: '&6&lAnti-Limpieza&7: &c'
 
 BARD_CLASS:
-  BARD_ENERGY: '&b&lBard Energy&7: &c'
-  BARD_EFFECT: '&a&lBard Effect&7: &c'
+  BARD_ENERGY: '&b&lEnergía de Bardo&7: &c'
+  BARD_EFFECT: '&a&lEfecto de Bardo&7: &c'
 
 MAGE_CLASS:
-  MAGE_ENERGY: '&b&lMage Energy&7: &c'
-  MAGE_EFFECT: '&a&lMage Effect&7: &c'
+  MAGE_ENERGY: '&b&lEnergía de Mago&7: &c'
+  MAGE_EFFECT: '&a&lEfecto de Mago&7: &c'
 
 GHOST_CLASS:
-  MODE: '&3&lMode&7: &c'
-  QUARTZ: '&f&lQuartz&7: &c'
+  MODE: '&3&lModo&7: &c'
+  QUARTZ: '&f&lCuarzo&7: &c'
 
 ROGUE_CLASS:
-  BACKSTAB: '&8&lBackstab&7: &c'
+  BACKSTAB: '&8&lPuñalada&7: &c'
 
 MINER_CLASS:
   INVIS: '&7&lInvisible&7: &c'
-  DIAMONDS: '&b&lDiamonds&7: &c'
+  DIAMONDS: '&b&lDiamantes&7: &c'
 
 CONQUEST:
-  FORMAT_POINTS: '&ef%team% &f- %points%'
+  FORMAT_POINTS: '&f%team% &f- %points%'
   LINES:
     - '&7&m--------------------'
-    - '&6&lConquest'
+    - '&6&lConquista'
     - '&71. &f%points-1%'
     - '&72. &f%points-2%'
     - '&73. &f%points-3%'
-    - ' &ef%yellow%  &c%red% '
+    - ' &f%yellow%  &c%red% '
     - ' &a%green%  &9%blue%'
 
 KILL_THE_KING:
   ENABLED: true
   LINES:
-    - '&4&lKing&7: &f%king%'
-    - '&4&lReward&7: &f%reward%'
-    - '&4&lHealth&7: &c%health%❤'
+    - '&4&lRey&7: &f%king%'
+    - '&4&lRecompensa&7: &f%reward%'
+    - '&4&lVida&7: &c%health%❤'
     - '&7&m--------------------'
 
 TEAM_FOCUS:
   ENABLED: true
   LINES_PLAYER:
     - '&7&m--------------------'
-    - '&dc[%team%] &f%hq%'
+    - '&c[%team%] &f%hq%'
     - '&6DTR&7: &f%dtr-color%%dtr%%dtr-symbol%'
-    - '&6Online&7: &f%online%/%max-online%'
+    - '&6En Línea&7: &f%online%/%max-online%'
   LINES_SYSTEM:
     - '&7&m--------------------'
-    - '&dc[%team%] &f%hq%'
+    - '&c[%team%] &f%hq%'
 
 STAFF_MODE:
   ENABLED: true
-  VANISH_NO_MODMODE: # They are vanished but not in staff mode.
-    - '&5c&lStaff Mode'
-    - '&dcVanished&7: &7%vanished%'
+  VANISH_NO_MODMODE:
+    - '&c&lModo Staff'
+    - '&cInvisible&7: &7%vanished%'
     - '&7&m--------------------'
   MOD_MODE:
-    - '&5c&lStaff Mode'
-    - '&dcVanished&7: &7%vanished%'
-    - '&dcPlayers&7: &7%players%'
-    - '&dcStaff Online&7: &7%staff%'
-    - '&dcTPS&7: &7%tps%'
+    - '&c&lModo Staff'
+    - '&cInvisible&7: &7%vanished%'
+    - '&cJugadores&7: &7%players%'
+    - '&cStaff en Línea&7: &7%staff%'
+    - '&cTPS&7: &7%tps%'
     - '&7&m--------------------'
 
 CUSTOM_TIMERS:
