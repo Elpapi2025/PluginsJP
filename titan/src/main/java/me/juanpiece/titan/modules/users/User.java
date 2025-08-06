@@ -56,6 +56,7 @@ public class User extends Module<UserManager> {
 
     private int falltrapTokens;
     private int baseTokens;
+    private int skybaseTokens;
 
     private long playtime;
     private long lastLogin;
@@ -109,6 +110,7 @@ public class User extends Module<UserManager> {
 
         this.falltrapTokens = Integer.parseInt((String) map.get("falltrapTokens"));
         this.baseTokens = Integer.parseInt((String) map.get("baseTokens"));
+        this.skybaseTokens = Integer.parseInt((String) map.getOrDefault("skybaseTokens", "0"));
 
         this.playtime = Long.parseLong((String) map.get("playtime"));
         this.lastLogin = 0L;
@@ -164,6 +166,7 @@ public class User extends Module<UserManager> {
 
         this.falltrapTokens = 0;
         this.baseTokens = 0;
+        this.skybaseTokens = 0;
 
         this.playtime = 0L;
         this.lastLogin = 0L;
@@ -204,6 +207,7 @@ public class User extends Module<UserManager> {
         map.put("highestKillstreak", String.valueOf(highestKillstreak));
         map.put("falltrapTokens", String.valueOf(falltrapTokens));
         map.put("baseTokens", String.valueOf(baseTokens));
+        map.put("skybaseTokens", String.valueOf(skybaseTokens));
         map.put("playtime", String.valueOf(playtime));
         map.put("lastDaily", String.valueOf(dailyCooldown));
         map.put("reclaimed", String.valueOf(reclaimed));

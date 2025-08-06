@@ -1998,6 +1998,30 @@ MESSAGE_COMMAND:
   USAGE:
     - '&cUsage: /message <player>'
   IGNORING_PLAYER: '&cYou have ignored that player.'
+
+SKYBASE_TOKEN_COMMAND:
+  USAGE:
+    - '&cUsage: /skybasetoken <player>'
+  SELF_CHECK: '&efYour skybase tokens: &c%balance%'
+  TARGET_CHECK: '&ef%target%''s skybase tokens: &c%balance%'
+
+SEND_SKYBASE_TOKEN_COMMAND:
+  USAGE:
+    - '&cUsage: /sendskybasetoken <player> <amount>'
+  CANT_PAY_SELF: '&cYou cannot pay yourself.'
+  MUST_BE_POSITIVE: '&cYou must send a positive amount.'
+  INSUFFICIENT_BAL: '&cYou do not have enough skybase tokens.'
+  PAID: '&efYou have sent &c%amount% &efskybase tokens to &9%player%&ef.'
+  RECEIVED: '&efYou have received &c%amount% &efskybase tokens from &9%player%&ef.'
+
+MANAGE_SKYBASE_TOKEN_COMMAND:
+  USAGE:
+    - '&f/manageskybasetoken set <player> <amount>'
+    - '&f/manageskybasetoken add <player> <amount>'
+    - '&f/manageskybasetoken take <player> <amount>'
+  REMOVED_BAL: '&efYou have removed &c%amount% &efskybase tokens from &9%target%&ef.'
+  ADDED_BAL: '&efYou have added &c%amount% &efskybase tokens to &9%target%&ef.'
+  SET_BAL: '&efYou have set the skybase tokens of &9%target% &efto &c%amount%&ef.'
   IGNORING_TARGET: '&cThat player is ignoring you.'
   TOGGLED_PLAYER: '&cYou have private messages disabled.'
   TOGGLED_TARGET: '&cThat player has private messages disabled.'

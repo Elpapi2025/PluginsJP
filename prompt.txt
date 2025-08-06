@@ -1,0 +1,29 @@
+ Objetivo General:
+  Traducir todos los mensajes visibles para el usuario en los archivos de configuración .yml dentro de titan/target/classes/ al español y
+  corregir los códigos de color de Minecraft al formato &X, reasignando colores específicos según lo solicitado. Finalmente, compilar el
+  proyecto.
+
+  Pasos Detallados:
+
+   1. Identificación de Archivos:
+       * Obtener una lista de todos los archivos .yml en el directorio /project/workspace/titan/target/classes/.
+
+   2. Procesamiento por Archivo (para cada archivo `.yml` encontrado):
+       * Lectura: Leer el contenido completo del archivo en memoria.
+       * Corrección de Códigos de Color (en memoria):
+           * General: Reemplazar cualquier ocurrencia de &XY (donde X e Y son caracteres hexadecimales) con &Y. Esto corrige los códigos de
+             color dobles.
+           * Reasignación Específica:
+               * Reemplazar todas las ocurrencias de &e (amarillo) con &f (blanco).
+               * Reemplazar todas las ocurrencias de &d (rosa) con &c (rojo).
+               * Reemplazar todas las ocurrencias de &5 (morado) con &c (rojo).
+       * Traducción de Mensajes (en memoria):
+           * Identificar las cadenas de texto orientadas al usuario (mensajes, descripciones, nombres de elementos, etc.).
+           * Traducir estas cadenas del inglés al español.
+           * MUY IMPORTANTE: Asegurarse de que los marcadores de posición (placeholders) como %player%, %amount%, %time%, %team%, etc., y los
+             comandos (ej. /team, /koth) NO SE TRADUZCAN y se mantengan exactamente como están.
+       * Escritura: Sobrescribir el archivo original con el contenido modificado (con los colores corregidos y los mensajes traducidos).
+
+   3. Compilación Final:
+       * Una vez que todos los archivos .yml hayan sido procesados y guardados, ejecutar el comando de compilación de Maven: mvn clean 
+         install -f titan/pom.xml.

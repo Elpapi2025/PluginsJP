@@ -212,3 +212,25 @@ CLAIMING:
       - ''
       - '&9Crouch &efLeft Click &6Block/Air'
       - '&b- &fPurchase current claim'
+
+SKYBASE_CONFIG:
+  Y_LEVEL: 250
+  SKYBASE_MENU:
+    TITLE: '&dSkybase Wall'
+    SIZE: 9
+    SKYBASE_WALLS: # Material, Data, Display name in menu
+      - 'GLASS, 0, &efClick to select &fGlass &efwalls.'
+      - 'OBSIDIAN, 0, &efClick to select &8Obsidian &efwalls.'
+      - 'NONE, 0, &efClick to select &fNone &efwalls.'
+  SKYBASE_WAND:
+    NAME: '&a&oSkybase Wand'
+    TYPE: 'WOOD_HOE'
+    LORE:
+      - '&efRight/Left Click &6Block'
+      - '&b- &fSelect claim''s corners'
+      - ''
+      - '&efRight Click &6Air'
+      - '&b- &fCancel current claim'
+      - ''
+      - '&9Crouch &efLeft Click &6Block/Air'
+      - '&b- &fPurchase current claim'
