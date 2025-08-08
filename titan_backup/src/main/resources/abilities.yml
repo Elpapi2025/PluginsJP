@@ -1,7 +1,7 @@
 GLOBAL_ABILITY:
   ENABLED: true
   COOLDOWN: 10
-  ABILITY_MENU_TITLE: '&cAbilities'
+  ABILITY_MENU_TITLE: '&bHabilidades'
   DISABLE_IN_CITADEL: true
   DISABLE_IN_EVENTS: true
   DISABLE_IN_NETHER: true
@@ -13,11 +13,11 @@ ACTION_BAR_COOLDOWN:
   SYMBOL: '▋'
   NON_COMPLETE_COLOR: '&c'
   COMPLETE_COLOR: '&a'
-  ACTION_BAR: '&c%abilityname% &r%actionbar% &7%remaining%'
+  ACTION_BAR: '&b%abilityname% &r%actionbar% &7%remaining%'
 
 SWITCHER:
   ENABLED: true
-  DISPLAY_NAME: '&c&lIntercambiador'
+  DISPLAY_NAME: '&b&lIntercambiador'
   MATERIAL: 'SNOW_BALL'
   COOLDOWN: 30
   ADD_GLOW: true
@@ -27,11 +27,11 @@ SWITCHER:
     - '&7Lanza esta bola de nieve a un jugador para intercambiar'
     - '&7posiciones con él, rango máximo de 8 bloques.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&b⁕ &fstore.titan.cc &b⁕'
 
 LIGHTNING:
   ENABLED: true
-  DISPLAY_NAME: '&c&lRayo'
+  DISPLAY_NAME: '&e&lRayo'
   MATERIAL: 'GOLD_INGOT'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -45,11 +45,11 @@ LIGHTNING:
     - '&710 segundos tendrás la oportunidad de golpear'
     - '&7a tu oponente con un rayo que inflige -1.5 de daño'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&e⁕ &fstore.titan.cc &e⁕'
 
 COMBO_ABILITY:
   ENABLED: true
-  DISPLAY_NAME: '&c&lHabilidad de Combo'
+  DISPLAY_NAME: '&a&lHabilidad de Combo'
   MATERIAL: 'RAW_FISH'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -63,11 +63,11 @@ COMBO_ABILITY:
     - '&7Haz clic derecho en este objeto y durante los próximos 10 segundos'
     - '&7cada golpe que des te dará un segundo de fuerza'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&a⁕ &fstore.titan.cc &a⁕'
 
 LUCKY_MODE:
   ENABLED: true
-  DISPLAY_NAME: '&c&lModo Suerte'
+  DISPLAY_NAME: '&6&lModo Suerte'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -81,7 +81,7 @@ LUCKY_MODE:
     - '&7próximos 10 segundos se te dará un cambio de daño'
     - '&7de -10% a 35% de daño extra.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&6⁕ &fstore.titan.cc &6⁕'
 
 RAGE_BALL:
   ENABLED: true
@@ -108,7 +108,7 @@ RAGE_BALL:
 
 CRAFTING_CHAOS:
   ENABLED: true
-  DISPLAY_NAME: '&c&lCaos de Crafteo'
+  DISPLAY_NAME: '&d&lCaos de Crafteo'
   MATERIAL: 'WORKBENCH'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -122,11 +122,11 @@ CRAFTING_CHAOS:
     - '&7la oportunidad de ponerlo en una mesa de'
     - '&7crafteo cuando lo golpees.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&d⁕ &fstore.titan.cc &d⁕'
 
 FOCUS_MODE:
   ENABLED: true
-  DISPLAY_NAME: '&c&lModo Concentración'
+  DISPLAY_NAME: '&9&lModo Concentración'
   MATERIAL: 'GOLD_NUGGET'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -139,11 +139,11 @@ FOCUS_MODE:
     - '&7Haz clic derecho en este objeto y la última persona'
     - '&7que te golpeó recibirá un 25% más de daño.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&9⁕ &fstore.titan.cc &9⁕'
 
 NINJA_ABILITY:
   ENABLED: true
-  DISPLAY_NAME: '&c&lHabilidad Ninja'
+  DISPLAY_NAME: '&5&lHabilidad Ninja'
   MATERIAL: 'NETHER_STAR'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -155,7 +155,7 @@ NINJA_ABILITY:
     - '&7Haz clic derecho en este objeto para teletransportarte a'
     - '&7la última persona que te golpeó en 3s.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&5⁕ &fstore.titan.cc &5⁕'
 
 ANTI_BUILD:
   ENABLED: true
@@ -183,7 +183,7 @@ ANTI_BUILD:
 
 PORTABLE_ARCHER:
   ENABLED: true
-  DISPLAY_NAME: '&c&lArquero Portátil'
+  DISPLAY_NAME: '&6&lArquero Portátil'
   MATERIAL: 'BOW'
   COOLDOWN: 60
   ADD_GLOW: true
@@ -195,12 +195,12 @@ PORTABLE_ARCHER:
     - '&7Dispara a alguien con este arco'
     - '&7para marcarlo como arquero durante 10s.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&6⁕ &fstore.titan.cc &6⁕'
     - '&cIrreparable'
 
 INVISIBILITY:
   ENABLED: true
-  DISPLAY_NAME: '&c&lInvisibilidad'
+  DISPLAY_NAME: '&8&lInvisibilidad'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -212,11 +212,11 @@ INVISIBILITY:
     - '&7Haz clic derecho en este objeto y te volverás'
     - '&7invisible incluso con armadura puesta.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&8⁕ &fstore.titan.cc &8⁕'
 
 TIME_WARP:
   ENABLED: true
-  DISPLAY_NAME: '&c&lSalto Temporal'
+  DISPLAY_NAME: '&a&lSalto Temporal'
   MATERIAL: 'FEATHER'
   COOLDOWN: 90
   ADD_GLOW: true
@@ -228,11 +228,11 @@ TIME_WARP:
     - '&7Haz clic derecho en este objeto para teletransportarte a'
     - '&7la ubicación de tu última perla en 2 segundos.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&a⁕ &fstore.titan.cc &a⁕'
 
 POCKETBARD:
   ENABLED: true
-  DISPLAY_NAME: '&c&lBardo de Bolsillo'
+  DISPLAY_NAME: '&b&lBardo de Bolsillo'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 60
   ADD_GLOW: true
@@ -242,7 +242,7 @@ POCKETBARD:
     - '&7Haz clic derecho en este objeto para abrir la'
     - '&7selección de bardo portátil.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&b⁕ &fstore.titan.cc &b⁕'
   TYPES:
     STRENGTH:
       NAME: '&6Fuerza II'
@@ -277,7 +277,7 @@ POCKETBARD:
       LORE:
         - '&7* &aMiembros del Equipo'
   POCKETBARD_MENU:
-    TITLE: '&cSelección de Bardo de Bolsillo'
+    TITLE: '&bSelección de Bardo de Bolsillo'
     SIZE: 9
     ITEMS:
       STRENGTH:
@@ -333,7 +333,7 @@ BERSERK:
 
 CLOSE_CALL:
   ENABLED: true
-  DISPLAY_NAME: '&c&lLlamada Cercana'
+  DISPLAY_NAME: '&a&lLlamada Cercana'
   MATERIAL: 'COOKIE'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -347,11 +347,11 @@ CLOSE_CALL:
     - '&7Haz clic derecho en este objeto para recibir efectos'
     - '&7divinos cuando tengas menos de 3.5 corazones.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&a⁕ &fstore.titan.cc &a⁕'
 
 SWITCH_STICK:
   ENABLED: true
-  DISPLAY_NAME: '&c&lPalo de Intercambio'
+  DISPLAY_NAME: '&e&lPalo de Intercambio'
   MATERIAL: 'STICK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -365,11 +365,11 @@ SWITCH_STICK:
     - '&7en el que podrás dar la vuelta al'
     - '&7jugador que estás atacando.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&e⁕ &fstore.titan.cc &e⁕'
 
 TELEPORT_EYE:
   ENABLED: true
-  DISPLAY_NAME: '&c&lOjo Teletransportador'
+  DISPLAY_NAME: '&9&lOjo Teletransportador'
   MATERIAL: 'INK_SACK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -381,11 +381,11 @@ TELEPORT_EYE:
     - '&7Haz clic derecho en este objeto cuando estés en el agua para teletransportarte'
     - '&7al último jugador que te golpeó.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&9⁕ &fstore.titan.cc &9⁕'
 
 SAMURAI:
   ENABLED: true
-  DISPLAY_NAME: '&c&lSamurai'
+  DISPLAY_NAME: '&d&lSamurai'
   MATERIAL: 'DIAMOND_SWORD'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -404,11 +404,11 @@ SAMURAI:
     - '&7enfriamiento de anti-construcción y perla de ender y recibes'
     - '&7efectos superpoderosos.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&d⁕ &fstore.titan.cc &d⁕'
 
 MAGIC_ROCK:
   ENABLED: true
-  DISPLAY_NAME: '&c&lRoca Mágica'
+  DISPLAY_NAME: '&a&lRoca Mágica'
   MATERIAL: 'COAL'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -424,7 +424,7 @@ MAGIC_ROCK:
     - '&7efectos dependiendo del bloque sobre ese jugador,'
     - '&7cuanto menos espacio sobre la cabeza del jugador, más efectos.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&a⁕ &fstore.titan.cc &a⁕'
 
 BELCH_BOMB:
   ENABLED: true
@@ -446,7 +446,7 @@ BELCH_BOMB:
 
 ANTI_TRAP_STAR:
   ENABLED: true
-  DISPLAY_NAME: '&c&lEstrella Anti-Trampas'
+  DISPLAY_NAME: '&5&lEstrella Anti-Trampas'
   MATERIAL: 'NETHER_STAR'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -458,11 +458,11 @@ ANTI_TRAP_STAR:
     - '&7Haz clic derecho en este objeto para teletransportarte a la última'
     - '&7persona que te golpeó con un proyectil.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&5⁕ &fstore.titan.cc &5⁕'
 
 MED_KIT:
   ENABLED: true
-  DISPLAY_NAME: '&c&lBotiquín Médico'
+  DISPLAY_NAME: '&a&lBotiquín Médico'
   MATERIAL: 'PAPER'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -476,11 +476,11 @@ MED_KIT:
     - '&7Haz clic derecho para recibir resistencia,'
     - '&7regeneración y absorción.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&a⁕ &fstore.titan.cc &a⁕'
 
 ROCKET:
   ENABLED: true
-  DISPLAY_NAME: '&c&lCohete'
+  DISPLAY_NAME: '&e&lCohete'
   MATERIAL: 'FIREWORK'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -492,11 +492,11 @@ ROCKET:
     - '&7Haz clic derecho para lanzarte,'
     - '&7en la dirección en la que miras.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&e⁕ &fstore.titan.cc &e⁕'
 
 ANTI_TRAP_BEACON:
   ENABLED: true
-  DISPLAY_NAME: '&c&lFaro Anti-Trampas'
+  DISPLAY_NAME: '&b&lFaro Anti-Trampas'
   MATERIAL: 'BEACON'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -518,7 +518,7 @@ ANTI_TRAP_BEACON:
     - '&7de bloques y la interacción en un radio'
     - '&7de 8 bloques.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&b⁕ &fstore.titan.cc &b⁕'
 
 ANTI_PEARL:
   ENABLED: true
@@ -538,7 +538,7 @@ ANTI_PEARL:
 
 ULTIMATE_ABILITY:
   ENABLED: true
-  DISPLAY_NAME: '&c&lHabilidad Definitiva'
+  DISPLAY_NAME: '&d&lHabilidad Definitiva'
   MATERIAL: 'FIREBALL'
   COOLDOWN: 120
   ADD_GLOW: true
@@ -553,11 +553,11 @@ ULTIMATE_ABILITY:
     - '&7Haz clic derecho en este objeto para guardar tu ubicación'
     - '&7y recibir efectos y serás teletransportado de vuelta'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&d⁕ &fstore.titan.cc &d⁕'
 
 GRAPPLE:
   ENABLED: true
-  DISPLAY_NAME: '&c&lHabilidad de Agarre'
+  DISPLAY_NAME: '&a&lHabilidad de Agarre'
   MATERIAL: 'FISHING_ROD'
   COOLDOWN: 20
   ADD_GLOW: true
@@ -569,11 +569,11 @@ GRAPPLE:
     - '&7Lanza este objeto para ser jalado hacia'
     - '&7la dirección en que fue lanzado.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&a⁕ &fstore.titan.cc &a⁕'
 
 TANK_INGOT:
   ENABLED: true
-  DISPLAY_NAME: '&c&lLingote de Tanque'
+  DISPLAY_NAME: '&e&lLingote de Tanque'
   MATERIAL: 'IRON_INGOT'
   COOLDOWN: 180
   ADD_GLOW: true
@@ -589,11 +589,11 @@ TANK_INGOT:
     - '&7resistencia dependiendo de los jugadores.'
     - '&7a tu alrededor.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&e⁕ &fstore.titan.cc &e⁕'
 
 TELEPORT_BOW:
   ENABLED: true
-  DISPLAY_NAME: '&c&lArco Teletransportador'
+  DISPLAY_NAME: '&b&lArco Teletransportador'
   MATERIAL: 'BOW'
   COOLDOWN: 60
   ADD_GLOW: true
@@ -606,7 +606,7 @@ TELEPORT_BOW:
     - '&7Dispara a alguien con este arco'
     - '&7para teletransportarte a él en 3s.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&b⁕ &fstore.titan.cc &b⁕'
     - '&cIrreparable'
 
 EXPLOSIVE_EGG:
@@ -629,13 +629,13 @@ EXPLOSIVE_EGG:
 
 PORTABLE_BARD:
   ENABLED: true
-  DISPLAY_NAME: '&c&lBardo Portátil'
+  DISPLAY_NAME: '&a&lBardo Portátil'
   MATERIAL: 'MONSTER_EGG'
   COOLDOWN: 180
   ADD_GLOW: true
   TAKE_ITEM: true
   DATA: 51
-  NAME: '&c&lBardo de %player% &c%health% ❤'
+  NAME: '&a&lBardo de %player% &c%health% ❤'
   HEALTH: 10
   RADIUS: 20
   UPGRADE_EVERY: 15
@@ -658,11 +658,11 @@ PORTABLE_BARD:
     - '&7Coloca este esqueleto para imitar'
     - '&7a un bardo. Debe estar en un radio de 20 bloques'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&a⁕ &fstore.titan.cc &a⁕'
 
 PORTABLE_ROGUE:
   ENABLED: true
-  DISPLAY_NAME: '&c&lPícaro Portátil'
+  DISPLAY_NAME: '&d&lPícaro Portátil'
   MATERIAL: 'GOLD_SWORD'
   COOLDOWN: 180
   ADD_GLOW: true
@@ -678,11 +678,11 @@ PORTABLE_ROGUE:
     - '&7Golpea a un jugador por la espalda para imitar la'
     - '&7habilidad de apuñalar del pícaro.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&d⁕ &fstore.titan.cc &d⁕'
 
 ANTITRAP_HALO:
   ENABLED: true
-  DISPLAY_NAME: '&c&lHalo Anti-Trampas'
+  DISPLAY_NAME: '&b&lHalo Anti-Trampas'
   MATERIAL: 'BLAZE_ROD'
   COOLDOWN: 180
   ADD_GLOW: true
@@ -702,4 +702,4 @@ ANTITRAP_HALO:
     - '&7colocación de bloques para cualquiera en un'
     - '&7radio de 6 bloques durante 30 segundos.'
     - ''
-    - '&c⁕ &fstore.titan.cc &c⁕'
+    - '&b⁕ &fstore.titan.cc &b⁕'

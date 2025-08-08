@@ -213,24 +213,4 @@ CLAIMING:
       - '&9Agacharse &fClick Izquierdo &6Bloque/Aire'
       - '&b- &fComprar claim actual'
 
-SKYBASE_CONFIG:
-  Y_LEVEL: 250
-  SKYBASE_MENU:
-    TITLE: '&cMuro de Skybase'
-    SIZE: 9
-    SKYBASE_WALLS:
-      - 'GLASS, 0, &fClick para seleccionar muros de &fCristal&f.'
-      - 'OBSIDIAN, 0, &fClick para seleccionar muros de &8Obsidiana&f.'
-      - 'NONE, 0, &fClick para seleccionar &fNingún &fmuro.'
-  SKYBASE_WAND:
-    NAME: '&a&oVarita de Skybase'
-    TYPE: 'WOOD_HOE'
-    LORE:
-      - '&fClick Derecho/Izquierdo &6Bloque'
-      - '&b- &fSeleccionar esquinas del claim'
-      - ''
-      - '&fClick Derecho &6Aire'
-      - '&b- &fCancelar claim actual'
-      - ''
-      - '&9Agacharse &fClick Izquierdo &6Bloque/Aire'
-      - '&b- &fComprar claim actual'
+
